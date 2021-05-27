@@ -1,4 +1,4 @@
-import React, { useContext, useReducer } from "react";
+import React, { useContext, useReducer, useEffect } from "react";
 import reducer from "../reducer/sidebarReducer";
 import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from "../actions";
 

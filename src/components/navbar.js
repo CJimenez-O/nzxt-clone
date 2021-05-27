@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaRegWindowClose } from "react-icons/fa";
 
 function Navbar() {
-	const { openSideBar, initialState } = useProductsContext();
+	const { openSidebar, closeSidebar, isSidebarOpen } = useProductsContext();
 
-	console.log({ initialState });
 	return (
 		<NavContainer>
 			<div className="header_center">
@@ -17,8 +16,12 @@ function Navbar() {
 						alt="logo"
 					/>
 				</Link>
-				<button type="button" className="nav_toggle" onClick={openSideBar}>
-					<FaBars />
+				<button
+					type="button"
+					className="nav_toggle"
+					onClick={isSidebarOpen ? closeSidebar : openSidebar}
+				>
+					{isSidebarOpen ? <FaRegWindowClose /> : <FaBars />}
 				</button>
 			</div>
 			<ul className="nav_links">
@@ -109,7 +112,14 @@ const NavContainer = styled.nav`
 		svg {
 			font-size: 1.5rem;
 		}
+		display: none;
+	}
 
+	.active {
+		display: unset;
+	}
+
+	.unactive {
 		display: none;
 	}
 
@@ -129,6 +139,10 @@ const NavContainer = styled.nav`
 
 	li .link {
 		color: white;
+	}
+
+	li:hover {
+		background-color: #000;
 	}
 
 	@media (max-width: 1082px) {

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 function Sidebar() {
-	const { isSidebarOpen, closeSideBar } = useProductsContext();
+	const { isSidebarOpen } = useProductsContext();
 	return (
 		<SidebarContainer
 			style={{
@@ -86,6 +86,11 @@ function Sidebar() {
 const SidebarContainer = styled.nav`
 	text-align: center;
 	background-color: black;
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	-ms-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
 
 	li {
 		border-bottom: 3px solid #51007a;
@@ -105,6 +110,10 @@ const SidebarContainer = styled.nav`
 
 	.showSideBar {
 		display: block;
+	}
+
+	@media (min-width: 1082px) {
+		display: none !important;
 	}
 `;
 
