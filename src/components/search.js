@@ -30,6 +30,7 @@ const Searchbar = styled.nav`
 	color: white;
 	position: fixed;
 	width: 100%;
+	z-index: 40;
 
 	.options {
 		float: right;
@@ -69,6 +70,7 @@ const Searchbar = styled.nav`
 	li {
 		padding-left: 20px;
 		font-size: 25px;
+		font-weight: 100;
 	}
 
 	@media (max-width: 990px) {

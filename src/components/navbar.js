@@ -56,6 +56,7 @@ const NavContainer = styled.nav`
 	position: fixed;
 	width: 100%;
 	margin-top: 0px;
+	z-index: 40;
 
 	.nav-center {
 		width: 90vw;
@@ -70,7 +71,8 @@ const NavContainer = styled.nav`
 
 	.logo {
 		color: black;
-		font-size: 20px;
+		font-size: 22px;
+		font-weight: 800;
 	}
 
 	.link {

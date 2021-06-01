@@ -20,6 +20,7 @@ const Ad = styled.div`
 	position: fixed;
 	margin-top: 100px;
 	width: 100%;
+	z-index: 40;
 	p {
 		color: black;
 		font-size: 14px;

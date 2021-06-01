@@ -83,6 +83,7 @@ const SidebarContainer = styled.nav`
 	position: fixed;
 	margin-top: 90px;
 	height: 100%;
+	z-index: 40;
 
 	li {
 		padding-top: 20px;
