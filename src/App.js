@@ -6,10 +6,12 @@ import Sidebar from "./components/sidebar";
 import Promo from "./components/Promo";
 import Components from "./pages/Components";
 import Home from "./pages/Home";
+import Search from "./components/search";
 
 function App() {
 	return (
 		<BrowserRouter>
+			<Search />
 			<Navbar />
 			<Sidebar />
 			<Promo />

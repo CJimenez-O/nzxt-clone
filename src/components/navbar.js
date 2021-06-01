@@ -4,155 +4,116 @@ import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 import { FaBars, FaRegWindowClose } from "react-icons/fa";
 
-function Navbar() {
-	const { openSidebar, closeSidebar, isSidebarOpen } = useProductsContext();
+const Navbar = () => {
+	const { openSidebar, initialState } = useProductsContext();
 
+	console.log(initialState);
 	return (
 		<NavContainer>
-			<div className="header_center">
-				<Link className="logo" to="/">
-					<img
-						src="https://nzxt-site-media.s3-us-west-2.amazonaws.com/assets/v5/icons/nzxt-79a744248d947e5a14df6ebc80f2a61d9a39bdb4e0de6b675b5c05c91ee47f75.png"
-						alt="logo"
-					/>
-				</Link>
-				<button
-					type="button"
-					className="nav_toggle"
-					onClick={isSidebarOpen ? closeSidebar : openSidebar}
-				>
-					{isSidebarOpen ? <FaRegWindowClose /> : <FaBars />}
-				</button>
+			<div className="nav-center">
+				<div className="nav-header">
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<h4 className="logo">NZXT</h4>
+					</Link>
+					<button type="button" className="nav-toggle" onClick={openSidebar}>
+						<FaBars />
+					</button>
+				</div>
+				<ul className="nav-links">
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<h4 className="link">Gaming PCs</h4>
+					</Link>
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<h4 className="link">PC Building</h4>
+					</Link>
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<h4 className="link">Peripherals</h4>
+					</Link>
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<h4 className="link">Software</h4>
+					</Link>
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<h4 className="link">Community</h4>
+					</Link>
+				</ul>
 			</div>
-			<ul className="nav_links">
-				<li>
-					<Link
-						className="link"
-						to="/pc-products-components"
-						style={{ textDecoration: "none" }}
-					>
-						PC COMPONENTS
-					</Link>
-				</li>
-				<li>
-					<a
-						className="link"
-						style={{ textDecoration: "none" }}
-						href="https://www.letsbld.com/"
-					>
-						GAMING PCS
-					</a>
-				</li>
-				<li>
-					<Link className="link" to="/audio" style={{ textDecoration: "none" }}>
-						AUDIO
-					</Link>
-				</li>
-				<li>
-					<Link
-						className="link"
-						to="/pc-products-accessories"
-						style={{ textDecoration: "none" }}
-					>
-						GAMING ACCESSORIES
-					</Link>
-				</li>
-				<li>
-					<Link
-						className="link"
-						to="/pc-monitoring"
-						style={{ textDecoration: "none" }}
-					>
-						PC MONITORING
-					</Link>
-				</li>
-				<li>
-					<Link className="link" to="/blog" style={{ textDecoration: "none" }}>
-						BLOG
-					</Link>
-				</li>
-				<li>
-					<Link
-						className="link"
-						to="/contact"
-						style={{ textDecoration: "none" }}
-					>
-						CONTACT
-					</Link>
-				</li>
-			</ul>
 		</NavContainer>
 	);
-}
+};
 
 const NavContainer = styled.nav`
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 30px;
-	background-color: #51007a;
-	display: flex;
 	height: 50px;
-	padding-top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-	.logo {
-		position: relative;
+	.nav-center {
+		width: 90vw;
+		margin: 0 auto;
+		max-width: var(--max-width);
 	}
-
-	.header_center {
+	.nav-header {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 	}
 
-	.nav_toggle {
+	.logo {
+		color: black;
+		font-size: 20px;
+	}
+
+	.link {
+		font-size: 15px;
+		letter-spacing: 0.5px;
+		font-weight: 600;
+		padding-right: 20px;
+	}
+
+	.nav-toggle {
 		background: transparent;
 		border: transparent;
-		color: white;
-		padding-right: 30px;
+		color: var(--clr-primary-5);
 		cursor: pointer;
 		svg {
 			font-size: 1.5rem;
 		}
+	}
+	.nav-links {
 		display: none;
 	}
-
-	.active {
-		display: unset;
-	}
-
-	.unactive {
+	.cart-btn-wrapper {
 		display: none;
 	}
-
-	.nav_links {
-		padding-left: 35px;
-		display: flex;
-		list-style-type: none;
-	}
-
-	li {
-		font-size: 14px;
-		color: white;
-		justify-content: space-between;
-		padding-right: 20px;
-		letter-spacing: 2px;
-	}
-
-	li .link {
-		color: white;
-	}
-
-	li:hover {
-		background-color: #000;
-	}
-
-	@media (max-width: 1082px) {
-		display: block;
-		.nav_links {
+	@media (min-width: 992px) {
+		.nav-toggle {
 			display: none;
 		}
-
-		.nav_toggle {
-			display: unset;
+		.nav-center {
+			display: grid;
+			grid-template-columns: auto 1fr auto;
+			align-items: center;
+		}
+		.nav-links {
+			display: flex;
+			justify-content: center;
+			li {
+				margin: 0 0.5rem;
+				font-size: 10px;
+			}
+			a {
+				color: var(--clr-grey-3);
+				font-size: 1rem;
+				text-transform: capitalize;
+				letter-spacing: var(--spacing);
+				padding: 0.5rem;
+				&:hover {
+					border-bottom: 2px solid var(--clr-primary-7);
+				}
+			}
+		}
+		.cart-btn-wrapper {
+			display: grid;
 		}
 	}
 `;

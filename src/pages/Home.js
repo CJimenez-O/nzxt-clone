@@ -1,100 +1,60 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Home() {
 	return (
 		<MainContainer>
-			<div className="item">
-				<div className="main_item_content">
-					<div className="description">
-						<h6>INTRODUCING THE NEW</h6>
-						<h3 className="title">STARTER PC SERIES</h3>
-						<p>
-							Your PC gaming journey starts here. Built by the pros with a
-							2-year warranty.
-						</p>
-						<h6>STARTING AT</h6>
-						<h3>$999</h3>
-						<button>EXPLORE</button>
-					</div>
-					<div className="image">
-						<img src="https://cdn.letsbld.com/landing-pages/144/sections/439/background_5fadeaaedc8e8.png" />
-					</div>
-				</div>
+			<div className="promo-text">
+				<h1>Meet the H510 Series</h1>
+				<h5>Quiet, cool, and brilliant.</h5>
+				<Link
+					to="/components"
+					className="button"
+					style={{ textDecoration: "none" }}
+				>
+					Shop Now
+				</Link>
 			</div>
-			<div className="item"></div>
-			<div className="item"></div>
-			<div className="item"></div>
-			<div className="item"></div>
-			<div className="item"></div>
-			<div className="item"></div>
-			<div className="item"></div>
-			<div className="item"></div>
+			<div>
+				<img src="https://nzxt.com/assets/cms/34299/1621638411-case-cut-fade-mid.png?ar=16%3A9&auto=format&fit=max&fm=webp&h=675&w=1200"></img>
+			</div>
 		</MainContainer>
 	);
 }
 
 const MainContainer = styled.div`
-	display: grid;
+	align-items: center;
 	justify-content: center;
-	grid-gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(331px, 1fr));
-	padding-top: 6px;
-	background-color: #f5f5f5;
+	background-color: black;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 
-	.item {
-		background-color: #fff;
-		box-shadow: 0 0 6px 4px rgb(0 0 0 / 11%);
-		height: 85%;
-		overflow: hidden;
+	.promo-text {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		font-size: 40px;
 	}
 
-	.main_item_content {
-		padding-bottom: 20px;
-		padding-left: 20px;
-		font-size: 14px;
-		width: 100%;
-		height: 100%;
-	}
-
-	.description {
-		max-width: 200px;
-		font-size: 18px;
-		position: absolute;
-		top: 250px;
-	}
-
-	.title {
-		color: #51007a;
-		font-size: 30px;
-	}
-
-	.description h3 {
-		font-size: 24px;
-		padding-top: 5px;
-	}
-
-	.description p {
-		padding-top: 10px;
-		padding-bottom: 25px;
-		font-size: 14px;
-		padding-right: 20px;
-	}
-
-	.description button {
-		margin-top: 10px;
-		padding: 10px 50px;
-		border-radius: 5px;
-		border: none;
-		background-color: #51007a;
+	.button {
+		background-color: black;
+		border: 2px solid white;
 		color: white;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 30px;
+		padding-left: 30px;
+		border-radius: 50px;
+		font-size: 16px;
 		font-weight: 600;
+		margin-top: 30px;
 	}
 
-	.image {
-		position: relative;
-		overflow: hidden;
-		margin-left: 150px;
+	.button:hover {
+		background-color: white;
+		color: #7f00f5;
 	}
 `;
 

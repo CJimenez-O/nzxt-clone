@@ -12,13 +12,13 @@ function Promo() {
 const Ad = styled.div`
 	align-items: center;
 	justify-content: center;
-	background-color: black;
 	text-align: center;
 	padding-top: 10px;
 	height: 40px;
+	border: 1px solid lightgray;
 	p {
-		color: white;
-		font-size: 18px;
+		color: black;
+		font-size: 14px;
 		letter-spacing: 1px;
 	}
 `;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 function Sidebar() {
-	const { isSidebarOpen } = useProductsContext();
+	const { isSidebarOpen, closeSidebar } = useProductsContext();
 	return (
 		<SidebarContainer
 			style={{
