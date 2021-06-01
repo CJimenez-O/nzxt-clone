@@ -92,6 +92,56 @@ function Home() {
 					</div>
 				</div>
 			</div>
+			<div className="mid-nav">
+				<div className="nav-bundle">
+					<div className="nav-option">
+						<img src="https://nzxt.com/assets/cms/34299/1621561418-case-h510-left-side.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<p>Cases</p>
+						<p className="sub-descrip">The H510</p>
+					</div>
+					<div className="nav-option">
+						<img src="https://nzxt.com/assets/cms/34299/1621561407-case-h510-right-side.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<p>Prebuilt PCs</p>
+						<p className="sub-descrip">Starter Series</p>
+					</div>
+					<div className="nav-option">
+						<img src="https://nzxt.com/assets/cms/34299/1621561411-kraken-z.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<p>Liquid Cooling</p>
+						<p className="sub-descrip">Kraken Z</p>
+					</div>
+				</div>
+				<div className="nav-bundle">
+					<div className="nav-option">
+						<img src="https://nzxt.com/assets/cms/34299/1621561387-software-generic.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<p>NZXT CAM</p>
+						<p className="sub-descrip">Software</p>
+					</div>
+					<div className="nav-option">
+						<img src="https://nzxt.com/assets/cms/34299/1621561365-service.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<p>Support</p>
+						<p className="sub-descrip">FAQs & Support</p>
+					</div>
+					<div className="nav-option">
+						<img src="https://nzxt.com/assets/cms/34299/1621561403-document.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<p>News</p>
+						<p className="sub-descrip">Community & Company</p>
+					</div>
+				</div>
+			</div>
+			<div className="video-stream">
+				<div className="video-decription">
+					<h6>AIO Liquid Cooling</h6>
+					<h3>COOLER THAN COOL</h3>
+					<h6 className="keep">Keep your cool. Keep your style.</h6>
+					<Link className="button" style={{ textDecoration: "none" }}>
+						Shop Now
+					</Link>
+				</div>
+				<video autoPlay loop muted>
+					<source src="https://stream.mux.com/Un02D7xPL00fDjLRm01tzBU84q2US02YsWsW/high.mp4" />
+				</video>
+			</div>
+			<div className="limited"></div>
 		</MainContainer>
 	);
 }
@@ -142,8 +192,12 @@ const MainContainer = styled.div`
 
 	.build {
 		display: flex;
-		padding-left: 100px;
+		padding-left: 50px;
 		margin-top: 50px;
+	}
+
+	.start {
+		margin-bottom: 30px;
 	}
 
 	.start h2 {
@@ -200,14 +254,14 @@ const MainContainer = styled.div`
 	}
 
 	.prod_display img {
-		height: 250px;
+		height: 220px;
 		position: relative;
-		margin-left: 150px;
-		bottom: 180px;
+		margin-left: 140px;
+		bottom: 150px;
 	}
 
 	.cooler {
-		bottom: 210px !important;
+		bottom: 220px !important;
 		margin-left: 120px !important;
 	}
 
@@ -224,6 +278,108 @@ const MainContainer = styled.div`
 
 	.company {
 		margin-top: 150px;
+	}
+
+	/* MIDDLE NAVIGATION ICONS */
+
+	.mid-nav {
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		margin-left: 6%;
+		margin-right: 6%;
+		background-color: #f2f3f5;
+		border-radius: 10px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 120px;
+		padding-right: 120px;
+		display: flex;
+	}
+
+	.nav-bundle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.nav-option {
+		padding-right: 60px;
+	}
+
+	.nav-option img {
+		height: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 5px;
+	}
+
+	.nav-option p {
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	.sub-descrip {
+		font-weight: 400 !important;
+		padding-top: 3px;
+		font-size: 12px !important;
+	}
+
+	/* VIDEO STREAM */
+
+	.video-stream {
+		position: relative;
+		overflow: hidden;
+		min-height: 600px;
+	}
+
+	.video-stream video {
+		min-height: 600px;
+		position: absolute;
+		object-fit: cover;
+		object-position: center;
+		z-index: -1;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.video-decription {
+		align-items: center;
+		text-align: center;
+		position: absolute;
+		font-size: 40px;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+		color: #f2f3f5;
+	}
+
+	.video-decription h6 {
+		font-size: 20px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.video-decription .button {
+		color: white;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: transparent;
+		border: 2px solid white;
+		border-radius: 50px;
+	}
+
+	.video-decription .button:hover {
+		background-color: white;
+		color: #7f00f5;
 	}
 
 	@media (max-width: 990px) {
@@ -243,7 +399,45 @@ const MainContainer = styled.div`
 		}
 
 		.product {
-			height: 400px;
+			height: 300px;
+		}
+
+		.start h2 {
+			margin-left: 0;
+		}
+		.start p {
+			margin-left: 0;
+		}
+		.rgb_pc {
+			height: 270px;
+		}
+
+		.mid-nav {
+			display: block;
+			margin-left: 8% !important;
+			margin-right: 8% !important;
+		}
+
+		.nav-option {
+			padding-right: 40px !important;
+			padding-left: 30px;
+		}
+
+		.video-decription {
+			top: 50%;
+			font-size: 20px;
+		}
+
+		.video-decription h6 {
+			font-size: 14px;
+		}
+
+		.keep {
+			margin-bottom: 20px;
+		}
+
+		.video-decription .button {
+			font-size: 14px;
 		}
 	}
 
@@ -269,6 +463,21 @@ const MainContainer = styled.div`
 			align-items: center;
 			width: 103%;
 			justify-content: center;
+		}
+
+		.mid-nav {
+			display: block;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+
+		.nav-option {
+			padding-right: 80px;
+			padding-bottom: 50px;
+			align-items: center;
+		}
+		.nav-option img {
+			padding-left: 0;
 		}
 	}
 `;
