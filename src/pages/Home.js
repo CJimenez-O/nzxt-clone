@@ -156,6 +156,7 @@ const MainContainer = styled.div`
 		justify-content: center;
 		text-align: center;
 		padding-top: 140px;
+		width: 100%;
 	}
 
 	.promo-text {
@@ -236,7 +237,6 @@ const MainContainer = styled.div`
 	.flex {
 		display: flex;
 		margin-right: 50px;
-		width: 90%;
 	}
 	.products {
 		margin-right: 20px;
@@ -286,8 +286,8 @@ const MainContainer = styled.div`
 		align-items: center;
 		text-align: center;
 		justify-content: center;
-		margin-top: 50px;
-		margin-bottom: 100px;
+		margin-top: 70px;
+		margin-bottom: 70px;
 		margin-left: 6%;
 		margin-right: 6%;
 		background-color: #f2f3f5;
@@ -382,6 +382,23 @@ const MainContainer = styled.div`
 		color: #7f00f5;
 	}
 
+	@media (max-width: 650px) {
+		.flex {
+			display: block;
+		}
+
+		.prod_display img {
+			height: 220px;
+			position: relative;
+			margin-left: 240px;
+			bottom: 160px;
+		}
+
+		.cooler {
+			margin-left: 240px !important;
+		}
+	}
+
 	@media (max-width: 990px) {
 		padding-top: 90px;
 
@@ -410,6 +427,10 @@ const MainContainer = styled.div`
 		}
 		.rgb_pc {
 			height: 270px;
+		}
+
+		.products {
+			margin-left: 5%;
 		}
 
 		.mid-nav {
@@ -461,7 +482,7 @@ const MainContainer = styled.div`
 		.flex {
 			margin-right: 0 !important;
 			align-items: center;
-			width: 103%;
+			width: 100%;
 			justify-content: center;
 		}
 
