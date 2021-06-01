@@ -117,7 +117,6 @@ const SidebarContainer = styled.nav`
 		border-radius: 5px;
 		padding: 5px;
 		padding-left: 10px;
-		padding-right: 60px;
 		border: none;
 		background-color: #e3e5e8;
 	}

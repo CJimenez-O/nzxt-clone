@@ -147,6 +147,7 @@ function Home() {
 }
 
 const MainContainer = styled.div`
+	/* landing page */
 	.landing {
 		align-items: center;
 		justify-content: center;
@@ -191,10 +192,13 @@ const MainContainer = styled.div`
 		color: #7f00f5;
 	}
 
+	/* start tour build section */
+
 	.build {
 		display: flex;
-		padding-left: 50px;
 		margin-top: 50px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.start {
@@ -236,7 +240,6 @@ const MainContainer = styled.div`
 
 	.flex {
 		display: flex;
-		margin-right: 50px;
 	}
 	.products {
 		margin-right: 20px;
