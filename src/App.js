@@ -13,8 +13,8 @@ function App() {
 		<BrowserRouter>
 			<Search />
 			<Navbar />
-			<Sidebar />
 			<Promo />
+			<Sidebar />
 			<Switch>
 				<Route exact path="/">
 					<Home />

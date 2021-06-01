@@ -2,21 +2,27 @@ import React from "react";
 import styled from "styled-components";
 import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
-import { FaBars, FaRegWindowClose } from "react-icons/fa";
+import { FaBars, FaShoppingCart, FaRegWindowClose } from "react-icons/fa";
 
 const Navbar = () => {
-	const { openSidebar, initialState } = useProductsContext();
+	const { openSidebar, isSidebarOpen, closeSidebar } = useProductsContext();
 
-	console.log(initialState);
 	return (
 		<NavContainer>
 			<div className="nav-center">
 				<div className="nav-header">
+					<button
+						type="button"
+						className="nav-toggle"
+						onClick={isSidebarOpen ? closeSidebar : openSidebar}
+					>
+						{isSidebarOpen ? <FaRegWindowClose /> : <FaBars />}
+					</button>
 					<Link to="/" style={{ textDecoration: "none" }}>
 						<h4 className="logo">NZXT</h4>
 					</Link>
-					<button type="button" className="nav-toggle" onClick={openSidebar}>
-						<FaBars />
+					<button type="button" className="nav-toggle">
+						<FaShoppingCart />
 					</button>
 				</div>
 				<ul className="nav-links">
@@ -46,6 +52,10 @@ const NavContainer = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	margin-top: 0px;
 
 	.nav-center {
 		width: 90vw;
@@ -85,10 +95,13 @@ const NavContainer = styled.nav`
 	.cart-btn-wrapper {
 		display: none;
 	}
-	@media (min-width: 992px) {
+	@media (min-width: 990px) {
+		margin-top: 50px;
+
 		.nav-toggle {
 			display: none;
 		}
+
 		.nav-center {
 			display: grid;
 			grid-template-columns: auto 1fr auto;

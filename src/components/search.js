@@ -28,6 +28,8 @@ const Searchbar = styled.nav`
 	background-color: rgba(49, 50, 52);
 	height: 50px;
 	color: white;
+	position: fixed;
+	width: 100%;
 
 	.options {
 		float: right;
@@ -67,6 +69,10 @@ const Searchbar = styled.nav`
 	li {
 		padding-left: 20px;
 		font-size: 25px;
+	}
+
+	@media (max-width: 990px) {
+		display: none;
 	}
 `;
 

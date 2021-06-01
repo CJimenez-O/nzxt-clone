@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
-import { FaTimes } from "react-icons/fa";
+import { FaRegUser, FaRegQuestionCircle, FaShoppingCart } from "react-icons/fa";
 
 function Sidebar() {
-	const { isSidebarOpen, closeSidebar } = useProductsContext();
+	const { isSidebarOpen } = useProductsContext();
 	return (
 		<SidebarContainer
 			style={{
@@ -13,16 +13,10 @@ function Sidebar() {
 			}}
 		>
 			<aside>
+				<div className="search">
+					<input type="text" placeholder="Search NZXT"></input>
+				</div>
 				<ul className="nav_links">
-					<li>
-						<Link
-							className="link"
-							to="/pc-products-components"
-							style={{ textDecoration: "none" }}
-						>
-							PC COMPONENTS
-						</Link>
-					</li>
 					<li>
 						<a
 							className="link"
@@ -38,7 +32,7 @@ function Sidebar() {
 							to="/audio"
 							style={{ textDecoration: "none" }}
 						>
-							AUDIO
+							PC Building
 						</Link>
 					</li>
 					<li>
@@ -47,7 +41,7 @@ function Sidebar() {
 							to="/pc-products-accessories"
 							style={{ textDecoration: "none" }}
 						>
-							GAMING ACCESSORIES
+							Peripherals
 						</Link>
 					</li>
 					<li>
@@ -56,7 +50,7 @@ function Sidebar() {
 							to="/pc-monitoring"
 							style={{ textDecoration: "none" }}
 						>
-							PC MONITORING
+							Software
 						</Link>
 					</li>
 					<li>
@@ -65,38 +59,36 @@ function Sidebar() {
 							to="/blog"
 							style={{ textDecoration: "none" }}
 						>
-							BLOG
-						</Link>
-					</li>
-					<li>
-						<Link
-							className="link"
-							to="/contact"
-							style={{ textDecoration: "none" }}
-						>
-							CONTACT
+							Community
 						</Link>
 					</li>
 				</ul>
+
+				<div className="support">
+					<FaRegQuestionCircle />
+					<p>Support</p>
+				</div>
+				<div className="signup">
+					<FaRegUser />
+					<p>Sign In / Sign Up</p>
+				</div>
 			</aside>
 		</SidebarContainer>
 	);
 }
 
 const SidebarContainer = styled.nav`
-	text-align: center;
-	background-color: black;
-	-webkit-transition: all 0.6s ease-out;
-	-moz-transition: all 0.6s ease-out;
-	-o-transition: all 0.6s ease-out;
-	-ms-transition: all 0.6s ease-out;
-	transition: all 0.6s ease-out;
+	background-color: white;
+	width: 50%;
+	position: fixed;
+	margin-top: 90px;
+	height: 100%;
 
 	li {
-		border-bottom: 3px solid #51007a;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		font-size: 18px;
+		font-size: 16px;
+		padding-left: 20px;
 	}
 
 	.hide {
@@ -104,12 +96,69 @@ const SidebarContainer = styled.nav`
 	}
 
 	li .link {
-		color: white;
+		color: black;
 		font-weight: 600;
 	}
 
 	.showSideBar {
 		display: block;
+	}
+
+	.search {
+		border-bottom: 1px solid lightgray;
+	}
+
+	input {
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+		font-size: 18px;
+		border-radius: 5px;
+		padding: 5px;
+		padding-left: 10px;
+		padding-right: 60px;
+		border: none;
+		background-color: #e3e5e8;
+	}
+
+	input::placeholder {
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
+
+	input[type="text"]:focus {
+		outline: none;
+		border: 4px solid #7f00f5;
+	}
+
+	.support {
+		border: 1px solid lightgray;
+		display: flex;
+		padding-left: 20px;
+		color: #7f00f5;
+		font-size: 16px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.support p {
+		padding-left: 10px;
+		color: black;
+	}
+
+	.signup {
+		display: flex;
+		padding-left: 20px;
+		color: #7f00f5;
+		font-size: 16px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.signup p {
+		padding-left: 10px;
+		color: black;
 	}
 
 	@media (min-width: 1082px) {

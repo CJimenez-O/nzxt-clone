@@ -16,10 +16,18 @@ const Ad = styled.div`
 	padding-top: 10px;
 	height: 40px;
 	border: 1px solid lightgray;
+	background-color: white;
+	position: fixed;
+	margin-top: 100px;
+	width: 100%;
 	p {
 		color: black;
 		font-size: 14px;
 		letter-spacing: 1px;
+	}
+
+	@media (max-width: 990px) {
+		margin-top: 50px;
 	}
 `;
 

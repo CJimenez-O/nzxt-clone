@@ -17,7 +17,10 @@ function Home() {
 				</Link>
 			</div>
 			<div>
-				<img src="https://nzxt.com/assets/cms/34299/1621638411-case-cut-fade-mid.png?ar=16%3A9&auto=format&fit=max&fm=webp&h=675&w=1200"></img>
+				<img
+					className="product"
+					src="https://nzxt.com/assets/cms/34299/1621638411-case-cut-fade-mid.png?ar=16%3A9&auto=format&fit=max&fm=webp&h=675&w=1200"
+				></img>
 			</div>
 		</MainContainer>
 	);
@@ -31,11 +34,14 @@ const MainContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	padding-top: 140px;
 
 	.promo-text {
-		padding-top: 50px;
+		padding-top: 30px;
 		padding-bottom: 50px;
 		font-size: 40px;
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 
 	.button {
@@ -55,6 +61,14 @@ const MainContainer = styled.div`
 	.button:hover {
 		background-color: white;
 		color: #7f00f5;
+	}
+
+	@media (max-width: 990px) {
+		padding-top: 90px;
+
+		.product {
+			height: 400px;
+		}
 	}
 `;
 
