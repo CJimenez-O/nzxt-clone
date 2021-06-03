@@ -38,7 +38,6 @@ const OwnerSection = styled.div`
 		gap: 2rem;
 		margin-right: 12%;
 		margin-left: 12%;
-		width: 100%;
 	}
 
 	.founder-decript {
