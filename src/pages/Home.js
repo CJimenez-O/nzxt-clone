@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Crft from "../components/crft";
+import Meet from "../components/Meet";
 
 function Home() {
 	return (
@@ -141,7 +143,9 @@ function Home() {
 					<source src="https://stream.mux.com/Un02D7xPL00fDjLRm01tzBU84q2US02YsWsW/high.mp4" />
 				</video>
 			</div>
-			<div className="limited"></div>
+
+			<Crft></Crft>
+			<Meet></Meet>
 		</MainContainer>
 	);
 }
@@ -434,6 +438,10 @@ const MainContainer = styled.div`
 
 		.products {
 			margin-left: 5%;
+		}
+
+		.start_button {
+			margin-left: 0;
 		}
 
 		.mid-nav {

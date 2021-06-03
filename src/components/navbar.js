@@ -82,6 +82,10 @@ const NavContainer = styled.nav`
 		padding-right: 20px;
 	}
 
+	.link:hover {
+		color: #7f00f5;
+	}
+
 	.nav-toggle {
 		background: transparent;
 		border: transparent;
