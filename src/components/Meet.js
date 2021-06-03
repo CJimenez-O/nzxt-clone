@@ -8,10 +8,10 @@ function Meet() {
 			<div className="founder-section">
 				<div className="founder-decript">
 					<h3>Meet the Founder</h3>
-					<p className="bolded">
-						We love building PCs and the people who build them.
-					</p>
 					<p className="founder-quote">
+						<span className="bolded">
+							We love building PCs and the people who build them.
+						</span>
 						That's why we develop and continuously evolve products of the
 						highest quality: to make creating extraordinary PCs achievable and
 						fun for all gamers.
@@ -42,7 +42,6 @@ const OwnerSection = styled.div`
 
 	.founder-decript {
 		padding-top: 7rem;
-		width: 100%;
 		max-width: 32rem;
 	}
 
@@ -76,6 +75,45 @@ const OwnerSection = styled.div`
 
 	img {
 		height: 500px;
+	}
+
+	@media (max-width: 1200px) {
+		margin-top: 95rem;
+
+		.background {
+			background-color: #f2f3f5;
+		}
+
+		.founder-section {
+			display: block;
+			text-align: center;
+			align-items: center;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.founder-decript {
+			left: 35%;
+			margin-top: 13rem;
+			position: absolute;
+			transform: translate(-50%, -50%);
+		}
+
+		.founder-decript h3 {
+			font-size: 30px;
+			padding-bottom: 10px;
+		}
+
+		img {
+			border-radius: 5px;
+			height: 400px;
+			text-align: center;
+			left: 35%;
+			top: 0px;
+			position: absolute;
+			transform: translate(-50%, -50%);
+		}
 	}
 `;
 

@@ -31,12 +31,18 @@ function Crft() {
 			<div className="brands">
 				<div className="logos">
 					<img src="https://nzxt.com/assets/cms/34299/1619643575-pubg.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
-					<img src="https://nzxt.com/assets/cms/34299/1619643592-fallout.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
+					<img
+						className="mid-logo"
+						src="https://nzxt.com/assets/cms/34299/1619643592-fallout.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"
+					></img>
 					<img src="https://nzxt.com/assets/cms/34299/1619643601-wow.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
 				</div>
 				<div className="logos">
 					<img src="https://nzxt.com/assets/cms/34299/1619643617-mass-effect.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
-					<img src="https://nzxt.com/assets/cms/34299/1619643623-siege.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
+					<img
+						className="mid-logo"
+						src="https://nzxt.com/assets/cms/34299/1619643623-siege.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"
+					></img>
 					<img src="https://nzxt.com/assets/cms/34299/1622086865-assassin-s-creed-logo.png?auto=format&fit=max&fm=webp&h=138&w=314"></img>
 				</div>
 			</div>
@@ -152,8 +158,7 @@ const Product = styled.div`
 	}
 
 	.logos img {
-		max-height: 60px;
-		min-height: 30px;
+		height: 55px;
 	}
 
 	.learn-more {
@@ -200,6 +205,36 @@ const Product = styled.div`
 	.cam img {
 		margin-top: 50px;
 		height: 215px;
+	}
+
+	@media (max-width: 1200px) {
+		.brands {
+			text-align: center;
+			margin-top: 15rem;
+			display: block;
+			align-items: center;
+			position: absolute;
+			left: 45%;
+			transform: translate(-50%, -50%);
+			width: 80%;
+		}
+
+		.logos img {
+			height: 100px;
+		}
+
+		.mid-logo {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+
+		.learn-more {
+			margin-top: 55rem;
+			display: block;
+		}
+		.cam {
+			margin-bottom: 40px;
+		}
 	}
 `;
 

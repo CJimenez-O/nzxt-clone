@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Crft from "../components/crft";
 import Meet from "../components/Meet";
+import Footer from "../components/Footer";
 
 function Home() {
 	return (
@@ -146,6 +147,7 @@ function Home() {
 
 			<Crft></Crft>
 			<Meet></Meet>
+			<Footer></Footer>
 		</MainContainer>
 	);
 }
