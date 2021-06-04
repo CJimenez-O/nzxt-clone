@@ -212,6 +212,16 @@ const Product = styled.div`
 			padding-top: 20px;
 			height: 80px !important;
 		}
+
+		.gaming h2 {
+			font-size: 2rem;
+		}
+
+		.gaming h1 {
+			margin-top: 10px;
+			font-size: 9rem;
+			padding-bottom: 20px;
+		}
 	}
 
 	@media (max-width: 1200px) {

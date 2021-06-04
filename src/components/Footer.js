@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import FooterLinks from "./footerLinks";
+import { useProductsContext } from "../context/sidebarContext";
 import {
 	FaFacebook,
 	FaTwitter,
@@ -13,6 +15,11 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
+	const {
+		openCompanyLinks,
+		isCompanyLinkOpen,
+		closeCompanyLinks,
+	} = useProductsContext();
 	return (
 		<Footer_section>
 			<div className="full">
@@ -134,34 +141,64 @@ function Footer() {
 				</div>
 				<div className="footer-nav">
 					<div className="btns">
-						<button className="ftr-nav-btn">
-							<h3 className="btn-title">CONTACT</h3>
-						</button>
+						<div className="btn-div">
+							<button
+								className="ftr-nav-btn"
+								onClick={
+									isCompanyLinkOpen ? closeCompanyLinks : openCompanyLinks
+								}
+							>
+								<h3 className="btn-title">CONTACT</h3>
+							</button>
+						</div>
+						{isCompanyLinkOpen ? (
+							<FooterLinks
+								linkList={[
+									"Company",
+									"Customer Support",
+									"Submit a Request",
+									"Support Center",
+									"AM4 Branket",
+								]}
+							/>
+						) : (
+							<div></div>
+						)}
 					</div>
 					<div className="btns">
-						<button className="ftr-nav-btn">
-							<h3 className="btn-title">ABOUT NZXT</h3>
-						</button>
+						<div className="btn-div">
+							<button className="ftr-nav-btn">
+								<h3 className="btn-title">ABOUT NZXT</h3>
+							</button>
+						</div>
 					</div>
 					<div className="btns">
-						<button className="ftr-nav-btn">
-							<h3 className="btn-title">COMMUNITY</h3>
-						</button>
+						<div className="btn-div">
+							<button className="ftr-nav-btn">
+								<h3 className="btn-title">COMMUNITY</h3>
+							</button>
+						</div>
 					</div>
 					<div className="btns">
-						<button className="ftr-nav-btn">
-							<h3 className="btn-title">SOFTWARE</h3>
-						</button>
+						<div className="btn-div">
+							<button className="ftr-nav-btn">
+								<h3 className="btn-title">SOFTWARE</h3>
+							</button>
+						</div>
 					</div>
 					<div className="btns">
-						<button className="ftr-nav-btn">
-							<h3 className="btn-title">ACCOUNT</h3>
-						</button>
+						<div className="btn-div">
+							<button className="ftr-nav-btn">
+								<h3 className="btn-title">ACCOUNT</h3>
+							</button>
+						</div>
 					</div>
 					<div className="btns">
-						<button className="ftr-nav-btn">
-							<h3 className="btn-title">NZXT STORE</h3>
-						</button>
+						<div className="btn-div">
+							<button className="ftr-nav-btn">
+								<h3 className="btn-title">NZXT STORE</h3>
+							</button>
+						</div>
 					</div>
 				</div>
 				<div className="social-icons">
@@ -310,7 +347,7 @@ const Footer_section = styled.footer`
 			justify-content: center;
 		}
 
-		.btns {
+		.btn-div {
 			border-bottom: 1px solid white;
 			padding-top: 20px;
 			padding-bottom: 20px;
@@ -320,6 +357,7 @@ const Footer_section = styled.footer`
 			background-color: transparent;
 			color: white;
 			border: none;
+			cursor: pointer;
 		}
 
 		.btn-title {
@@ -346,6 +384,16 @@ const Footer_section = styled.footer`
 
 		.legal-links li {
 			padding-top: 3px;
+		}
+
+		.footer-links {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		.footer-links li {
+			padding-top: 20px;
+			list-style: none;
 		}
 	}
 

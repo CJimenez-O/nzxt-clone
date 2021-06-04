@@ -1,11 +1,17 @@
 import React, { useContext, useReducer, useEffect } from "react";
 import reducer from "../reducer/sidebarReducer";
-import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from "../actions";
+import {
+	SIDEBAR_OPEN,
+	SIDEBAR_CLOSE,
+	COMPANY_OPEN,
+	COMPANY_CLOSE,
+} from "../actions";
 
 // Makes actions global
 
 const initialState = {
 	isSidebarOpen: false,
+	isCompanyLinkOpen: false,
 };
 
 const ProductsContext = React.createContext();
@@ -20,8 +26,23 @@ export const ProductsProvider = ({ children }) => {
 		dispatch({ type: SIDEBAR_CLOSE });
 	};
 
+	const openCompanyLinks = () => {
+		dispatch({ type: COMPANY_OPEN });
+	};
+	const closeCompanyLinks = () => {
+		dispatch({ type: COMPANY_CLOSE });
+	};
+
 	return (
-		<ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
+		<ProductsContext.Provider
+			value={{
+				...state,
+				openSidebar,
+				closeSidebar,
+				openCompanyLinks,
+				closeCompanyLinks,
+			}}
+		>
 			{children}
 		</ProductsContext.Provider>
 	);

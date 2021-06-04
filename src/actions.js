@@ -1,2 +1,4 @@
 export const SIDEBAR_OPEN = "SIDEBAR_OPEN";
 export const SIDEBAR_CLOSE = "SIDEBAR_CLOSE";
+export const COMPANY_OPEN = "COMPANY_OPEN";
+export const COMPANY_CLOSE = "COMPANY_CLOSE";
