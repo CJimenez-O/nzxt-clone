@@ -15,7 +15,155 @@ import {
 function Footer() {
 	return (
 		<Footer_section>
-			<div className="upper">
+			<div className="full">
+				<div className="upper">
+					<div className="social-icons">
+						<Link className="social-link">
+							<FaFacebook />
+						</Link>
+						<Link className="social-link">
+							<FaTwitter />
+						</Link>
+						<Link className="social-link">
+							<FaInstagram />
+						</Link>
+						<Link className="social-link">
+							<FaYoutube />
+						</Link>
+						<Link className="social-link">
+							<FaTwitch />
+						</Link>
+						<Link className="social-link">
+							<FaReddit />
+						</Link>
+						<Link className="social-link">
+							<FaSteam />
+						</Link>
+						<Link className="social-link">
+							<FaDiscord />
+						</Link>
+					</div>
+					<div className="region">
+						<div className="lang">
+							<h5 className="pref-title">LANGUAGE</h5>
+							<p className="pref-selected">English</p>
+						</div>
+						<div className="reg">
+							<h5 className="pref-title">REGION</h5>
+							<p className="pref-selected">North America</p>
+						</div>
+					</div>
+				</div>
+				<div className="mid-footer">
+					<div className="flex-1">
+						<div className="contact-col">
+							<h3>CONTACT</h3>
+							<ul>
+								<li>Company</li>
+								<li>Customer Support</li>
+								<li>Submit a Request</li>
+								<li>Support Center</li>
+								<li>AM4 Bracket</li>
+							</ul>
+						</div>
+						<div className="contact-col middle-col">
+							<h3>ABOUT NZXT</h3>
+							<ul>
+								<li>Founder Q & A</li>
+								<li>Newsroom & Blog</li>
+								<li>Careers</li>
+								<li>Customer Reviews</li>
+							</ul>
+						</div>
+						<div className="contact-col">
+							<h3>COMMUNITY</h3>
+							<ul>
+								<li>Our Discord</li>
+								<li>Newsroom & Blog</li>
+							</ul>
+						</div>
+					</div>
+					<div className="flex-2">
+						<div className="contact-col">
+							<h3>SOFTWARE</h3>
+							<ul>
+								<li>CAM</li>
+								<li>CAM Feedback</li>
+							</ul>
+						</div>
+						<div className="contact-col middle-col">
+							<h3>ACCOUNT</h3>
+							<ul>
+								<li>Manage Your Account</li>
+							</ul>
+						</div>
+						<div className="contact-col">
+							<h3>NZXT STORE</h3>
+							<ul>
+								<li>Build a Custome PC</li>
+								<li>FAQ</li>
+								<li>Find a Retailer</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div className="legal">
+					<div className="footer-inc">
+						<h5 className="footer-logo">NZXT</h5>
+						<p>© NZXT Inc. 2021 All Rights Reserved</p>
+					</div>
+					<div className="legal-links">
+						<ul>
+							<li>Legal</li>
+							<li>Privacy Policy</li>
+							<li>Manage Cookie Preferecnes</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div className="small-screen">
+				<div className="region">
+					<div className="lang">
+						<h5 className="pref-title">LANGUAGE</h5>
+						<p className="pref-selected">English</p>
+					</div>
+					<div className="reg">
+						<h5 className="pref-title">REGION</h5>
+						<p className="pref-selected">North America</p>
+					</div>
+				</div>
+				<div className="footer-nav">
+					<div className="btns">
+						<button className="ftr-nav-btn">
+							<h3 className="btn-title">CONTACT</h3>
+						</button>
+					</div>
+					<div className="btns">
+						<button className="ftr-nav-btn">
+							<h3 className="btn-title">ABOUT NZXT</h3>
+						</button>
+					</div>
+					<div className="btns">
+						<button className="ftr-nav-btn">
+							<h3 className="btn-title">COMMUNITY</h3>
+						</button>
+					</div>
+					<div className="btns">
+						<button className="ftr-nav-btn">
+							<h3 className="btn-title">SOFTWARE</h3>
+						</button>
+					</div>
+					<div className="btns">
+						<button className="ftr-nav-btn">
+							<h3 className="btn-title">ACCOUNT</h3>
+						</button>
+					</div>
+					<div className="btns">
+						<button className="ftr-nav-btn">
+							<h3 className="btn-title">NZXT STORE</h3>
+						</button>
+					</div>
+				</div>
 				<div className="social-icons">
 					<Link className="social-link">
 						<FaFacebook />
@@ -42,77 +190,10 @@ function Footer() {
 						<FaDiscord />
 					</Link>
 				</div>
-				<div className="region">
-					<div className="lang">
-						<h5 className="pref-title">LANGUAGE</h5>
-						<p className="pref-selected">English</p>
-					</div>
-					<div className="reg">
-						<h5 className="pref-title">REGION</h5>
-						<p className="pref-selected">North America</p>
-					</div>
-				</div>
-			</div>
-			<div className="mid-footer">
-				<div className="flex-1">
-					<div className="contact-col">
-						<h3>CONTACT</h3>
-						<ul>
-							<li>Company</li>
-							<li>Customer Support</li>
-							<li>Submit a Request</li>
-							<li>Support Center</li>
-							<li>AM4 Bracket</li>
-						</ul>
-					</div>
-					<div className="contact-col middle-col">
-						<h3>ABOUT NZXT</h3>
-						<ul>
-							<li>Founder Q & A</li>
-							<li>Newsroom & Blog</li>
-							<li>Careers</li>
-							<li>Customer Reviews</li>
-						</ul>
-					</div>
-					<div className="contact-col">
-						<h3>COMMUNITY</h3>
-						<ul>
-							<li>Our Discord</li>
-							<li>Newsroom & Blog</li>
-						</ul>
-					</div>
-				</div>
-				<div className="flex-2">
-					<div className="contact-col">
-						<h3>SOFTWARE</h3>
-						<ul>
-							<li>CAM</li>
-							<li>CAM Feedback</li>
-						</ul>
-					</div>
-					<div className="contact-col middle-col">
-						<h3>ACCOUNT</h3>
-						<ul>
-							<li>Manage Your Account</li>
-						</ul>
-					</div>
-					<div className="contact-col">
-						<h3>NZXT STORE</h3>
-						<ul>
-							<li>Build a Custome PC</li>
-							<li>FAQ</li>
-							<li>Find a Retailer</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div className="legal">
-				<div className="footer-inc">
-					<h5 className="footer-logo">NZXT</h5>
-					<p>© NZXT Inc. 2021 All Rights Reserved</p>
-				</div>
 				<div className="legal-links">
 					<ul>
+						<li className="footer-logo">NZXT</li>
+						<li>© NZXT Inc. 2021 All Rights Reserved</li>
 						<li>Legal</li>
 						<li>Privacy Policy</li>
 						<li>Manage Cookie Preferecnes</li>
@@ -130,9 +211,20 @@ const Footer_section = styled.footer`
 	padding-right: 5%;
 	color: rgba(156, 163, 175);
 	background-color: #1c1c1c;
+
+	.small-screen {
+		display: none;
+	}
+
 	.upper {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.pref-selected {
+		color: white;
+		letter-spacing: 1px;
+		font-weight: 600;
 	}
 
 	.social-link {
@@ -199,6 +291,62 @@ const Footer_section = styled.footer`
 		font-size: 13px;
 		list-style: none;
 		padding-right: 20px;
+	}
+
+	@media (max-width: 700px) {
+		padding-bottom: 10rem;
+		.full {
+			display: none;
+		}
+
+		.small-screen {
+			display: block;
+			position: relative;
+		}
+
+		.region {
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+		}
+
+		.btns {
+			border-bottom: 1px solid white;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		.ftr-nav-btn {
+			background-color: transparent;
+			color: white;
+			border: none;
+		}
+
+		.btn-title {
+			letter-spacing: 1px;
+		}
+
+		.footer-logo {
+			font-weight: 600;
+		}
+
+		.social-icons {
+			align-items: center;
+			text-align: center;
+		}
+
+		.legal-links {
+			text-align: center;
+			padding-top: 5rem;
+		}
+
+		.legal-links ul {
+			padding-bottom: 0px;
+		}
+
+		.legal-links li {
+			padding-top: 3px;
+		}
 	}
 
 	@media (max-width: 990px) {

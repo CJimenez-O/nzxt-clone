@@ -80,10 +80,6 @@ const OwnerSection = styled.div`
 	@media (max-width: 1200px) {
 		margin-top: 95rem;
 
-		.background {
-			background-color: #f2f3f5;
-		}
-
 		.founder-section {
 			display: block;
 			text-align: center;
@@ -103,6 +99,11 @@ const OwnerSection = styled.div`
 		.founder-decript h3 {
 			font-size: 30px;
 			padding-bottom: 10px;
+		}
+
+		.founder-button {
+			padding-left: 60px;
+			padding-right: 60px;
 		}
 
 		img {

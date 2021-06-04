@@ -207,6 +207,13 @@ const Product = styled.div`
 		height: 215px;
 	}
 
+	@media (max-width: 750px) {
+		.logos img {
+			padding-top: 20px;
+			height: 80px !important;
+		}
+	}
+
 	@media (max-width: 1200px) {
 		.brands {
 			text-align: center;
@@ -216,7 +223,7 @@ const Product = styled.div`
 			position: absolute;
 			left: 45%;
 			transform: translate(-50%, -50%);
-			width: 80%;
+			width: 100%;
 		}
 
 		.logos img {
