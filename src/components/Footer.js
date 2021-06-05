@@ -19,6 +19,21 @@ function Footer() {
 		openCompanyLinks,
 		isCompanyLinkOpen,
 		closeCompanyLinks,
+		openAboutLinks,
+		isAboutOpen,
+		closeAboutLinks,
+		openCommunityLinks,
+		isCommunityOpen,
+		closeCommunityLinks,
+		openSoftwareLinks,
+		isSoftwareOpen,
+		closeSoftwareLinks,
+		openAccountLinks,
+		isAccountOpen,
+		closeAccountLinks,
+		openStoreLinks,
+		isStoreOpen,
+		closeStoreLinks,
 	} = useProductsContext();
 	return (
 		<Footer_section>
@@ -167,38 +182,91 @@ function Footer() {
 					</div>
 					<div className="btns">
 						<div className="btn-div">
-							<button className="ftr-nav-btn">
+							<button
+								className="ftr-nav-btn"
+								onClick={isAboutOpen ? closeAboutLinks : openAboutLinks}
+							>
 								<h3 className="btn-title">ABOUT NZXT</h3>
 							</button>
 						</div>
+						{isAboutOpen ? (
+							<FooterLinks
+								linkList={[
+									"Founder Q & A",
+									"Newsroom & Blog",
+									"Careers",
+									"Customer Reviews",
+								]}
+							/>
+						) : (
+							<div></div>
+						)}
 					</div>
 					<div className="btns">
 						<div className="btn-div">
-							<button className="ftr-nav-btn">
+							<button
+								className="ftr-nav-btn"
+								onClick={
+									isCommunityOpen ? closeCommunityLinks : openCommunityLinks
+								}
+							>
 								<h3 className="btn-title">COMMUNITY</h3>
 							</button>
 						</div>
+						{isCommunityOpen ? (
+							<FooterLinks linkList={["Our Discord", "Newsroom & Blog"]} />
+						) : (
+							<div></div>
+						)}
 					</div>
 					<div className="btns">
 						<div className="btn-div">
-							<button className="ftr-nav-btn">
+							<button
+								className="ftr-nav-btn"
+								onClick={
+									isSoftwareOpen ? closeSoftwareLinks : openSoftwareLinks
+								}
+							>
 								<h3 className="btn-title">SOFTWARE</h3>
 							</button>
 						</div>
+						{isSoftwareOpen ? (
+							<FooterLinks linkList={["CAM", "CAM Feedback"]} />
+						) : (
+							<div></div>
+						)}
 					</div>
 					<div className="btns">
 						<div className="btn-div">
-							<button className="ftr-nav-btn">
+							<button
+								className="ftr-nav-btn"
+								onClick={isAccountOpen ? closeAccountLinks : openAccountLinks}
+							>
 								<h3 className="btn-title">ACCOUNT</h3>
 							</button>
 						</div>
+						{isAccountOpen ? (
+							<FooterLinks linkList={["Manage Your Account"]} />
+						) : (
+							<div></div>
+						)}
 					</div>
 					<div className="btns">
 						<div className="btn-div">
-							<button className="ftr-nav-btn">
+							<button
+								className="ftr-nav-btn"
+								onClick={isStoreOpen ? closeStoreLinks : openStoreLinks}
+							>
 								<h3 className="btn-title">NZXT STORE</h3>
 							</button>
 						</div>
+						{isStoreOpen ? (
+							<FooterLinks
+								linkList={["Build a Custom PC", "FAQ", "Find a Retailer"]}
+							/>
+						) : (
+							<div></div>
+						)}
 					</div>
 				</div>
 				<div className="social-icons">
