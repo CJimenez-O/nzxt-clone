@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ProductHero from "../components/ProductHero";
 import ProductImageLeft from "../components/productFlexLeft";
 import ProductImageRight from "../components/ProductFlexRight";
+import Warranty from "../components/warranty";
 import { Link } from "react-router-dom";
 
 function StreamingPc() {
@@ -24,6 +25,8 @@ function StreamingPc() {
 				description="2-year warranty on all parts & labor as well as professional cable management."
 				image="https://nzxt.com/assets/cms/34299/1617232916-streamerbuiltbythepros.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=470&w=470"
 			/>
+
+			<Warranty />
 		</StreamerPc>
 	);
 }
