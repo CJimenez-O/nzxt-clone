@@ -7,6 +7,7 @@ import Promo from "./components/Promo";
 import Components from "./pages/Components";
 import Home from "./pages/Home";
 import Search from "./components/search";
+import Streamer from "./pages/StreamingPc";
 
 function App() {
 	return (
@@ -19,8 +20,8 @@ function App() {
 				<Route exact path="/">
 					<Home />
 				</Route>
-				<Route exact path="/pc-products-components">
-					<Components />
+				<Route exact path="/collection/stream-pc">
+					<Streamer />
 				</Route>
 			</Switch>
 		</BrowserRouter>

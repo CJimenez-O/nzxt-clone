@@ -26,7 +26,7 @@ const Navbar = () => {
 					</button>
 				</div>
 				<ul className="nav-links">
-					<Link to="/" style={{ textDecoration: "none" }}>
+					<Link to="/collection" style={{ textDecoration: "none" }}>
 						<h4 className="link">Gaming PCs</h4>
 					</Link>
 					<Link to="/" style={{ textDecoration: "none" }}>
