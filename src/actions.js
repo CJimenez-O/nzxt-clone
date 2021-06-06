@@ -12,3 +12,5 @@ export const ACCOUNT_OPEN = "ACCOUNT_OPEN";
 export const ACCOUNT_CLOSE = "ACCOUNT_CLOSE";
 export const STORE_OPEN = "STORE_OPEN";
 export const STORE_CLOSE = "STORE_CLOSE";
+export const MAIL_OPEN = "MAIL_OPEN";
+export const MAIL_CLOSE = "MAIL_CLOSE";

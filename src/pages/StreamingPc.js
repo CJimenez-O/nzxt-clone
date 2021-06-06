@@ -4,6 +4,10 @@ import ProductHero from "../components/ProductHero";
 import ProductImageLeft from "../components/productFlexLeft";
 import ProductImageRight from "../components/ProductFlexRight";
 import Warranty from "../components/warranty";
+import Suggestion from "../components/suggest";
+import MailingList from "../components/mailingListBtn";
+import Footer from "../components/Footer";
+import MailForm from "../components/mailingListForm";
 import { Link } from "react-router-dom";
 
 function StreamingPc() {
@@ -27,6 +31,12 @@ function StreamingPc() {
 			/>
 
 			<Warranty />
+			<StreamerPc />
+			<Suggestion />
+			<MailingList />
+			<MailForm />
+
+			<Footer />
 		</StreamerPc>
 	);
 }

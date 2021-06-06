@@ -67,6 +67,7 @@ const WarrantyWrap = styled.div`
 	.icon {
 		font-size: 30px;
 		padding-bottom: 10px;
+		color: #4a4949;
 	}
 `;
 
