@@ -2,9 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
+import { useUserContext } from "../context/user_context";
 import { FaRegUser, FaRegQuestionCircle, FaShoppingCart } from "react-icons/fa";
 
 function Sidebar() {
+	const { loginWithRedirect, myUser, logout } = useUserContext();
 	const { isSidebarOpen } = useProductsContext();
 	return (
 		<SidebarContainer
@@ -69,8 +71,29 @@ function Sidebar() {
 					<p>Support</p>
 				</div>
 				<div className="signup">
-					<FaRegUser />
-					<p>Sign In / Sign Up</p>
+					{myUser ? (
+						<button
+							type="button"
+							className="auth-btn"
+							onClick={() => {
+								localStorage.removeItem("user");
+								logout({ returnTo: window.location.origin });
+							}}
+						>
+							<h3 className="signOut">Sign Out</h3>
+						</button>
+					) : (
+						<button
+							type="button"
+							className="auth-btn signInTrue"
+							onClick={loginWithRedirect}
+						>
+							<h3>
+								<FaRegUser />
+							</h3>
+							<span className="signIn">Sign In / Sign Up</span>
+						</button>
+					)}
 				</div>
 			</aside>
 		</SidebarContainer>
@@ -158,6 +181,25 @@ const SidebarContainer = styled.nav`
 
 	.signup p {
 		padding-left: 10px;
+		color: black;
+	}
+
+	.signInTrue {
+		display: flex;
+		gap: 10px;
+	}
+
+	.auth-btn {
+		border: none;
+		background-color: transparent;
+		color: #7f00f5;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	.signIn {
+		font-size: 16px;
+		font-weight: 400;
 		color: black;
 	}
 
