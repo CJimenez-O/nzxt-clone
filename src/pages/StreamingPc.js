@@ -34,7 +34,6 @@ function StreamingPc() {
 			<StreamerPc />
 			<Suggestion />
 			<MailingList />
-			<MailForm />
 
 			<Footer />
 		</StreamerPc>

@@ -8,23 +8,26 @@ import Components from "./pages/Components";
 import Home from "./pages/Home";
 import Search from "./components/search";
 import Streamer from "./pages/StreamingPc";
+import AuthWrapper from "./pages/AuthWrapper";
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Search />
-			<Navbar />
-			<Promo />
-			<Sidebar />
-			<Switch>
-				<Route exact path="/">
-					<Home />
-				</Route>
-				<Route exact path="/collection/stream-pc">
-					<Streamer />
-				</Route>
-			</Switch>
-		</BrowserRouter>
+		<AuthWrapper>
+			<BrowserRouter>
+				<Search />
+				<Navbar />
+				<Promo />
+				<Sidebar />
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route exact path="/collection/stream-pc">
+						<Streamer />
+					</Route>
+				</Switch>
+			</BrowserRouter>
+		</AuthWrapper>
 	);
 }
 

@@ -1,8 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { FaRegUser, FaRegQuestionCircle, FaShoppingCart } from "react-icons/fa";
+import {
+	FaRegUser,
+	FaRegQuestionCircle,
+	FaShoppingCart,
+	FaUserSlash,
+	FaUserAltSlash,
+} from "react-icons/fa";
+import { useUserContext } from "../context/user_context";
 
 function Search() {
+	const { loginWithRedirect, myUser, logout } = useUserContext();
+
 	return (
 		<Searchbar>
 			<div className="options">
@@ -13,7 +22,30 @@ function Search() {
 						<FaRegQuestionCircle />
 					</li>
 					<li>
-						<FaRegUser />
+						{myUser ? (
+							<button
+								type="button"
+								className="auth-btn"
+								onClick={() => {
+									localStorage.removeItem("user");
+									logout({ returnTo: window.location.origin });
+								}}
+							>
+								<h3 className="signOut">
+									<FaUserAltSlash />
+								</h3>
+							</button>
+						) : (
+							<button
+								type="button"
+								className="auth-btn"
+								onClick={loginWithRedirect}
+							>
+								<h3>
+									<FaRegUser />
+								</h3>
+							</button>
+						)}
 					</li>
 					<li>
 						<FaShoppingCart />
@@ -37,6 +69,14 @@ const Searchbar = styled.nav`
 		font-size: 20px;
 		align-items: center;
 		display: flex;
+	}
+
+	.auth-btn {
+		border: none;
+		background-color: transparent;
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
 	}
 
 	input {
