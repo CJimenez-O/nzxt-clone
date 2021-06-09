@@ -203,6 +203,11 @@ const SidebarContainer = styled.nav`
 		color: black;
 	}
 
+	.signOut {
+		font-size: 16px;
+		font-weight: 400;
+	}
+
 	@media (min-width: 1082px) {
 		display: none !important;
 	}
