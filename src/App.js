@@ -10,6 +10,8 @@ import Search from "./components/search";
 import Streamer from "./pages/StreamingPc";
 import Audio from "./pages/Audio";
 import AuthWrapper from "./pages/AuthWrapper";
+import CartSideBar from "./components/CartSideBar";
+import MailingForm from "./components/mailingListForm";
 
 function App() {
 	return (
@@ -19,6 +21,7 @@ function App() {
 				<Navbar />
 				<Promo />
 				<Sidebar />
+				<CartSideBar />
 				<Switch>
 					<Route exact path="/">
 						<Home />

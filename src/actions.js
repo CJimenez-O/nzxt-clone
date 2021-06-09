@@ -14,3 +14,5 @@ export const STORE_OPEN = "STORE_OPEN";
 export const STORE_CLOSE = "STORE_CLOSE";
 export const MAIL_OPEN = "MAIL_OPEN";
 export const MAIL_CLOSE = "MAIL_CLOSE";
+export const CART_OPEN = "CART_OPEN";
+export const CART_CLOSE = "CART_CLOSE";

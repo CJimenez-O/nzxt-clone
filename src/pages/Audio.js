@@ -93,16 +93,17 @@ const AudioContainer = styled.div`
 		height: 450px;
 	}
 
-	@media (max-width: 990px){
+	@media (max-width: 990px) {
 		.audio-content {
-		display: block;
-	}
+			display: block;
+		}
 
-	.audio-details{
-		align-items: center;
-		justify-content: center;
-		position: relative;
-		width: 100%;
+		.audio-details {
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			width: 100%;
+		}
 	}
 `;
 

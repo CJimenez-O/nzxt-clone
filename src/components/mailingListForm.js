@@ -26,8 +26,8 @@ function MailingListForm() {
 }
 
 const MailForm = styled.form`
-	position: relative;
-	z-index: 41;
+	padding-bottom: -10rem;
+
 	.form-container {
 		background-color: gray;
 		text-align: center;

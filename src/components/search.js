@@ -8,9 +8,11 @@ import {
 	FaUserAltSlash,
 } from "react-icons/fa";
 import { useUserContext } from "../context/user_context";
+import { useCartContext } from "../context/cart_context";
 
 function Search() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
+	const { openCart, isCartOpen, closeCart } = useCartContext();
 
 	return (
 		<Searchbar>
@@ -48,7 +50,11 @@ function Search() {
 						)}
 					</li>
 					<li>
-						<FaShoppingCart />
+						<button type="button" className="auth-btn" onClick={openCart}>
+							<h3 className="signOut">
+								<FaShoppingCart />
+							</h3>
+						</button>
 					</li>
 				</ul>
 			</div>

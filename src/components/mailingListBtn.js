@@ -42,6 +42,19 @@ const MailButton = styled.div`
 	.arrow {
 		font-size: 14px;
 	}
+
+	.form-container {
+		background-color: gray;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		padding: 40px;
+		margin-top: -20rem;
+		margin-bottom: 10rem;
+		border-radius: 25px;
+		position: relative;
+		z-index: 1;
+	}
 `;
 
 export default Mailinglist;

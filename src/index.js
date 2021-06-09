@@ -6,6 +6,7 @@ import { ProductsProvider } from "./context/sidebarContext";
 import { MailProvider } from "./context/mailContext";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { UserProvider } from "./context/user_context";
+import { CartProvider } from "./context/cart_context";
 
 ReactDOM.render(
 	<Auth0Provider
@@ -16,9 +17,11 @@ ReactDOM.render(
 	>
 		<UserProvider>
 			<ProductsProvider>
-				<MailProvider>
-					<App />
-				</MailProvider>
+				<CartProvider>
+					<MailProvider>
+						<App />
+					</MailProvider>
+				</CartProvider>
 			</ProductsProvider>
 		</UserProvider>
 	</Auth0Provider>,
