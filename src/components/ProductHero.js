@@ -54,6 +54,37 @@ const ProdHero = styled.div`
 	.product-img {
 		height: 350px;
 	}
+
+	@media (max-width: 790px) {
+		.promo-text {
+			padding-top: 0px;
+		}
+
+		.title {
+			font-size: 2rem !important;
+		}
+
+		.subtitle {
+			font-size: 1.5rem !important;
+		}
+
+		.product-img {
+			height: 180px !important;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.title {
+			font-size: 3rem;
+		}
+		.subtitle {
+			font-size: 1.5rem;
+		}
+
+		.product-img {
+			height: 250px;
+		}
+	}
 `;
 
 export default ProductHero;

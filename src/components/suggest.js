@@ -8,7 +8,7 @@ function Suggestion() {
 				<h2 className="like">You may also like</h2>
 			</div>
 			<div className="products">
-				<div className="product-1">
+				<div className="product-1 left">
 					<img
 						className="product-img"
 						src="https://nzxt.com/assets/cms/34299/1616123904-creatorblack1.png?ar=1%3A1&auto=format&fit=crop&fm=webp&h=400&w=400"
@@ -80,6 +80,33 @@ const SuggestProd = styled.div`
 
 	.price {
 		font-weight: 600;
+	}
+
+	@media (max-width: 790px) {
+		.products {
+			overflow: auto;
+		}
+
+		.left {
+			padding-left: 15rem;
+		}
+
+		.like {
+			font-size: 2.5rem;
+		}
+	}
+
+	@media (max-width: 990px) {
+		.products {
+			overflow: auto;
+			padding-left: 22rem;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.products {
+			overflow: auto;
+		}
 	}
 `;
 

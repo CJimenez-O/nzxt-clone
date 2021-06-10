@@ -47,6 +47,48 @@ const ProdFlex = styled.div`
 		line-height: 24px;
 		font-weight: 400;
 	}
+
+	@media (max-width: 690px) {
+		.image-display {
+			left: 5% !important;
+		}
+	}
+
+	@media (max-width: 790px) {
+		.product-flex {
+			display: block;
+			padding-bottom: 40px;
+		}
+
+		.image-display {
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			left: 20%;
+		}
+
+		.image-description {
+			align-items: center;
+			justify-content: center;
+		}
+
+		.descript {
+			width: 80%;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.left-img {
+			height: 350px;
+		}
+
+		.title {
+			font-size: 2.5rem;
+		}
+
+		.descript {
+		}
+	}
 `;
 
 export default ProductFlexLeft;
