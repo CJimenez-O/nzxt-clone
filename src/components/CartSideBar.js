@@ -5,13 +5,17 @@ import { useCartContext } from "../context/cart_context";
 import { FaWindowClose } from "react-icons/fa";
 
 function CartSideBar() {
-	const { isCartOpen } = useCartContext();
+	const { isCartOpen, closeCart } = useCartContext();
 	return (
-		<CartBar>
+		<CartBar
+			style={{
+				display: `${isCartOpen ? "block" : "none"}`,
+			}}
+		>
 			<div className="userCart">
 				<h3>Your Cart (0)</h3>
 				<div className="close-btn">
-					<button className="closeCart">
+					<button className="closeCart" onClick={closeCart}>
 						<h3>
 							<FaWindowClose />
 						</h3>
@@ -60,12 +64,16 @@ const CartBar = styled.div`
 		padding-bottom: 20px;
 		letter-spacing: 1px;
 		font-size: 25px;
+		margin-left: 5%;
+		margin-right: 5%;
+		border-bottom: 1px solid lightgray;
 	}
 
 	.closeCart {
 		border: none;
 		background-color: transparent;
 		font-size: 25px;
+		cursor: pointer;
 	}
 
 	.close-btn {
@@ -76,8 +84,11 @@ const CartBar = styled.div`
 		text-align: center;
 		align-items: center;
 		font-size: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 35px;
 		padding-top: 20px;
+		margin-left: 15%;
+		margin-right: 15%;
+		border-bottom: 1px solid lightgray;
 	}
 	.promo {
 		text-align: center;
