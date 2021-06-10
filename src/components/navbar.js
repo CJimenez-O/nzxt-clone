@@ -112,12 +112,17 @@ const NavContainer = styled.nav`
 		color: black;
 		font-size: 20px;
 		cursor: pointer;
+		display: block;
 	}
 
 	@media (min-width: 990px) {
 		margin-top: 50px;
 
 		.nav-toggle {
+			display: none;
+		}
+
+		.auth-btn {
 			display: none;
 		}
 

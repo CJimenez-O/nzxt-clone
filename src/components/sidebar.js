@@ -101,11 +101,12 @@ function Sidebar() {
 }
 
 const SidebarContainer = styled.nav`
-	background-color: red;
+	background-color: white;
 	width: 50%;
 	position: fixed;
 	margin-top: 90px;
 	z-index: 40;
+	height: 100vh;
 
 	li {
 		padding-top: 20px;
