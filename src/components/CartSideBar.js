@@ -50,7 +50,6 @@ const CartBar = styled.div`
 	background-color: white;
 	width: 35%;
 	left: 65%;
-	margin-top: 110px;
 	position: fixed;
 	height: 100%;
 	z-index: 42;
@@ -129,6 +128,20 @@ const CartBar = styled.div`
 		font-size: 16px;
 		font-weight: 600;
 		letter-spacing: 1px;
+	}
+
+	@media (max-width: 690px) {
+		width: 100% !important;
+		left: 0 !important;
+
+		.userCart {
+			gap: 150px;
+		}
+	}
+
+	@media (max-width: 990px) {
+		width: 50%;
+		left: 50%;
 	}
 `;
 

@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 import { FaBars, FaShoppingCart, FaRegWindowClose } from "react-icons/fa";
+import { useCartContext } from "../context/cart_context";
 
 const Navbar = () => {
 	const { openSidebar, isSidebarOpen, closeSidebar } = useProductsContext();
+	const { openCart } = useCartContext();
 
 	return (
 		<NavContainer>
@@ -21,8 +23,10 @@ const Navbar = () => {
 					<Link to="/" style={{ textDecoration: "none" }}>
 						<h4 className="logo">NZXT</h4>
 					</Link>
-					<button type="button" className="nav-toggle">
-						<FaShoppingCart />
+					<button type="button" className="auth-btn" onClick={openCart}>
+						<h3 className="signOut">
+							<FaShoppingCart />
+						</h3>
 					</button>
 				</div>
 				<ul className="nav-links">
@@ -101,6 +105,15 @@ const NavContainer = styled.nav`
 	.cart-btn-wrapper {
 		display: none;
 	}
+
+	.auth-btn {
+		border: none;
+		background-color: transparent;
+		color: black;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
 	@media (min-width: 990px) {
 		margin-top: 50px;
 
