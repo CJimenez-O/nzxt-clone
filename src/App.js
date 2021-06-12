@@ -11,6 +11,7 @@ import Streamer from "./pages/StreamingPc";
 import Audio from "./pages/Audio";
 import AuthWrapper from "./pages/AuthWrapper";
 import CartSideBar from "./components/CartSideBar";
+import Company from "./pages/Company";
 import MailingForm from "./components/mailingListForm";
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
 					</Route>
 					<Route exact path="/collection/audio">
 						<Audio />
+					</Route>
+					<Route exact path="/company">
+						<Company />
 					</Route>
 				</Switch>
 			</BrowserRouter>

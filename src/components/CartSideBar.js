@@ -27,12 +27,20 @@ function CartSideBar() {
 				<p>Find Products you'll love</p>
 				<div className="button-links">
 					<div className="browse">
-						<Link className="browse-btn" style={{ textDecoration: "none" }}>
+						<Link
+							className="browse-btn"
+							to="/"
+							style={{ textDecoration: "none" }}
+						>
 							Keep Browsing
 						</Link>
 					</div>
 					<div className="build">
-						<Link className="build-btn" style={{ textDecoration: "none" }}>
+						<Link
+							className="build-btn"
+							to="/"
+							style={{ textDecoration: "none" }}
+						>
 							Create Build
 						</Link>
 					</div>

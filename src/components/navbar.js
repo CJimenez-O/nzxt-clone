@@ -39,11 +39,11 @@ const Navbar = () => {
 					<Link to="/" style={{ textDecoration: "none" }}>
 						<h4 className="link">Peripherals</h4>
 					</Link>
-					<Link to="/" style={{ textDecoration: "none" }}>
+					<Link to="/cam" style={{ textDecoration: "none" }}>
 						<h4 className="link">Software</h4>
 					</Link>
-					<Link to="/" style={{ textDecoration: "none" }}>
-						<h4 className="link">Community</h4>
+					<Link to="/company" style={{ textDecoration: "none" }}>
+						<h4 className="link">Company</h4>
 					</Link>
 				</ul>
 			</div>
