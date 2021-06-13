@@ -301,7 +301,7 @@ const About = styled.div`
 
 	.other {
 		border-radius: 10px;
-		background-color: lightgray;
+		background-color: #f2f3f5;
 		flex-grow: 8;
 	}
 
