@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function Company() {
 	return (
@@ -32,15 +34,21 @@ function Company() {
 								</p>
 							</li>
 							<li>
-								<h4 className="list-title">Every Voice Matters</h4>
+								<h4 className="list-title">Do What You Say</h4>
 								<p className="list-details">
-									We're honest, we're vocal, and we say our piece.
+									We aren’t always perfect, but we’re relentless in our purpose.
 								</p>
 							</li>
 							<li>
-								<h4 className="list-title">Every Voice Matters</h4>
+								<h4 className="list-title">Build Scalable Systems</h4>
 								<p className="list-details">
-									We're honest, we're vocal, and we say our piece.
+									Our best successes can accommodate our growth.
+								</p>
+							</li>
+							<li>
+								<h4 className="list-title">Win Together</h4>
+								<p className="list-details">
+									We win as a team, we lose as a team.
 								</p>
 							</li>
 						</ul>
@@ -48,27 +56,119 @@ function Company() {
 					<div className="import-list">
 						<ul>
 							<li>
-								<h4 className="list-title">Every Voice Matters</h4>
+								<h4 className="list-title">Give A Sh*t</h4>
 								<p className="list-details">
-									We're honest, we're vocal, and we say our piece.
+									We go the extra mile to do right by our community.
 								</p>
 							</li>
 							<li>
-								<h4 className="list-title">Every Voice Matters</h4>
+								<h4 className="list-title">Keep It Simple</h4>
+								<p className="list-details">‘Nuff said.</p>
+							</li>
+							<li>
+								<h4 className="list-title">Commit to Quality</h4>
 								<p className="list-details">
-									We're honest, we're vocal, and we say our piece.
+									No detail is too small, we’re in the relentless pursuit of
+									perfection.
 								</p>
 							</li>
 							<li>
-								<h4 className="list-title">Every Voice Matters</h4>
+								<h4 className="list-title">Learn and Grow</h4>
 								<p className="list-details">
-									We're honest, we're vocal, and we say our piece.
+									We build on our mistakes and our successes. We dwell on
+									neither.
 								</p>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
+			<div className="support-wrapper">
+				<h3 className="support-header-title">We're here to support you</h3>
+				<div className="support">
+					<div className="contact">
+						<div className="contact-info">
+							<div className="hq">
+								<h3>Address</h3>
+								<p>15736 E. Valley Blvd City of Industry CA, 91744-3927</p>
+							</div>
+							<div className="phone">
+								<h3>Phone</h3>
+								<p>+1-626-385-8272</p>
+								<h3>Support</h3>
+								<p>+800-228-9395</p>
+							</div>
+						</div>
+						<div className="hours">
+							<div className="daily-hours">
+								<h3 className="daily-hrs-title">
+									Monday - Friday:
+									<span className="daily-hrs-details">8:00AM - 6:00PM PST</span>
+								</h3>
+							</div>
+							<div className="holidays">
+								<h3 className="holiday-title">Holiday Schedule</h3>
+								<ul className="holiday-list">
+									<li>New Years Day - 01/01</li>
+									<li>Martin Luther King Jr. Day - 01/20</li>
+									<li>President’s Day - 02/15</li>
+									<li>Memorial Day - 05/31</li>
+									<li>Juneteenth - 06/18</li>
+									<li>Independence Day - 07/03</li>
+									<li>Labor Day - 09/06</li>
+									<li>Thanksgiving Day - 11/25</li>
+									<li>Black Friday - 11/26</li>
+									<li>Christmas Eve - 12/24</li>
+									<li>Christmas Day - 12/25</li>
+									<li>New Years Eve - 12/31</li>
+								</ul>
+								<p className="thanks">
+									Due to Covid-19, our support team is currently operating under
+									reduced staffing. Our temporary hours are 8AM to 6PM PST.
+									Thank you for your patience! 💜
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="other">
+						<div className="support-lists">
+							<div className="support-list">
+								<h4 className="support-title"> Customer Support </h4>
+								<p>Contact the proper department within NZXT to help you.</p>
+								<Link className="link">Contact Support</Link>
+							</div>
+							<div className="support-list">
+								<h4 className="support-title"> Customer Support </h4>
+								<p>Contact the proper department within NZXT to help you.</p>
+								<Link className="link">Contact Support</Link>
+							</div>
+							<div className="support-list">
+								<h4 className="support-title"> Customer Support </h4>
+								<p>Contact the proper department within NZXT to help you.</p>
+								<Link className="link">Contact Support</Link>
+							</div>
+						</div>
+						<div className="support-lists">
+							<div className="support-list">
+								<h4 className="support-title"> Customer Support </h4>
+								<p>Contact the proper department within NZXT to help you.</p>
+								<Link className="link">Contact Support</Link>
+							</div>
+							<div className="support-list">
+								<h4 className="support-title"> Customer Support </h4>
+								<p>Contact the proper department within NZXT to help you.</p>
+								<Link className="link">Contact Support</Link>
+							</div>
+							<div className="support-list">
+								<h4 className="support-title"> Customer Support </h4>
+								<p>Contact the proper department within NZXT to help you.</p>
+								<Link className="link">Contact Support</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<Footer />
 		</About>
 	);
 }
@@ -110,16 +210,18 @@ const About = styled.div`
 
 	.important-title {
 		padding-bottom: 50px;
-		position: relative;
 		font-size: 40px;
-		margin-left: 50px;
+	}
+
+	.importance {
+		margin-left: 15%;
+		margin-right: 15%;
+		width: 70%;
 	}
 
 	.import-lists {
 		display: flex;
 		gap: 100px;
-		align-items: center;
-		justify-content: center;
 	}
 
 	.import-list li {
@@ -137,6 +239,101 @@ const About = styled.div`
 		padding-bottom: 20px;
 		font-size: 18px;
 		letter-spacing: 0.5px;
+	}
+
+	.support-wrapper {
+		margin-left: 15%;
+		margin-right: 15%;
+		margin-bottom: 50px;
+		width: 70%;
+	}
+
+	.support-header-title {
+		font-size: 40px;
+		margin-bottom: 30px;
+		margin-top: 50px;
+	}
+
+	.support {
+		display: flex;
+	}
+
+	.contact {
+		width: 90%;
+	}
+
+	.contact-info {
+		display: flex;
+		gap: 30px;
+		margin-bottom: 30px;
+	}
+
+	.hq {
+		width: 35%;
+	}
+
+	.daily-hrs-title {
+		margin-bottom: 20px;
+	}
+
+	.daily-hrs-details {
+		font-weight: 400;
+	}
+
+	.holiday-title {
+		margin-bottom: 10px;
+	}
+
+	.holiday-list {
+		margin-bottom: 20px;
+	}
+	.holiday-list li {
+		list-style: none;
+		padding-bottom: 5px;
+		font-size: 18px;
+	}
+
+	.thanks {
+		font-size: 18px;
+		letter-spacing: 0.5px;
+		width: 60%;
+	}
+
+	.other {
+		border-radius: 10px;
+		background-color: lightgray;
+		flex-grow: 8;
+	}
+
+	.support-lists {
+		display: flex;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.support-list {
+		padding-right: 20px;
+	}
+
+	.support-list p {
+		margin-bottom: 10px;
+		line-height: 25px;
+		font-size: 18px;
+	}
+
+	.support-title {
+		letter-spacing: 0.2px;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+
+	.link {
+		color: black;
+		letter-spacing: 0.5px;
+		font-weight: 400;
+		font-size: 18px;
 	}
 `;
 
