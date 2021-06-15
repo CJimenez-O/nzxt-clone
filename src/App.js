@@ -12,6 +12,7 @@ import Audio from "./pages/Audio";
 import AuthWrapper from "./pages/AuthWrapper";
 import CartSideBar from "./components/CartSideBar";
 import Company from "./pages/Company";
+import Software from "./pages/Software";
 import MailingForm from "./components/mailingListForm";
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
 					</Route>
 					<Route exact path="/collection/audio">
 						<Audio />
+					</Route>
+					<Route exact path="/software">
+						<Software />
 					</Route>
 					<Route exact path="/company">
 						<Company />

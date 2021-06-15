@@ -36,7 +36,7 @@ const ProdFlex = styled.div`
 	}
 
 	.title {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		color: #313234;
 	}
 

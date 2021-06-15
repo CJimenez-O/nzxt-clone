@@ -39,7 +39,7 @@ const Navbar = () => {
 					<Link to="/" style={{ textDecoration: "none" }}>
 						<h4 className="link">Peripherals</h4>
 					</Link>
-					<Link to="/cam" style={{ textDecoration: "none" }}>
+					<Link to="/software" style={{ textDecoration: "none" }}>
 						<h4 className="link">Software</h4>
 					</Link>
 					<Link to="/company" style={{ textDecoration: "none" }}>
