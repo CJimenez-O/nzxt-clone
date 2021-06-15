@@ -318,6 +318,30 @@ const SoftwareContainer = styled.div`
 	}
 
 	@media (max-width: 1200px) {
+		padding-top: 80px;
+		.software-content {
+			display: block;
+			text-align: center;
+		}
+
+		.software-details {
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.title {
+			width: 100%;
+		}
+
+		.software-details p {
+			width: 100%;
+		}
+
+		img {
+			height: 400px;
+		}
+
 		.left-img {
 			height: 350px;
 		}
