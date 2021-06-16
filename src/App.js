@@ -13,6 +13,7 @@ import AuthWrapper from "./pages/AuthWrapper";
 import CartSideBar from "./components/CartSideBar";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
+import Support from "./pages/Support";
 import MailingForm from "./components/mailingListForm";
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
 					</Route>
 					<Route exact path="/company">
 						<Company />
+					</Route>
+					<Route exact path="/support">
+						<Support />
 					</Route>
 				</Switch>
 			</BrowserRouter>
