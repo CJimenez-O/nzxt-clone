@@ -11,15 +11,18 @@ function Software() {
 		<SoftwareContainer>
 			<div className="software-content">
 				<div className="software-details">
-					<h3 className="title">The Best Gaming PC Monitoring App</h3>
+					<h3 className="hero-title">The Best Gaming PC Monitoring App</h3>
 					<p>
 						Manage performance, temperatures, and devices all from a single
 						application. NZXT CAM is fast, efficient, and easy-to-use, allowing
 						you to control every aspect of your computer.
 					</p>
 				</div>
-				<div className="software-image">
-					<img src="https://nzxt.com/assets/cms/34299/1620941749-cam-hero-en-1380x1380.png?auto=format&dpr=2&fit=max&fm=webp&h=690&w=690"></img>
+				<div>
+					<img
+						className="software-image"
+						src="https://nzxt.com/assets/cms/34299/1620941749-cam-hero-en-1380x1380.png?auto=format&dpr=2&fit=max&fm=webp&h=690&w=690"
+					></img>
 				</div>
 			</div>
 			<div className="bonus">
@@ -127,7 +130,7 @@ function Software() {
 }
 
 const SoftwareContainer = styled.div`
-	padding-top: 140px;
+	padding-top: 100px;
 	.software-content {
 		display: flex;
 		gap: 50px;
@@ -143,7 +146,7 @@ const SoftwareContainer = styled.div`
 		width: 40%;
 	}
 
-	.title {
+	.hero-title {
 		font-size: 70px;
 		font-weight: 800;
 		width: 90%;
@@ -157,7 +160,7 @@ const SoftwareContainer = styled.div`
 		width: 80%;
 	}
 
-	img {
+	.software-image {
 		height: 600px;
 	}
 
@@ -295,6 +298,10 @@ const SoftwareContainer = styled.div`
 	}
 
 	@media (max-width: 790px) {
+		.software-image {
+			height: 400px !important;
+		}
+
 		.product-flex {
 			display: block;
 			padding-bottom: 40px;
@@ -318,7 +325,7 @@ const SoftwareContainer = styled.div`
 	}
 
 	@media (max-width: 1200px) {
-		padding-top: 80px;
+		padding-top: 100px;
 		.software-content {
 			display: block;
 			text-align: center;
@@ -330,16 +337,17 @@ const SoftwareContainer = styled.div`
 			justify-content: center;
 		}
 
-		.title {
+		.hero-title {
 			width: 100%;
+			font-size: 3rem;
 		}
 
 		.software-details p {
 			width: 100%;
 		}
 
-		img {
-			height: 400px;
+		.software-image {
+			height: 500px;
 		}
 
 		.left-img {

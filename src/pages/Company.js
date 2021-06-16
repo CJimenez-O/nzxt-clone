@@ -138,31 +138,35 @@ function Company() {
 								<Link className="link">Contact Support</Link>
 							</div>
 							<div className="support-list">
-								<h4 className="support-title"> Customer Support </h4>
-								<p>Contact the proper department within NZXT to help you.</p>
-								<Link className="link">Contact Support</Link>
+								<h4 className="support-title"> Issue Request</h4>
+								<p>
+									Submit a request to our support teams, we’re here to help!
+								</p>
+								<Link className="link">Submit a Request</Link>
 							</div>
 							<div className="support-list">
-								<h4 className="support-title"> Customer Support </h4>
-								<p>Contact the proper department within NZXT to help you.</p>
-								<Link className="link">Contact Support</Link>
+								<h4 className="support-title"> Support Center </h4>
+								<p>Find additional customer support articles and FAQ.</p>
+								<Link className="link">Support Center</Link>
 							</div>
 						</div>
 						<div className="support-lists">
 							<div className="support-list">
-								<h4 className="support-title"> Customer Support </h4>
-								<p>Contact the proper department within NZXT to help you.</p>
-								<Link className="link">Contact Support</Link>
+								<h4 className="support-title"> Guides </h4>
+								<p>Learn the basics in hardware, software, and assembly.</p>
+								<Link className="link">Learn More</Link>
 							</div>
 							<div className="support-list">
-								<h4 className="support-title"> Customer Support </h4>
-								<p>Contact the proper department within NZXT to help you.</p>
-								<Link className="link">Contact Support</Link>
+								<h4 className="support-title"> Your Order </h4>
+								<p>
+									Track your order, view your order history, or make a return.
+								</p>
+								<Link className="link">My Orders</Link>
 							</div>
 							<div className="support-list">
-								<h4 className="support-title"> Customer Support </h4>
-								<p>Contact the proper department within NZXT to help you.</p>
-								<Link className="link">Contact Support</Link>
+								<h4 className="support-title"> Newsroom </h4>
+								<p>Read NZXT’s latest news and blog updates.</p>
+								<Link className="link">Latest</Link>
 							</div>
 						</div>
 					</div>
@@ -320,7 +324,7 @@ const About = styled.div`
 	.support-list p {
 		margin-bottom: 10px;
 		line-height: 25px;
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.support-title {
