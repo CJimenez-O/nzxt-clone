@@ -66,10 +66,10 @@ function Sidebar() {
 					</li>
 				</ul>
 
-				<div className="support">
+				<Link className="support" style={{ textDecoration: "none" }}>
 					<FaRegQuestionCircle />
 					<p>Support</p>
-				</div>
+				</Link>
 				<div className="signup">
 					{myUser ? (
 						<button

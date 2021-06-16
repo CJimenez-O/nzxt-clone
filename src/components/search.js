@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { useUserContext } from "../context/user_context";
 import { useCartContext } from "../context/cart_context";
+import { Link } from "react-router-dom";
 
 function Search() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
@@ -21,7 +22,9 @@ function Search() {
 
 				<ul>
 					<li>
-						<FaRegQuestionCircle />
+						<Link className="link" to="/support">
+							<FaRegQuestionCircle />
+						</Link>
 					</li>
 					<li>
 						{myUser ? (
@@ -75,6 +78,10 @@ const Searchbar = styled.nav`
 		font-size: 20px;
 		align-items: center;
 		display: flex;
+	}
+
+	.link {
+		color: white;
 	}
 
 	.auth-btn {
