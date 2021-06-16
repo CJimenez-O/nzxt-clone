@@ -38,7 +38,7 @@ function Support() {
 							<div className="daily-hours">
 								<h3 className="daily-hrs-title">
 									Monday - Friday:
-									<span className="daily-hrs-details">8:00AM - 6:00PM PST</span>
+									<span className="daily-hrs-details">8:00AM - 6:00PM </span>
 								</h3>
 							</div>
 							<div className="holidays">
@@ -74,9 +74,48 @@ function Support() {
 						<div className="search-button-div">
 							<button className="search-button">Browse Articles</button>
 						</div>
+
+						<div className="company-quality">
+							<div className="slogans">
+								<div className="slogan">
+									<h3>WIN WIN ATTITUDE</h3>
+									<p>
+										"We put our customers first”. Our mission is to provide our
+										customers a winning solution in response to their customer
+										support request.
+									</p>
+								</div>
+								<div className="slogan">
+									<h3>BE HUMBLE</h3>
+									<p>
+										We are gamers ourselves and we respect the community we come
+										from. This keeps us humble and reminds us to keep improving.
+									</p>
+								</div>
+							</div>
+							<div className="slogans">
+								<div className="slogan">
+									<h3>SERVICE WOW!</h3>
+									<p>
+										We believe that there is a service above and beyond what
+										exists as the norm. We strive to deliver more and exceed
+										expectations in consumer satisfaction.
+									</p>
+								</div>
+								<div className="slogan">
+									<h3>EFFICIENCY & QUALITY</h3>
+									<p>
+										It’s important to us that our customer service is reliable,
+										receptive, prompt in follow ups and offers easy-to-use
+										self-help tools.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<Footer />
 		</SupportContainer>
 	);
@@ -124,10 +163,11 @@ const SupportContainer = styled.div`
 
 	.support {
 		display: flex;
+		gap: 50px;
 	}
 
 	.contact {
-		width: 40%;
+		width: 100%;
 	}
 
 	.contact-info {
@@ -135,28 +175,28 @@ const SupportContainer = styled.div`
 	}
 
 	.hq {
-		width: 35%;
+		width: 55%;
 		margin-bottom: 30px;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.phone {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.daily-hrs-title {
 		margin-bottom: 20px;
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	.daily-hrs-details {
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.holiday-title {
 		margin-bottom: 10px;
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	.holiday-list {
@@ -165,11 +205,11 @@ const SupportContainer = styled.div`
 	.holiday-list li {
 		list-style: none;
 		padding-bottom: 5px;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.thanks {
-		font-size: 14px;
+		font-size: 16px;
 		letter-spacing: 0.5px;
 		width: 60%;
 	}
@@ -183,7 +223,7 @@ const SupportContainer = styled.div`
 		margin-bottom: 20px;
 	}
 	.search-input {
-		width: 500px;
+		width: 600px;
 		font-size: 16px;
 		border-radius: 10px;
 		border: 1px solid lightgray;
@@ -215,6 +255,33 @@ const SupportContainer = styled.div`
 		letter-spacing: 1px;
 		background-color: #7f00f5;
 		color: white;
+		cursor: pointer;
+	}
+
+	.slogans {
+		margin-top: 50px;
+		display: flex;
+		gap: 120px;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 80%;
+	}
+
+	.slogan {
+		border-top: 1px solid lightgray;
+		padding-top: 30px;
+		width: 40%;
+	}
+
+	.slogan h3 {
+		font-size: 30px;
+	}
+
+	.slogan p {
+		line-height: 25px;
+		font-size: 18px;
+		font-weight: 400;
+		padding-top: 15px;
 	}
 `;
 
