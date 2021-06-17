@@ -211,7 +211,7 @@ const SupportContainer = styled.div`
 	.thanks {
 		font-size: 16px;
 		letter-spacing: 0.5px;
-		width: 60%;
+		width: 100%;
 	}
 
 	.support-search {

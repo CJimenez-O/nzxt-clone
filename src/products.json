@@ -1,0 +1,36 @@
+[
+	{
+		"id": "product/streamer-pc",
+		"name": "Streaming PC",
+		"price": 199999,
+		"display-image": "https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"colors": ["#fff", "#000"],
+		"description": "Alongside the GEFORCE RTX 3070 graphics card, all components in the Streaming PC were hand-selected to run the most popular games beautifully while smoothly operating your stream.",
+		"sub": "Prebuilt Streaming PC",
+		"category": "collection/streaming",
+		"instock": true,
+		"stock": 10
+	},
+	{
+		"id": "product/streamer-pro-pc",
+		"name": "Streaming Pro PC",
+		"price": 299999,
+		"display-image": "https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"colors": ["#fff", "#000"],
+		"description": "Alongside the GEFORCE RTX 3090 graphics card, all components in the Streaming Pro PC were hand-selected to run the most popular games beautifully while smoothly operating your stream.",
+		"sub": "Prebuilt Streaming Pro PC",
+		"category": "collection/streaming",
+		"instock": true,
+		"stock": 10
+	}
+]

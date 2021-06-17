@@ -7,10 +7,15 @@ import Warranty from "../components/warranty";
 import Suggestion from "../components/suggest";
 import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
+import Products from "../products.json";
 import MailForm from "../components/mailingListForm";
 import { Link } from "react-router-dom";
 
 function StreamingPc() {
+	const StreamingProducts = Products.filter(
+		(product) => product.category === "collection/streaming"
+	);
+
 	return (
 		<StreamerPc>
 			<ProductHero
@@ -18,6 +23,17 @@ function StreamingPc() {
 				subtitle="Don't let your streams be dreams"
 				image="https://nzxt.com/assets/cms/34299/1621293341-prebuiltstreaminghero.png?auto=format&bg=FFFFFF&dpr=1.5&fit=max&fm=webp&h=460&w=900"
 			/>
+
+			<div>
+				{StreamingProducts.map((product) => {
+					return (
+						<div>
+							<h1>{product.name}</h1>
+						</div>
+					);
+				})}
+			</div>
+
 			<ProductImageLeft
 				title="Power the Stream"
 				description="The Streaming PC is built for quality, entry-level streams. It's an excellent build for multi-tasking, editing, and video rendering."
@@ -34,7 +50,6 @@ function StreamingPc() {
 			<StreamerPc />
 			<Suggestion />
 			<MailingList />
-
 			<Footer />
 		</StreamerPc>
 	);

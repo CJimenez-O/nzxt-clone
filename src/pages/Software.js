@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaCalendarCheck } from "react-icons/fa";
 import { GrSettingsOption, GrRotateLeft } from "react-icons/gr";
 import ProductImageRight from "../components/ProductFlexRight";
+import Footer from "../components/Footer";
 
 import { Link } from "react-router-dom";
 

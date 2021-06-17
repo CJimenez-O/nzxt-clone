@@ -14,6 +14,7 @@ import CartSideBar from "./components/CartSideBar";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
+import Error from "./pages/ErrorPage";
 import MailingForm from "./components/mailingListForm";
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
 					</Route>
 					<Route exact path="/support">
 						<Support />
+					</Route>
+
+					<Route exact="*">
+						<Error />
 					</Route>
 				</Switch>
 			</BrowserRouter>
