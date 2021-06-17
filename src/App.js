@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
 import Promo from "./components/Promo";
-import Components from "./pages/Components";
+import GamingMenu from "./components/GamingSec";
 import Home from "./pages/Home";
 import Search from "./components/search";
 import Streamer from "./pages/StreamingPc";
@@ -25,6 +25,7 @@ function App() {
 			<BrowserRouter>
 				<Search />
 				<Navbar />
+				<GamingMenu />
 				<Promo />
 				<Sidebar />
 				<CartSideBar />
@@ -32,7 +33,7 @@ function App() {
 					<Route exact path="/">
 						<Home />
 					</Route>
-					<Route exact path="/collection/stream-pc">
+					<Route exact path="/collection/streaming">
 						<Streamer />
 					</Route>
 					<Route exact path="/collection/audio">

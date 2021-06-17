@@ -30,15 +30,15 @@ const Navbar = () => {
 					</button>
 				</div>
 				<ul className="nav-links">
-					<Link to="/collection/stream-pc" style={{ textDecoration: "none" }}>
+					<button className="nav-btn" onClick="">
 						<h4 className="link">Gaming PCs</h4>
-					</Link>
-					<Link to="/" style={{ textDecoration: "none" }}>
+					</button>
+					<button className="nav-btn">
 						<h4 className="link">PC Building</h4>
-					</Link>
-					<Link to="/" style={{ textDecoration: "none" }}>
+					</button>
+					<button className="nav-btn">
 						<h4 className="link">Peripherals</h4>
-					</Link>
+					</button>
 					<Link to="/software" style={{ textDecoration: "none" }}>
 						<h4 className="link">Software</h4>
 					</Link>
@@ -77,6 +77,12 @@ const NavContainer = styled.nav`
 		color: black;
 		font-size: 22px;
 		font-weight: 800;
+	}
+
+	.nav-btn {
+		border: none;
+		background-color: white;
+		cursor: pointer;
 	}
 
 	.link {
