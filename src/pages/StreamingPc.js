@@ -8,14 +8,13 @@ import Suggestion from "../components/suggest";
 import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
 import Products from "../products.json";
+import ProductDisplays from "../components/ProductDisplay";
+import Child from "../components/child";
+import { FaCircle } from "react-icons/fa";
 import MailForm from "../components/mailingListForm";
 import { Link } from "react-router-dom";
 
 function StreamingPc() {
-	const StreamingProducts = Products.filter(
-		(product) => product.category === "collection/streaming"
-	);
-
 	return (
 		<StreamerPc>
 			<ProductHero
@@ -24,15 +23,11 @@ function StreamingPc() {
 				image="https://nzxt.com/assets/cms/34299/1621293341-prebuiltstreaminghero.png?auto=format&bg=FFFFFF&dpr=1.5&fit=max&fm=webp&h=460&w=900"
 			/>
 
-			<div>
-				{StreamingProducts.map((product) => {
-					return (
-						<div>
-							<h1>{product.name}</h1>
-						</div>
-					);
-				})}
-			</div>
+			<ProductDisplays
+				title="TIME TO STREAM"
+				details="The Streaming PC is designed to run the most popular games beautifully while smoothly operating a stream."
+				filter="collection/streaming"
+			/>
 
 			<ProductImageLeft
 				title="Power the Stream"

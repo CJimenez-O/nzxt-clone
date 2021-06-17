@@ -14,6 +14,8 @@ import CartSideBar from "./components/CartSideBar";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
+import { links } from "./link";
+import Child from "./components/child";
 import Error from "./pages/ErrorPage";
 import MailingForm from "./components/mailingListForm";
 
@@ -45,7 +47,11 @@ function App() {
 					<Route exact path="/support">
 						<Support />
 					</Route>
-
+					{links.map((link) => {
+						const { id, url } = link;
+						return <Route key={id} path={url}></Route>;
+					})}
+					<Route path="/:id" children={<Child />} />
 					<Route exact="*">
 						<Error />
 					</Route>
