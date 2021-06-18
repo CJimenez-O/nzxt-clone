@@ -3,6 +3,8 @@ import reducer from "../reducer/sidebarReducer";
 import {
 	SIDEBAR_OPEN,
 	SIDEBAR_CLOSE,
+	PREBUILT_OPEN,
+	PREBUILT_CLOSE,
 	COMPANY_OPEN,
 	COMPANY_CLOSE,
 	ABOUT_OPEN,
@@ -21,6 +23,7 @@ import {
 
 const initialState = {
 	isSidebarOpen: false,
+	isPrebuiltOpen: false,
 	isCompanyLinkOpen: false,
 	isAboutOpen: false,
 	isCommunityOpen: false,
@@ -39,6 +42,13 @@ export const ProductsProvider = ({ children }) => {
 	};
 	const closeSidebar = () => {
 		dispatch({ type: SIDEBAR_CLOSE });
+	};
+
+	const openPrebuilt = () => {
+		dispatch({ type: PREBUILT_OPEN });
+	};
+	const closePrebuilt = () => {
+		dispatch({ type: PREBUILT_CLOSE });
 	};
 
 	const openCompanyLinks = () => {
@@ -89,6 +99,8 @@ export const ProductsProvider = ({ children }) => {
 				...state,
 				openSidebar,
 				closeSidebar,
+				openPrebuilt,
+				closePrebuilt,
 				openCompanyLinks,
 				closeCompanyLinks,
 				openAboutLinks,

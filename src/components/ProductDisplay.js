@@ -4,7 +4,7 @@ import { FaCircle, FaShoppingCart } from "react-icons/fa";
 import Products from "../products.json";
 import { formatPrice } from "../helpers";
 
-function ProductDisplay({ filter, title, details }) {
+function ProductDisplay({ filter, title, details, height }) {
 	const DisplayedProducts = Products.filter(
 		(product) => product.category === filter
 	);
@@ -55,6 +55,9 @@ const DisplayWrapper = styled.div`
 		gap: 50px;
 		align-items: center;
 		justify-content: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
 	}
 
 	.details {
@@ -95,7 +98,6 @@ const DisplayWrapper = styled.div`
 	.prod-image {
 		height: 350px;
 	}
-
 	.name {
 		margin-top: 10px;
 	}
@@ -104,11 +106,12 @@ const DisplayWrapper = styled.div`
 		margin-top: 2px;
 		font-size: 14px;
 		color: gray;
+		width: 60%;
 	}
 
 	.selection {
 		display: flex;
-		justify-content: space-between;
+		gap: 200px;
 		margin-top: 10px;
 	}
 

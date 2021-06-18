@@ -4,9 +4,17 @@ import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 import { FaBars, FaShoppingCart, FaRegWindowClose } from "react-icons/fa";
 import { useCartContext } from "../context/cart_context";
+import GamingMenu from "./GamingSec";
 
 const Navbar = () => {
-	const { openSidebar, isSidebarOpen, closeSidebar } = useProductsContext();
+	const {
+		openSidebar,
+		isSidebarOpen,
+		closeSidebar,
+		openPrebuilt,
+		isPrebuiltOpen,
+		closePrebuilt,
+	} = useProductsContext();
 	const { openCart } = useCartContext();
 
 	return (
@@ -29,23 +37,39 @@ const Navbar = () => {
 						</h3>
 					</button>
 				</div>
-				<ul className="nav-links">
-					<button className="nav-btn" onClick="">
-						<h4 className="link">Gaming PCs</h4>
-					</button>
-					<button className="nav-btn">
-						<h4 className="link">PC Building</h4>
-					</button>
-					<button className="nav-btn">
-						<h4 className="link">Peripherals</h4>
-					</button>
-					<Link to="/software" style={{ textDecoration: "none" }}>
-						<h4 className="link">Software</h4>
-					</Link>
-					<Link to="/company" style={{ textDecoration: "none" }}>
-						<h4 className="link">Company</h4>
-					</Link>
-				</ul>
+				<div className="nav-links">
+					<div className="nav-menu">
+						<button
+							className="nav-btn selected"
+							onClick={isPrebuiltOpen ? closePrebuilt : openPrebuilt}
+						>
+							<h4 className="link">Gaming PCs</h4>
+						</button>
+						<div className="submenu">
+							<GamingMenu />
+						</div>
+					</div>
+					<div>
+						<button className="nav-btn">
+							<h4 className="link">PC Building</h4>
+						</button>
+					</div>
+					<div>
+						<button className="nav-btn">
+							<h4 className="link">Peripherals</h4>
+						</button>
+					</div>
+					<div>
+						<Link to="/software" style={{ textDecoration: "none" }}>
+							<h4 className="link">Software</h4>
+						</Link>
+					</div>
+					<div>
+						<Link to="/company" style={{ textDecoration: "none" }}>
+							<h4 className="link">Company</h4>
+						</Link>
+					</div>
+				</div>
 			</div>
 		</NavContainer>
 	);
@@ -82,7 +106,11 @@ const NavContainer = styled.nav`
 	.nav-btn {
 		border: none;
 		background-color: white;
+		padding-right: 20px;
 		cursor: pointer;
+	}
+
+	.selected {
 	}
 
 	.link {
@@ -106,6 +134,8 @@ const NavContainer = styled.nav`
 	}
 	.nav-links {
 		display: none;
+		justify-content: center;
+		align-items: center;
 	}
 	.cart-btn-wrapper {
 		display: none;

@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 
 function GamingSec() {
+	const { isPrebuiltOpen } = useProductsContext();
 	return (
-		<Wrapper style={{ display: "none" }}>
+		<Wrapper style={{ display: `${isPrebuiltOpen ? "block" : "none"}` }}>
 			<div className="sub-menu">
 				<h4 className="nav-title">PREBUILT PCS</h4>
 				<div className="link-list">
 					<Link
-						to="/collection/starter-series"
+						to="/collection/starter-pc"
 						className="link"
 						style={{ "text-decoration": "none" }}
 					>
@@ -60,10 +62,9 @@ const Wrapper = styled.div`
 	background-color: white;
 	position: fixed;
 	min-width: 450px;
-	left: 20%;
-	margin-top: 110px;
-	z-index: 41;
+	z-index: 42;
 	padding-bottom: 0px;
+	margin-left: -180px;
 	border-radius: 15px;
 
 	.sub-menu {
@@ -113,11 +114,13 @@ const Wrapper = styled.div`
 		margin-bottom: 5px;
 		font-size: 15px;
 		font-weight: 600;
+		color: white;
 	}
 
 	.promo-details {
 		font-size: 15px;
 		font-weight: 600;
+		color: white;
 	}
 `;
 

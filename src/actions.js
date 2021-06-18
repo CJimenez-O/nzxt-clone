@@ -1,5 +1,7 @@
 export const SIDEBAR_OPEN = "SIDEBAR_OPEN";
 export const SIDEBAR_CLOSE = "SIDEBAR_CLOSE";
+export const PREBUILT_OPEN = "PREBUILT_OPEN";
+export const PREBUILT_CLOSE = "PREBUILT_CLOSE";
 export const COMPANY_OPEN = "COMPANY_OPEN";
 export const COMPANY_CLOSE = "COMPANY_CLOSE";
 export const ABOUT_OPEN = "ABOUT_OPEN";
