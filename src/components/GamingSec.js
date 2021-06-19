@@ -4,7 +4,7 @@ import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 
 function GamingSec() {
-	const { isPrebuiltOpen } = useProductsContext();
+	const { openPrebuilt, isPrebuiltOpen, closePrebuilt } = useProductsContext();
 	return (
 		<Wrapper style={{ display: `${isPrebuiltOpen ? "block" : "none"}` }}>
 			<div className="sub-menu">
@@ -14,6 +14,7 @@ function GamingSec() {
 						to="/collection/starter-pc"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePrebuilt}
 					>
 						<p>Starter Series</p>
 						<p className="sub">Prebuilt Gaming PC</p>
@@ -32,6 +33,7 @@ function GamingSec() {
 						to="/collection/streaming"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePrebuilt}
 					>
 						<p>Streaming PC</p>
 						<p className="sub">Prebuilt Streaming PC</p>
@@ -40,6 +42,7 @@ function GamingSec() {
 						to="/collection/h1-mini-pc"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePrebuilt}
 					>
 						<p>H1 Mini PC</p>
 						<p className="sub">Prebuilt Mini ITX</p>
@@ -47,7 +50,11 @@ function GamingSec() {
 				</div>
 			</div>
 			<div className="promo">
-				<Link className="promo-link" style={{ "text-decoration": "none" }}>
+				<Link
+					className="promo-link"
+					style={{ "text-decoration": "none" }}
+					onClick={closePrebuilt}
+				>
 					<p className="promo-title">New to PC gaming? </p>
 					<p className="promo-details">Check out our Starter PC family</p>
 				</Link>
@@ -68,7 +75,7 @@ const Wrapper = styled.div`
 	border-radius: 15px;
 
 	.sub-menu {
-		padding-top: 20px;
+		padding-top: 30px;
 		margin-left: 10%;
 		margin-right: 5%;
 		width: 90%;

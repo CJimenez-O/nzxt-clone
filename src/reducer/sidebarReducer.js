@@ -16,6 +16,13 @@ function sidebarReducer(state, action) {
 		return { ...state, isPrebuiltOpen: false };
 	}
 
+	if (action.type === "BUILTMENU_OPEN") {
+		return { ...state, isBuiltMenuOpen: true };
+	}
+	if (action.type === "BUILTMENU_CLOSE") {
+		return { ...state, isBuiltMenuOpen: false };
+	}
+
 	if (action.type === "COMPANY_OPEN") {
 		// console.log(action);
 		return { ...state, isCompanyLinkOpen: true };

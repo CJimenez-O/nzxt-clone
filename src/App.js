@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Search from "./components/search";
 import Streamer from "./pages/StreamingPc";
 import Starter from "./pages/Starter";
+import Creator from "./pages/CreatorPc";
 import Audio from "./pages/Audio";
 import AuthWrapper from "./pages/AuthWrapper";
 import CartSideBar from "./components/CartSideBar";
@@ -37,6 +38,9 @@ function App() {
 					</Route>
 					<Route exact path="/collection/starter-pc">
 						<Starter />
+					</Route>
+					<Route exact path="/collection/creator">
+						<Creator />
 					</Route>
 					<Route exact path="/collection/audio">
 						<Audio />

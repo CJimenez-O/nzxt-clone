@@ -66,5 +66,22 @@
 		"category": "collection/starter",
 		"instock": true,
 		"stock": 5
+	},
+	{
+		"id": "product/creator-pc",
+		"name": "Creator PC",
+		"sub": "Prebuilt Creator PC",
+		"price": 399999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1616123904-creatorblack1.png?ar=1%3A1&auto=format&bg=F5F5F8&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"colors": ["#fff", "#000"],
+		"description": "A great first PC The Starter PC Series is built by experts and gives you a competitive advantage.",
+		"category": "collection/creator",
+		"instock": true,
+		"stock": 5
 	}
 ]

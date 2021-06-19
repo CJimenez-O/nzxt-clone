@@ -5,6 +5,8 @@ import {
 	SIDEBAR_CLOSE,
 	PREBUILT_OPEN,
 	PREBUILT_CLOSE,
+	BUILTMENU_OPEN,
+	BUILTMENU_CLOSE,
 	COMPANY_OPEN,
 	COMPANY_CLOSE,
 	ABOUT_OPEN,
@@ -24,6 +26,7 @@ import {
 const initialState = {
 	isSidebarOpen: false,
 	isPrebuiltOpen: false,
+	isBuiltMenuOpen: false,
 	isCompanyLinkOpen: false,
 	isAboutOpen: false,
 	isCommunityOpen: false,
@@ -46,9 +49,18 @@ export const ProductsProvider = ({ children }) => {
 
 	const openPrebuilt = () => {
 		dispatch({ type: PREBUILT_OPEN });
+		dispatch({ type: BUILTMENU_CLOSE });
 	};
 	const closePrebuilt = () => {
 		dispatch({ type: PREBUILT_CLOSE });
+	};
+
+	const openBuiltMenu = () => {
+		dispatch({ type: BUILTMENU_OPEN });
+		dispatch({ type: PREBUILT_CLOSE });
+	};
+	const closeBuiltMenu = () => {
+		dispatch({ type: BUILTMENU_CLOSE });
 	};
 
 	const openCompanyLinks = () => {
@@ -101,6 +113,8 @@ export const ProductsProvider = ({ children }) => {
 				closeSidebar,
 				openPrebuilt,
 				closePrebuilt,
+				openBuiltMenu,
+				closeBuiltMenu,
 				openCompanyLinks,
 				closeCompanyLinks,
 				openAboutLinks,

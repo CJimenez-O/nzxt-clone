@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FaBars, FaShoppingCart, FaRegWindowClose } from "react-icons/fa";
 import { useCartContext } from "../context/cart_context";
 import GamingMenu from "./GamingSec";
+import BuildingMenu from "./BuildingMenu";
 
 const Navbar = () => {
 	const {
@@ -14,6 +15,9 @@ const Navbar = () => {
 		openPrebuilt,
 		isPrebuiltOpen,
 		closePrebuilt,
+		openBuiltMenu,
+		isBuiltMenuOpen,
+		closeBuiltMenu,
 	} = useProductsContext();
 	const { openCart } = useCartContext();
 
@@ -50,9 +54,15 @@ const Navbar = () => {
 						</div>
 					</div>
 					<div>
-						<button className="nav-btn">
+						<button
+							className="nav-btn"
+							onClick={isBuiltMenuOpen ? closeBuiltMenu : openBuiltMenu}
+						>
 							<h4 className="link">PC Building</h4>
 						</button>
+						<div className="submenu">
+							<BuildingMenu />
+						</div>
 					</div>
 					<div>
 						<button className="nav-btn">
