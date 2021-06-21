@@ -7,22 +7,21 @@ import Warranty from "../components/warranty";
 import Suggestion from "../components/suggest";
 import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
-import ProductDisplays from "../components/ProductDisplay";
+import SingleProductDisplay from "../components/SingleProductDisplay";
 
-function Starter() {
+function H1Mini() {
 	return (
 		<Wrapper>
 			<ProductHero
-				title="Starter Series"
-				subtitle="Pre-built PCs to Start any Gaming Journey"
-				image="https://nzxt.com/assets/cms/34299/1616697983-starterlinehero.png?auto=format&bg=FFFFFF&dpr=1.5&fit=max&fm=webp&h=460&w=900"
+				title="The H1 Mini PC"
+				subtitle="Game big, go Mini"
+				image="https://nzxt.com/assets/cms/34299/1616721375-prebuilth1minihero.png?auto=format&bg=FFFFFF&dpr=1.5&fit=max&fm=webp&h=460&w=900"
 			/>
 
-			<ProductDisplays
-				title="TIME TO START"
-				details="The Starter PC Series is built by experts to give gamers a competitive advantage."
-				filter="collection/streaming"
-				height="350px"
+			<SingleProductDisplay
+				title="BUILT FOR CREATORS"
+				details="The Creator PC equips users with everything needed to showcase creative talents."
+				filter="collection/h1-mini-pc"
 			/>
 
 			<ProductImageLeft
@@ -47,4 +46,4 @@ function Starter() {
 
 const Wrapper = styled.div``;
 
-export default Starter;
+export default H1Mini;

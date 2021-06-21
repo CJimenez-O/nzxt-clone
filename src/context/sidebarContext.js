@@ -43,6 +43,12 @@ const ProductsContext = React.createContext();
 export const ProductsProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(reducer, initialState);
 
+	const resetNav = () => {
+		dispatch({ type: BUILTMENU_CLOSE });
+		dispatch({ type: PERIFMENU_CLOSE });
+		dispatch({ type: PREBUILT_CLOSE });
+	};
+
 	const openSidebar = () => {
 		dispatch({ type: SIDEBAR_OPEN });
 	};
@@ -123,6 +129,7 @@ export const ProductsProvider = ({ children }) => {
 		<ProductsContext.Provider
 			value={{
 				...state,
+				resetNav,
 				openSidebar,
 				closeSidebar,
 				openPrebuilt,

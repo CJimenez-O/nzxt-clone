@@ -9,6 +9,7 @@ import Search from "./components/search";
 import Streamer from "./pages/StreamingPc";
 import Starter from "./pages/Starter";
 import Creator from "./pages/CreatorPc";
+import MiniPc from "./pages/H1Mini";
 import Audio from "./pages/Audio";
 import AuthWrapper from "./pages/AuthWrapper";
 import CartSideBar from "./components/CartSideBar";
@@ -41,6 +42,9 @@ function App() {
 					</Route>
 					<Route exact path="/collection/creator">
 						<Creator />
+					</Route>
+					<Route exact path="/collection/h1-mini-pc">
+						<MiniPc />
 					</Route>
 					<Route exact path="/collection/audio">
 						<Audio />

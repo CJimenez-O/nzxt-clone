@@ -10,6 +10,7 @@ import PerifMenu from "./PerifMenu";
 
 const Navbar = () => {
 	const {
+		resetNav,
 		openSidebar,
 		isSidebarOpen,
 		closeSidebar,
@@ -36,7 +37,7 @@ const Navbar = () => {
 					>
 						{isSidebarOpen ? <FaRegWindowClose /> : <FaBars />}
 					</button>
-					<Link to="/" style={{ textDecoration: "none" }}>
+					<Link onClick={resetNav} to="/" style={{ textDecoration: "none" }}>
 						<h4 className="logo">NZXT</h4>
 					</Link>
 					<button type="button" className="auth-btn" onClick={openCart}>
