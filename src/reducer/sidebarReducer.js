@@ -23,6 +23,13 @@ function sidebarReducer(state, action) {
 		return { ...state, isBuiltMenuOpen: false };
 	}
 
+	if (action.type === "PERIFMENU_OPEN") {
+		return { ...state, isPerifMenuOpen: true };
+	}
+	if (action.type === "PERIFMENU_CLOSE") {
+		return { ...state, isPerifMenuOpen: false };
+	}
+
 	if (action.type === "COMPANY_OPEN") {
 		// console.log(action);
 		return { ...state, isCompanyLinkOpen: true };

@@ -22,6 +22,7 @@ function ProductFlexRight({ title, description, image }) {
 }
 
 const ProdFlex = styled.div`
+	margin-top: 50px;
 	.product-flex {
 		display: flex;
 		gap: 40px;
@@ -32,7 +33,9 @@ const ProdFlex = styled.div`
 	}
 
 	.left-img {
-		height: 500px;
+		height: 400px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
 	.title {

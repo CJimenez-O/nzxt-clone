@@ -7,6 +7,8 @@ import {
 	PREBUILT_CLOSE,
 	BUILTMENU_OPEN,
 	BUILTMENU_CLOSE,
+	PERIFMENU_OPEN,
+	PERIFMENU_CLOSE,
 	COMPANY_OPEN,
 	COMPANY_CLOSE,
 	ABOUT_OPEN,
@@ -27,6 +29,7 @@ const initialState = {
 	isSidebarOpen: false,
 	isPrebuiltOpen: false,
 	isBuiltMenuOpen: false,
+	isPerifMenuOpen: false,
 	isCompanyLinkOpen: false,
 	isAboutOpen: false,
 	isCommunityOpen: false,
@@ -61,6 +64,14 @@ export const ProductsProvider = ({ children }) => {
 	};
 	const closeBuiltMenu = () => {
 		dispatch({ type: BUILTMENU_CLOSE });
+	};
+
+	const openPerifMenu = () => {
+		dispatch({ type: PERIFMENU_OPEN });
+		dispatch({ type: PREBUILT_CLOSE });
+	};
+	const closePerifMenu = () => {
+		dispatch({ type: PERIFMENU_CLOSE });
 	};
 
 	const openCompanyLinks = () => {
@@ -115,6 +126,8 @@ export const ProductsProvider = ({ children }) => {
 				closePrebuilt,
 				openBuiltMenu,
 				closeBuiltMenu,
+				openPerifMenu,
+				closePerifMenu,
 				openCompanyLinks,
 				closeCompanyLinks,
 				openAboutLinks,

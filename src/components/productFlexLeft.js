@@ -32,7 +32,9 @@ const ProdFlex = styled.div`
 	}
 
 	.left-img {
-		height: 500px;
+		height: 400px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
 	.title {

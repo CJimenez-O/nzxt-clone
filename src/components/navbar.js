@@ -6,6 +6,7 @@ import { FaBars, FaShoppingCart, FaRegWindowClose } from "react-icons/fa";
 import { useCartContext } from "../context/cart_context";
 import GamingMenu from "./GamingSec";
 import BuildingMenu from "./BuildingMenu";
+import PerifMenu from "./PerifMenu";
 
 const Navbar = () => {
 	const {
@@ -18,6 +19,9 @@ const Navbar = () => {
 		openBuiltMenu,
 		isBuiltMenuOpen,
 		closeBuiltMenu,
+		openPerifMenu,
+		isPerifMenuOpen,
+		closePerifMenu,
 	} = useProductsContext();
 	const { openCart } = useCartContext();
 
@@ -65,9 +69,15 @@ const Navbar = () => {
 						</div>
 					</div>
 					<div>
-						<button className="nav-btn">
+						<button
+							className="nav-btn"
+							onClick={isPerifMenuOpen ? closePerifMenu : openPerifMenu}
+						>
 							<h4 className="link">Peripherals</h4>
 						</button>
+						<div className="submenu">
+							<PerifMenu />
+						</div>
 					</div>
 					<div>
 						<Link to="/software" style={{ textDecoration: "none" }}>
