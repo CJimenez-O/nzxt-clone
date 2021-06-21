@@ -53,6 +53,7 @@ export const ProductsProvider = ({ children }) => {
 	const openPrebuilt = () => {
 		dispatch({ type: PREBUILT_OPEN });
 		dispatch({ type: BUILTMENU_CLOSE });
+		dispatch({ type: PERIFMENU_CLOSE });
 	};
 	const closePrebuilt = () => {
 		dispatch({ type: PREBUILT_CLOSE });
@@ -61,6 +62,7 @@ export const ProductsProvider = ({ children }) => {
 	const openBuiltMenu = () => {
 		dispatch({ type: BUILTMENU_OPEN });
 		dispatch({ type: PREBUILT_CLOSE });
+		dispatch({ type: PERIFMENU_CLOSE });
 	};
 	const closeBuiltMenu = () => {
 		dispatch({ type: BUILTMENU_CLOSE });
@@ -69,6 +71,7 @@ export const ProductsProvider = ({ children }) => {
 	const openPerifMenu = () => {
 		dispatch({ type: PERIFMENU_OPEN });
 		dispatch({ type: PREBUILT_CLOSE });
+		dispatch({ type: BUILTMENU_CLOSE });
 	};
 	const closePerifMenu = () => {
 		dispatch({ type: PERIFMENU_CLOSE });

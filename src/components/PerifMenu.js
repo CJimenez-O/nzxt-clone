@@ -27,28 +27,28 @@ function PerifMenu() {
 				<div className="link-list mid">
 					<h4 className="nav-title">ACCESSORIES</h4>
 					<Link
-						to="/collection/starter-pc"
+						to="/product/standard-mouse-pad"
 						className="link"
 						style={{ "text-decoration": "none" }}
 					>
 						<p>NZXT Standard Mouse Pad</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/product/large-mouse-pad"
 						className="link"
 						style={{ "text-decoration": "none" }}
 					>
 						<p>NZXT Large Mouse Pad</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/product/puck"
 						className="link"
 						style={{ "text-decoration": "none" }}
 					>
 						<p>Puck</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/product/pan-puck"
 						className="link"
 						style={{ "text-decoration": "none" }}
 					>
@@ -57,7 +57,11 @@ function PerifMenu() {
 				</div>
 			</div>
 			<div className="promo">
-				<Link className="promo-link" style={{ "text-decoration": "none" }}>
+				<Link
+					className="promo-link"
+					to="/product/puck"
+					style={{ "text-decoration": "none" }}
+				>
 					<p className="promo-title">Get organized with Puck</p>
 					<p className="promo-details">Hang your headphones & cords in style</p>
 				</Link>
