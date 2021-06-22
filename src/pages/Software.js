@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaCalendarCheck } from "react-icons/fa";
 import { GrSettingsOption, GrRotateLeft } from "react-icons/gr";
 import ProductImageRight from "../components/ProductFlexRight";
-import Footer from "../components/Footer";
+import Footer from "../components/CustomeFooter";
 
 import { Link } from "react-router-dom";
 
@@ -112,9 +112,9 @@ function Software() {
 				<div className="cam">
 					<h3>Become a Beta Tester</h3>
 					<h6>
-						PGet your hands on next-generation CAM software before anyone else
-						in the community. CAM Beta provides tech-savvy users the opportunity
-						to work directly with our dev team to provide feedback on future
+						Get your hands on next-generation CAM software before anyone else in
+						the community. CAM Beta provides tech-savvy users the opportunity to
+						work directly with our dev team to provide feedback on future
 						versions of NZXT CAM.
 					</h6>
 					<Link className="link" style={{ textDecoration: "none" }}>
@@ -126,6 +126,7 @@ function Software() {
 					></img>
 				</div>
 			</div>
+			<Footer full="45rem" mid="75rem" />
 		</SoftwareContainer>
 	);
 }
@@ -299,6 +300,9 @@ const SoftwareContainer = styled.div`
 	}
 
 	@media (max-width: 790px) {
+		.bonus {
+			display: block;
+		}
 		.software-image {
 			height: 400px !important;
 		}

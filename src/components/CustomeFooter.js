@@ -14,7 +14,7 @@ import {
 	FaDiscord,
 } from "react-icons/fa";
 
-function Footer() {
+function Footer({ full, mid }) {
 	const {
 		openCompanyLinks,
 		isCompanyLinkOpen,
@@ -316,6 +316,7 @@ const Footer_section = styled.footer`
 	padding-right: 5%;
 	color: rgba(156, 163, 175);
 	background-color: #1c1c1c;
+	margin-top: 45rem;
 
 	.small-screen {
 		display: none;
@@ -341,6 +342,7 @@ const Footer_section = styled.footer`
 	.region {
 		display: flex;
 		gap: 4rem;
+		line-height: 40px !important;
 	}
 
 	.mid-footer {
@@ -502,6 +504,8 @@ const Footer_section = styled.footer`
 	}
 
 	@media (max-width: 1200px) {
+		margin-top: 75rem;
+
 		.mid-footer {
 			display: block;
 		}

@@ -32,6 +32,7 @@ const OwnerSection = styled.div`
 	background-color: #f2f3f5;
 	align-items: center;
 	margin-top: 40rem;
+	height: 500px;
 
 	.founder-section {
 		display: flex;
@@ -79,6 +80,7 @@ const OwnerSection = styled.div`
 
 	@media (max-width: 1200px) {
 		margin-top: 95rem;
+		background-color: white;
 
 		.founder-section {
 			display: block;

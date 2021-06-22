@@ -69,6 +69,12 @@ const WarrantyWrap = styled.div`
 		padding-bottom: 10px;
 		color: #4a4949;
 	}
+
+	@media (max-width: 700px) {
+		.bonus {
+			display: block;
+		}
+	}
 `;
 
 export default Warranty;
