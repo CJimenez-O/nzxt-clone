@@ -144,7 +144,7 @@ function Footer() {
 				</div>
 			</div>
 			<div className="small-screen">
-				<div className="region">
+				<div className="region region-selection">
 					<div className="lang">
 						<h5 className="pref-title">LANGUAGE</h5>
 						<p className="pref-selected">English</p>
@@ -341,6 +341,7 @@ const Footer_section = styled.footer`
 	.region {
 		display: flex;
 		gap: 4rem;
+		line-height: 35px !important;
 	}
 
 	.mid-footer {

@@ -70,7 +70,7 @@ const WarrantyWrap = styled.div`
 		color: #4a4949;
 	}
 
-	@media (max-width: 700px) {
+	@media (max-width: 790px) {
 		.bonus {
 			display: block;
 		}

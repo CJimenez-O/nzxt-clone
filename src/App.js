@@ -7,6 +7,7 @@ import Promo from "./components/Promo";
 import Home from "./pages/Home";
 import Search from "./components/search";
 import Streamer from "./pages/StreamingPc";
+import StreamerProduct from "./pages/StreamerPcProduct";
 import Starter from "./pages/Starter";
 import Creator from "./pages/CreatorPc";
 import MiniPc from "./pages/H1Mini";
@@ -37,6 +38,7 @@ function App() {
 					<Route exact path="/collection/streaming">
 						<Streamer />
 					</Route>
+					<StreamerProduct exact path="/product/streamer-pc"></StreamerProduct>
 					<Route exact path="/collection/starter-pc">
 						<Starter />
 					</Route>
