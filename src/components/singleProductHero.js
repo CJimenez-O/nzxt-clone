@@ -47,8 +47,14 @@ function SingleProductHero() {
 					</div>
 					<div className="add-to-cart">
 						<div className="amount">
-							<p>Qty</p>
-							<select></select>
+							<p className="quant">QTY</p>
+							<select className="selector">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
 						</div>
 						<button className="cart-button">Add to cart</button>
 					</div>
@@ -154,16 +160,31 @@ const Wrapper = styled.div`
 
 	.amount {
 		display: flex;
-		gap: 40px;
 		margin-top: 10px;
-		margin-bottom: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 15px;
-		border-top: 1px solid lightgray;
-		background-color: gray;
-		border-radius: 10px;
+		margin-bottom: 15px;
 		width: 40%;
+	}
+
+	.quant {
+		background-color: #f2f3f5;
+		color: gray;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border: 1px solid gray;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+
+	.selector {
+		border: 1px solid gray;
+		padding-right: 20px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 5px;
 	}
 
 	.cart-button {
