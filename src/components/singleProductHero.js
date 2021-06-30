@@ -68,6 +68,60 @@ function SingleProductHero() {
 							beautifully while smoothly operating your stream.
 						</p>
 					</div>
+					<div className="performance">
+						<div className="perform-title">
+							<span>Performance</span>
+						</div>
+						<div className="games-perform">
+							<div className="game">
+								<img
+									className="game-logo"
+									src="https://nzxt.com/assets/cms/34299/1620400903-modern-warfare-alt.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+								></img>
+								<h4>
+									<span className="fps">120</span> FPS
+								</h4>
+							</div>
+							<div className="game">
+								<img
+									className="game-logo"
+									src="https://nzxt.com/assets/cms/34299/1620400487-fortnite-1.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+								></img>
+								<h4>
+									<span className="fps">120</span> FPS
+								</h4>
+							</div>
+						</div>
+						<div className="games-perform">
+							<div className="game">
+								<img
+									className="game-logo"
+									src="https://nzxt.com/assets/cms/34299/1620400899-minecraft-logo.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+								></img>
+								<h4>
+									<span className="fps">120</span> FPS
+								</h4>
+							</div>
+							<div className="game">
+								<img
+									className="game-logo"
+									src="https://nzxt.com/assets/cms/34299/1620401520-gta.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+								></img>
+								<h4>
+									<span className="fps">120</span> FPS
+								</h4>
+							</div>
+						</div>
+						<p className="estimated-perform">Estimated Performance</p>
+						<div className="quality-options">
+							<div className="1080">
+								<button className="quality-chosen">1080</button>
+							</div>
+							<div className="1440">
+								<button className="quality">1440</button>
+							</div>
+						</div>
+					</div>
 					<div className="inside"></div>
 				</div>
 			</div>
@@ -201,6 +255,10 @@ const Wrapper = styled.div`
 		letter-spacing: 1px;
 	}
 
+	.details {
+		margin-bottom: 30px;
+	}
+
 	.detail-title {
 		width: 100%;
 		text-align: center;
@@ -221,6 +279,86 @@ const Wrapper = styled.div`
 	.product-info {
 		line-height: 20px;
 		font-size: 15px;
+		letter-spacing: 0.5px;
+	}
+
+	.perform-title {
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid lightgray;
+		line-height: 0.1em;
+		margin: 10px 0 20px;
+		color: lightgray;
+		margin-bottom: 50px;
+	}
+
+	.perform-title span {
+		background: #fff;
+		padding: 0 10px;
+		font-size: 20px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+	}
+
+	.games-perform {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		margin-top: 20px;
+	}
+
+	.game {
+		text-align: center;
+		border: 1px solid lightgray;
+		box-shadow: 0px 0px 5px lightgray;
+		padding: 10px 25px;
+		border-radius: 10px;
+	}
+
+	.game-logo {
+		height: 80px;
+	}
+
+	.fps {
+		color: #26b307;
+	}
+
+	.estimated-perform {
+		text-align: center;
+		font-size: 10px;
+		margin-top: 30px;
+	}
+
+	.quality-options {
+		display: flex;
+		gap: 40px;
+		justify-content: center;
+		background-color: #f2f3f5;
+		width: 60%;
+		margin-right: 20%;
+		margin-left: 20%;
+		border-radius: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 5px;
+	}
+
+	.quality {
+		border: none;
+		background-color: transparent;
+		padding: 5px 20px;
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		padding-top: 5px;
+	}
+
+	.quality-chosen {
+		background-color: white !important;
+		border: 1px solid lightgray !important;
+		box-shadow: 0px 0px 5px lightgray;
+		padding: 5px 20px;
+		border-radius: 20px;
+		font-size: 16px;
 		letter-spacing: 0.5px;
 	}
 `;
