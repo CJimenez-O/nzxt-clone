@@ -12,6 +12,7 @@ function CartSideBar() {
 		total_items,
 		total_amount,
 		cart,
+		removeItem,
 	} = useCartContext();
 
 	return (
@@ -79,55 +80,61 @@ function CartSideBar() {
 				}}
 				className="cart-items-selected"
 			>
-				<div className="total-items-added">
-					<div className="item-added">
-						<div className="prod-item-info">
-							<div>
-								<img className="item-image" src={cart[0].image}></img>
+				{cart.map((cart) => {
+					return (
+						<div>
+							<div className="total-items-added">
+								<div className="item-added">
+									<div className="prod-item-info">
+										<div>
+											<img className="item-image" src={cart.image}></img>
+										</div>
+										<div className="item-name">
+											<h4>{cart.name}</h4>
+											<h4>{cart.color}</h4>
+										</div>
+									</div>
+									<div className="remove-item">
+										<button onClick={() => removeItem(cart.id)}>
+											<FaRegTrashAlt />
+										</button>
+									</div>
+								</div>
+								<div className="quant-added">
+									<div className="quant-selecter">
+										<button className="decrease amt-btn">-</button>
+										<p>{cart.amount}</p>
+										<button className="increase amt-btn">+</button>
+									</div>
+									<div className="item-pricing"> {formatPrice(cart.price)}</div>
+								</div>
 							</div>
-							<div className="item-name">
-								<h4>{cart[0].name}</h4>
-								<h4>{cart[0].color}</h4>
+							<div className="checkout-info">
+								<div className="amount-subtotal">
+									<div>
+										<h3>Subtotal</h3>
+									</div>
+									<div>{formatPrice(total_amount)}</div>
+								</div>
+								<div className="amount-taxes">
+									<div>
+										<p>Taxes</p>
+									</div>
+									<div>
+										<p>Calculated at checkout</p>
+									</div>
+								</div>
+								<div className="amount-shipping">
+									<div>
+										<p>Estimated shipping</p>
+									</div>
+									<div>FREE</div>
+								</div>
+								<button className="checkout-btn">Proceed to Checkout</button>
 							</div>
 						</div>
-						<div className="remove-item">
-							<p>
-								<FaRegTrashAlt />
-							</p>
-						</div>
-					</div>
-					<div className="quant-added">
-						<div className="quant-selecter">
-							<button className="decrease amt-btn">-</button>
-							<p>{cart[0].amount}</p>
-							<button className="increase amt-btn">+</button>
-						</div>
-						<div className="item-pricing"> {formatPrice(cart[0].price)}</div>
-					</div>
-				</div>
-				<div className="checkout-info">
-					<div className="amount-subtotal">
-						<div>
-							<h3>Subtotal</h3>
-						</div>
-						<div>{formatPrice(total_amount)}</div>
-					</div>
-					<div className="amount-taxes">
-						<div>
-							<p>Taxes</p>
-						</div>
-						<div>
-							<p>Calculated at checkout</p>
-						</div>
-					</div>
-					<div className="amount-shipping">
-						<div>
-							<p>Estimated shipping</p>
-						</div>
-						<div>FREE</div>
-					</div>
-					<button className="checkout-btn">Proceed to Checkout</button>
-				</div>
+					);
+				})}
 			</div>
 		</CartBar>
 	);
