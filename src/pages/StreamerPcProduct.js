@@ -8,7 +8,7 @@ import ProductDisplay from "../components/singleProductHero";
 function StreamerPcProduct() {
 	return (
 		<div>
-			<ProductDisplay />
+			<ProductDisplay filter="Streaming PC" />
 			<Suggestion />
 			<Footer />
 		</div>

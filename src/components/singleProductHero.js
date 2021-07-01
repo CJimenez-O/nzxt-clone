@@ -1,130 +1,161 @@
 import React from "react";
 import styled from "styled-components";
 import { FaCircle, FaShoppingCart } from "react-icons/fa";
+import Products from "../products.json";
+import { formatPrice } from "../helpers";
+import { useCartContext } from "../context/cart_context";
 
-function SingleProductHero() {
+function SingleProductHero({ filter }) {
+	const { addToCart } = useCartContext();
+	const DisplayedProducts = Products.filter(
+		(product) => product.name === filter
+	);
+
+	console.log(DisplayedProducts);
 	return (
 		<Wrapper>
-			<div className="single-product-page">
-				<div className="display-images">
-					<div>
-						<img
-							className="main-image"
-							src="https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
-						></img>
-					</div>
-					<div className="secondary-images">
-						<img
-							className="sub-image"
-							src="https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
-						></img>
-						<img
-							className="sub-image"
-							src="https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
-						></img>
-					</div>
-				</div>
-				<div className="product-details">
-					<div className="product-header">
-						<div className="prod-name">
-							<h4>Streaming PC</h4>
-							<p>Prebuilt Streaming PC</p>
-						</div>
-						<div className="price">
-							<p>$1,999.00</p>
-						</div>
-					</div>
-					<div className="color-selection">
-						<p>Color:</p>
-						<div className="colors">
-							<button className="black color-btn">
-								<FaCircle />
-							</button>
-							<button className="white color-btn">
-								<FaCircle />
-							</button>
-						</div>
-					</div>
-					<div className="add-to-cart">
-						<div className="amount">
-							<p className="quant">QTY</p>
-							<select className="selector">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select>
-						</div>
-						<button className="cart-button">Add to cart</button>
-					</div>
-					<div className="details">
-						<div className="detail-title">
-							<span>Details</span>
-						</div>
-						<p className="product-info">
-							Alongside the GEFORCE RTX 3070 graphics card, all components in
-							the Streaming PC were hand-selected to run the most popular games
-							beautifully while smoothly operating your stream.
-						</p>
-					</div>
-					<div className="performance">
-						<div className="perform-title">
-							<span>Performance</span>
-						</div>
-						<div className="games-perform">
-							<div className="game">
-								<img
-									className="game-logo"
-									src="https://nzxt.com/assets/cms/34299/1620400903-modern-warfare-alt.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
-								></img>
-								<h4>
-									<span className="fps">120</span> FPS
-								</h4>
+			{DisplayedProducts.map((product) => {
+				const {
+					id,
+					images,
+					name,
+					sub,
+					price,
+					description,
+					inside,
+					color,
+					stock,
+					cartImage,
+				} = product;
+				const amount = 1;
+				return (
+					<div className="single-product-page">
+						<div className="display-images">
+							<div>
+								<img className="main-image" src={images[0]}></img>
 							</div>
-							<div className="game">
-								<img
-									className="game-logo"
-									src="https://nzxt.com/assets/cms/34299/1620400487-fortnite-1.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
-								></img>
-								<h4>
-									<span className="fps">120</span> FPS
-								</h4>
+							<div className="secondary-images">
+								<img className="sub-image" src={images[1]}></img>
+								<img className="sub-image" src={images[2]}></img>
 							</div>
 						</div>
-						<div className="games-perform">
-							<div className="game">
-								<img
-									className="game-logo"
-									src="https://nzxt.com/assets/cms/34299/1620400899-minecraft-logo.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
-								></img>
-								<h4>
-									<span className="fps">120</span> FPS
-								</h4>
+
+						<div className="product-details">
+							<div className="product-header">
+								<div className="prod-name">
+									<h4>{name}</h4>
+									<p>{sub}</p>
+								</div>
+								<div className="price">
+									<p>{formatPrice(price)}</p>
+								</div>
 							</div>
-							<div className="game">
-								<img
-									className="game-logo"
-									src="https://nzxt.com/assets/cms/34299/1620401520-gta.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
-								></img>
-								<h4>
-									<span className="fps">120</span> FPS
-								</h4>
+							<div className="color-selection">
+								<p>Color:</p>
+								<div className="colors">
+									<button className="black color-btn">
+										<FaCircle />
+									</button>
+									<button className="white color-btn">
+										<FaCircle />
+									</button>
+								</div>
 							</div>
-						</div>
-						<p className="estimated-perform">Estimated Performance</p>
-						<div className="quality-options">
-							<div className="1080">
-								<button className="quality-chosen">1080</button>
+							<div className="add-to-cart">
+								<div className="amount">
+									<p className="quant">QTY</p>
+									<select type="text" className="selector">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+								<button
+									onClick={() =>
+										addToCart(cartImage, name, price, color, id, amount, stock)
+									}
+									className="cart-button"
+								>
+									Add to cart
+								</button>
 							</div>
-							<div className="1440">
-								<button className="quality">1440</button>
+							<div className="details">
+								<div className="detail-title">
+									<span>Details</span>
+								</div>
+								<p className="product-info">{description}</p>
+							</div>
+							<div className="performance">
+								<div className="perform-title">
+									<span>Performance</span>
+								</div>
+								<div className="games-perform">
+									<div className="game">
+										<img
+											className="game-logo"
+											src="https://nzxt.com/assets/cms/34299/1620400903-modern-warfare-alt.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+										></img>
+										<h4>
+											<span className="fps">120</span> FPS
+										</h4>
+									</div>
+									<div className="game">
+										<img
+											className="game-logo"
+											src="https://nzxt.com/assets/cms/34299/1620400487-fortnite-1.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+										></img>
+										<h4>
+											<span className="fps">120</span> FPS
+										</h4>
+									</div>
+								</div>
+								<div className="games-perform">
+									<div className="game">
+										<img
+											className="game-logo"
+											src="https://nzxt.com/assets/cms/34299/1620400899-minecraft-logo.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+										></img>
+										<h4>
+											<span className="fps">120</span> FPS
+										</h4>
+									</div>
+									<div className="game">
+										<img
+											className="game-logo"
+											src="https://nzxt.com/assets/cms/34299/1620401520-gta.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+										></img>
+										<h4>
+											<span className="fps">120</span> FPS
+										</h4>
+									</div>
+								</div>
+								<p className="estimated-perform">Estimated Performance</p>
+								<div className="quality-options">
+									<div className="1080">
+										<button className="quality-chosen">1080</button>
+									</div>
+									<div className="1440">
+										<button className="quality">1440</button>
+									</div>
+								</div>
+							</div>
+							<div className="inside">
+								<div className="perform-title">
+									<span>Inside the box</span>
+								</div>
+								<div className="items-list">
+									<div className="items">
+										<p className="item-inside">{inside}</p>
+										<p className="item-quant">1</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div className="inside"></div>
-				</div>
-			</div>
+				);
+			})}
 		</Wrapper>
 	);
 }
@@ -241,6 +272,10 @@ const Wrapper = styled.div`
 		padding-left: 5px;
 	}
 
+	.selector:focus {
+		border: 1px solid red !important;
+	}
+
 	.cart-button {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -253,6 +288,7 @@ const Wrapper = styled.div`
 		border: none;
 		font-weight: 400;
 		letter-spacing: 1px;
+		cursor: pointer;
 	}
 
 	.details {
@@ -280,6 +316,10 @@ const Wrapper = styled.div`
 		line-height: 20px;
 		font-size: 15px;
 		letter-spacing: 0.5px;
+	}
+
+	.performance {
+		margin-bottom: 50px;
 	}
 
 	.perform-title {
@@ -350,6 +390,7 @@ const Wrapper = styled.div`
 		font-size: 16px;
 		letter-spacing: 0.5px;
 		padding-top: 5px;
+		cursor: pointer;
 	}
 
 	.quality-chosen {
@@ -360,6 +401,16 @@ const Wrapper = styled.div`
 		border-radius: 20px;
 		font-size: 16px;
 		letter-spacing: 0.5px;
+		cursor: pointer;
+	}
+
+	.items {
+		display: flex;
+		justify-content: space-between;
+		font-size: 17px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		color: #4d4d4d;
 	}
 `;
 

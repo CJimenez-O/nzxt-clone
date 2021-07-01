@@ -39,6 +39,7 @@ function App() {
 						<Streamer />
 					</Route>
 					<StreamerProduct exact path="/product/streamer-pc"></StreamerProduct>
+
 					<Route exact path="/collection/starter-pc">
 						<Starter />
 					</Route>
@@ -64,7 +65,7 @@ function App() {
 						const { id, url } = link;
 						return <Route key={id} path={url}></Route>;
 					})}
-					<Route path="/:id" children={<Child />} />
+					<Route path="/product/:id" children={<singlePage />} />
 					<Route exact="*">
 						<Error />
 					</Route>
