@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useCartContext } from "../context/cart_context";
@@ -11,8 +11,10 @@ function CartSideBar() {
 		closeCart,
 		total_items,
 		total_amount,
+		toggleAmount,
 		cart,
 		removeItem,
+		stock,
 	} = useCartContext();
 
 	return (
@@ -81,6 +83,12 @@ function CartSideBar() {
 				className="cart-items-selected"
 			>
 				{cart.map((cart) => {
+					const increase = () => {
+						toggleAmount(cart.id, "inc");
+					};
+					const decrease = () => {
+						toggleAmount(cart.id, "dec");
+					};
 					return (
 						<div>
 							<div className="total-items-added">
@@ -102,39 +110,43 @@ function CartSideBar() {
 								</div>
 								<div className="quant-added">
 									<div className="quant-selecter">
-										<button className="decrease amt-btn">-</button>
+										<button className="decrease amt-btn" onClick={decrease}>
+											-
+										</button>
 										<p>{cart.amount}</p>
-										<button className="increase amt-btn">+</button>
+										<button className="increase amt-btn" onClick={increase}>
+											+
+										</button>
 									</div>
 									<div className="item-pricing"> {formatPrice(cart.price)}</div>
 								</div>
 							</div>
-							<div className="checkout-info">
-								<div className="amount-subtotal">
-									<div>
-										<h3>Subtotal</h3>
-									</div>
-									<div>{formatPrice(total_amount)}</div>
-								</div>
-								<div className="amount-taxes">
-									<div>
-										<p>Taxes</p>
-									</div>
-									<div>
-										<p>Calculated at checkout</p>
-									</div>
-								</div>
-								<div className="amount-shipping">
-									<div>
-										<p>Estimated shipping</p>
-									</div>
-									<div>FREE</div>
-								</div>
-								<button className="checkout-btn">Proceed to Checkout</button>
-							</div>
 						</div>
 					);
 				})}
+				<div className="checkout-info">
+					<div className="amount-subtotal">
+						<div>
+							<h3>Subtotal</h3>
+						</div>
+						<div>{formatPrice(total_amount)}</div>
+					</div>
+					<div className="amount-taxes">
+						<div>
+							<p>Taxes</p>
+						</div>
+						<div>
+							<p>Calculated at checkout</p>
+						</div>
+					</div>
+					<div className="amount-shipping">
+						<div>
+							<p>Estimated shipping</p>
+						</div>
+						<div>FREE</div>
+					</div>
+					<button className="checkout-btn">Proceed to Checkout</button>
+				</div>
 			</div>
 		</CartBar>
 	);
@@ -280,6 +292,7 @@ const CartBar = styled.div`
 		background-color: transparent;
 		font-size: 16px;
 		font-weight: 400;
+		cursor: pointer;
 	}
 
 	.item-pricing {
