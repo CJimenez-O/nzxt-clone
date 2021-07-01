@@ -82,16 +82,16 @@ function CartSideBar() {
 				}}
 				className="cart-items-selected"
 			>
-				{cart.map((cart) => {
-					const increase = () => {
-						toggleAmount(cart.id, "inc");
-					};
-					const decrease = () => {
-						toggleAmount(cart.id, "dec");
-					};
-					return (
-						<div>
-							<div className="total-items-added">
+				<div className="total-items-added">
+					{cart.map((cart) => {
+						const increase = () => {
+							toggleAmount(cart.id, "inc");
+						};
+						const decrease = () => {
+							toggleAmount(cart.id, "dec");
+						};
+						return (
+							<div>
 								<div className="item-added">
 									<div className="prod-item-info">
 										<div>
@@ -103,8 +103,13 @@ function CartSideBar() {
 										</div>
 									</div>
 									<div className="remove-item">
-										<button onClick={() => removeItem(cart.id)}>
-											<FaRegTrashAlt />
+										<button
+											onClick={() => removeItem(cart.id)}
+											className="remove-btn"
+										>
+											<p>
+												<FaRegTrashAlt />
+											</p>
 										</button>
 									</div>
 								</div>
@@ -121,9 +126,9 @@ function CartSideBar() {
 									<div className="item-pricing"> {formatPrice(cart.price)}</div>
 								</div>
 							</div>
-						</div>
-					);
-				})}
+						);
+					})}
+				</div>
 				<div className="checkout-info">
 					<div className="amount-subtotal">
 						<div>
@@ -264,7 +269,9 @@ const CartBar = styled.div`
 		padding-top: 5px;
 	}
 
-	.remove-item p {
+	.remove-btn {
+		background-color: transparent;
+		border: none;
 		padding-top: 20px;
 		font-size: 22px;
 		cursor: pointer;
@@ -276,6 +283,7 @@ const CartBar = styled.div`
 		width: 70%;
 		margin-right: 5%;
 		margin-left: 25%;
+		margin-bottom: 30px;
 	}
 
 	.quant-selecter {

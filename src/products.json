@@ -28,6 +28,7 @@
 			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
 			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
 		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FUXq20T.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "Alongside the GEFORCE RTX 3090 graphics card, all components in the Streaming Pro PC were hand-selected to run the most popular games beautifully while smoothly operating your stream.",
 		"sub": "Prebuilt Streaming Pro PC",
@@ -46,6 +47,7 @@
 			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
 			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
 		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FUXq20T.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "A great first PC The Starter PC Series is built by experts and gives you a competitive advantage.",
 		"category": "collection/starter",
@@ -63,9 +65,10 @@
 			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
 			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
 		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FUXq20T.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "A great first PC The Starter PC Series is built by experts and gives you a competitive advantage.",
-		"category": "collection/starter",
+		"category": "collection/starter-plus",
 		"instock": true,
 		"stock": 5
 	},
@@ -76,10 +79,11 @@
 		"price": 399999,
 		"displayImage": "https://nzxt.com/assets/cms/34299/1616123904-creatorblack1.png?ar=1%3A1&auto=format&bg=F5F5F8&fit=crop&fm=webp&h=400&w=400",
 		"images": [
-			"https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
-			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
-			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+			"https://nzxt.com/assets/cms/34299/1616123904-creatorblack1.png?bg=F5F5F8&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616123908-creatorblack2.png?bg=F5F5F8&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616123886-creatorblack3.png?bg=F5F5F8&fit=crop&fm=webp&h=576&w=576"
 		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2F6misCl.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "A great first PC The Starter PC Series is built by experts and gives you a competitive advantage.",
 		"category": "collection/creator",
@@ -88,15 +92,16 @@
 	},
 	{
 		"id": "product/h1-mini-pc",
-		"name": "Creator PC",
+		"name": "H1 Mini PC",
 		"sub": "Go big, go mini",
 		"price": 249999,
-		"displayImage": "https://nzxt.com/assets/cms/34299/1616126348-h1minipcleft3q.png?ar=1%3A1&auto=format&bg=F5F5F8&fit=crop&fm=webp&h=400&w=400",
+		"displayImage": "https://nzxt.com/assets/cms/34299/1616126348-h1minipcleft3q.png?bg=F5F5F8&fit=crop&fm=webp&h=576&w=576",
 		"images": [
-			"https://nzxt.com/assets/cms/34299/1616124321-streamingpcwhttomohawkmobohero.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
-			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
-			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+			"https://nzxt.com/assets/cms/34299/1616126348-h1minipcleft3q.png?bg=F5F5F8&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616126450-whth1front.png?bg=F5F5F8&dpr=1.5&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616126357-h1minipcback3q.png?bg=F5F5F8&fit=crop&fm=webp&h=576&w=576"
 		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FE91JXd.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "Built in the elegantly small H1 vertical chassis, the NZXT H1 Mini PC is packed with impressively powerful components and designed to be the ultimate small-footprint companion. The clean, modern appearance creates a bold profile that fits seamlessly into virtually any space--from a college dorm to a thoughtfully-curated living room.",
 		"category": "collection/h1-mini-pc",
