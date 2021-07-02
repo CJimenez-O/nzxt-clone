@@ -1,20 +1,36 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { useCartContext } from "../context/cart_context";
 import { formatPrice } from "../helpers";
 import { FaWindowClose, FaRegTrashAlt } from "react-icons/fa";
+import StripeCheckout from "react-stripe-checkout";
+import {
+	CardElement,
+	useStripe,
+	Elements,
+	useElements,
+} from "@stripe/react-stripe-js";
+import axios from "axios";
 
 function CartSideBar() {
 	const {
 		isCartOpen,
 		closeCart,
+		clearCart,
 		total_items,
 		total_amount,
 		toggleAmount,
 		cart,
 		removeItem,
 	} = useCartContext();
+
+	const onClose = () => {
+		closeCart();
+		clearCart();
+	};
+
+	const totalString = `Total: ${formatPrice(total_amount)}`;
 
 	return (
 		<CartBar
@@ -149,17 +165,16 @@ function CartSideBar() {
 						</div>
 						<div>FREE</div>
 					</div>
-					<Link
-						style={{
-							textDecoration: `none`,
-						}}
-						to="/checkout"
+					<StripeCheckout
+						close={onClose}
+						name="NZXT-CLONE"
+						description={totalString}
+						stripeKey="pk_test_51IFWJgEwYzftIafUrf5P4aScZ8sNUpfns1XxIpmEnSmzyRfRVRS1bikIXFwB2pBcIKgxGPJFC9q4TGDZZJ6iM85k00FSFuGFdt"
 						className="checkout-btn"
-					>
-						<button onClick={closeCart} className="checkout-btn">
-							Proceed to Checkout
-						</button>
-					</Link>
+						amount={formatPrice(cart.price)}
+						currency="USD"
+						bitcoin
+					></StripeCheckout>
 				</div>
 			</div>
 		</CartBar>

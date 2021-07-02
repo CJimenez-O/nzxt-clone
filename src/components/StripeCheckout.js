@@ -7,6 +7,7 @@ import {
 	Elements,
 	useElements,
 } from "@stripe/react-stripe-js";
+import StripeCheckout from "react-stripe-checkout";
 
 import axios from "axios";
 import { useCartContext } from "../context/cart_context";
@@ -94,50 +95,63 @@ const CheckoutForm = () => {
 
 	return (
 		<div>
-			{succeeded ? (
-				<article>
-					<h4>Thank you</h4>
-					<h4>Your payment was successful!</h4>
-					<h4>Redirecting to home page shortly</h4>
-				</article>
-			) : (
-				<article>
-					<p>Subtotal: {formatPrice(total_amount)}</p>
-					<p>Shipping: Free</p>
-					<p>Total: {formatPrice(total_amount)}</p>
-				</article>
-			)}
-			<form id="payment-form" onSubmit={handleSubmit}>
-				<CardElement
-					id="card-element"
-					options={cardStyle}
-					onChange={handleChange}
-				/>
-				<button disabled={processing || disabled || succeeded} id="submit">
-					<span id="button-text">
-						{processing ? <div className="spinner" id="spinnier"></div> : "Pay"}
-					</span>
-				</button>
-				{/* Show any error that happens when processing the payment */}
-				{error && (
-					<div className="card-error" role="alert">
-						{error}
-					</div>
-				)}
-				{/* Show  a success message upon completion */}
-				<p className={succeeded ? "result-message" : "result-message hidden"}>
-					Payment succedded, see the result in your
-					<a href={`https://dashboard.stripe.com/test/payments`}>
-						Stripe dasboard.
-					</a>
-					Refresh the page to pay again
-				</p>
-			</form>
+			<article
+				style={{
+					display: `${succeeded ? "block" : "none"}`,
+				}}
+			>
+				<h4>Thank you</h4>
+				<h4>Your payment was successful!</h4>
+				<h4>Redirecting to home page shortly</h4>
+			</article>
+
+			<div className="checkout-info">
+				<div className="checkout-cart-items">
+					<article>
+						<p>Subtotal: {formatPrice(total_amount)}</p>
+						<p>Shipping: Free</p>
+						<p>Total: {formatPrice(total_amount)}</p>
+					</article>
+				</div>
+				<div className="checkout-payment">
+					<form id="payment-form" onSubmit={handleSubmit}>
+						<CardElement
+							id="card-element"
+							options={cardStyle}
+							onChange={handleChange}
+						/>
+						<button disabled={processing || disabled || succeeded} id="submit">
+							<span id="button-text">
+								{processing ? (
+									<div className="spinner" id="spinnier"></div>
+								) : (
+									"Pay"
+								)}
+							</span>
+						</button>
+						{/* Show any error that happens when processing the payment */}
+						{error && (
+							<div className="card-error" role="alert">
+								{error}
+							</div>
+						)}
+						{/* Show  a success message upon completion */}
+						<p
+							className={succeeded ? "result-message" : "result-message hidden"}
+						>
+							Payment successful, Thank You!
+						</p>
+					</form>
+				</div>
+			</div>
 		</div>
 	);
 };
 
-const StripeCheckout = () => {
+const StripeCheckoutPage = () => {
+	const onToken = (token) => {
+		console.log(token);
+	};
 	return (
 		<Wrapper>
 			<Elements stripe={promise}>
@@ -292,6 +306,11 @@ const Wrapper = styled.section`
 			transform: rotate(360deg);
 		}
 	}
+
+	.checkout-info {
+		width: 100%;
+	}
+
 	@media only screen and (max-width: 600px) {
 		form {
 			width: 80vw;
@@ -299,4 +318,4 @@ const Wrapper = styled.section`
 	}
 `;
 
-export default StripeCheckout;
+export default StripeCheckoutPage;
