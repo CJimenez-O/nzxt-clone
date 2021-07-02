@@ -54,6 +54,7 @@ export const CartProvider = ({ children }) => {
 				stock,
 			},
 		});
+		dispatch({ type: CART_OPEN });
 	};
 	// remove item
 	const removeItem = (id) => {

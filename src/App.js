@@ -17,15 +17,21 @@ import CreatorPc from "./pages/CreatorPcProduct";
 import MiniPc from "./pages/H1Mini";
 import MiniPcProd from "./pages/H1MiniPcProduct";
 import Audio from "./pages/Audio";
+import MousePad from "./pages/MousePad";
+import LargeMousePad from "./pages/LargeMousePad";
+import Puck from "./pages/Puck";
+import PanPuck from "./pages/PanPuck";
 import AuthWrapper from "./pages/AuthWrapper";
 import CartSideBar from "./components/CartSideBar";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
+import Checkout from "./pages/CheckoutPage";
 import { links } from "./link";
 import Child from "./components/child";
 import Error from "./pages/ErrorPage";
 import MailingForm from "./components/mailingListForm";
+import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
 	return (
@@ -70,6 +76,18 @@ function App() {
 					<Route exact path="/collection/product/h1-mini-pc">
 						<MiniPcProd />
 					</Route>
+					<Route exact path="/product/standard-mouse-pad">
+						<MousePad />
+					</Route>
+					<Route exact path="/product/large-mouse-pad">
+						<LargeMousePad />
+					</Route>
+					<Route exact path="/product/puck">
+						<Puck />
+					</Route>
+					<Route exact path="/product/pan-puck">
+						<PanPuck />
+					</Route>
 					<Route exact path="/collection/audio">
 						<Audio />
 					</Route>
@@ -81,6 +99,9 @@ function App() {
 					</Route>
 					<Route exact path="/support">
 						<Support />
+					</Route>
+					<Route exact path="/checkout">
+						<Checkout />
 					</Route>
 					{links.map((link) => {
 						const { id, url } = link;

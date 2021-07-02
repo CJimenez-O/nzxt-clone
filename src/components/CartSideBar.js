@@ -149,7 +149,17 @@ function CartSideBar() {
 						</div>
 						<div>FREE</div>
 					</div>
-					<button className="checkout-btn">Proceed to Checkout</button>
+					<Link
+						style={{
+							textDecoration: `none`,
+						}}
+						to="/checkout"
+						className="checkout-btn"
+					>
+						<button onClick={closeCart} className="checkout-btn">
+							Proceed to Checkout
+						</button>
+					</Link>
 				</div>
 			</div>
 		</CartBar>
@@ -167,8 +177,7 @@ const CartBar = styled.div`
 	.userCart {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		gap: 90px;
+		justify-content: space-between;
 		padding-top: 20px;
 		padding-bottom: 20px;
 		letter-spacing: 1px;
@@ -245,7 +254,8 @@ const CartBar = styled.div`
 	}
 
 	.total-items-added {
-		height: 60vh;
+		height: 450px;
+		overflow: auto;
 	}
 
 	.item-added {
@@ -334,6 +344,7 @@ const CartBar = styled.div`
 		justify-content: space-between;
 		font-size: 13px;
 		font-weight: 600;
+		margin-bottom: 15px;
 	}
 
 	.checkout-btn {
@@ -341,8 +352,7 @@ const CartBar = styled.div`
 		width: 98%;
 		margin-right: 1%;
 		margin-left: 1%;
-		margin-top: 25px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 		border-radius: 20px;
 		border: none;
 		padding-top: 10px;
@@ -352,6 +362,7 @@ const CartBar = styled.div`
 		font-weight: 600;
 		background-color: #7f00f5;
 		color: white;
+		cursor: pointer;
 	}
 
 	@media (max-width: 690px) {

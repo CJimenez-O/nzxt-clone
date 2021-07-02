@@ -3,14 +3,14 @@ import Suggestion from "../components/suggest";
 import Footer from "../components/Footer";
 import ProductDisplay from "../components/singleProductHero";
 
-function StreamerPcProduct() {
+function MousePad() {
 	return (
 		<div>
-			<ProductDisplay filter="Streaming PC" />
+			<ProductDisplay filter="NZXT Standard Mouse Pad" />
 			<Suggestion />
 			<Footer />
 		</div>
 	);
 }
 
-export default StreamerPcProduct;
+export default MousePad;

@@ -30,6 +30,7 @@ function PerifMenu() {
 						to="/product/standard-mouse-pad"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePerifMenu}
 					>
 						<p>NZXT Standard Mouse Pad</p>
 					</Link>
@@ -37,6 +38,7 @@ function PerifMenu() {
 						to="/product/large-mouse-pad"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePerifMenu}
 					>
 						<p>NZXT Large Mouse Pad</p>
 					</Link>
@@ -44,6 +46,7 @@ function PerifMenu() {
 						to="/product/puck"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePerifMenu}
 					>
 						<p>Puck</p>
 					</Link>
@@ -51,6 +54,7 @@ function PerifMenu() {
 						to="/product/pan-puck"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePerifMenu}
 					>
 						<p>Pan Puck</p>
 					</Link>

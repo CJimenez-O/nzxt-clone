@@ -107,5 +107,73 @@
 		"category": "collection/h1-mini-pc",
 		"instock": true,
 		"stock": 5
+	},
+	{
+		"id": "product/nzxt-standard-mouse-pad",
+		"name": "NZXT Standard Mouse Pad",
+		"sub": "Small Premium Mousepad",
+		"price": 1499,
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615593222-mousepad-perspective.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615593213-mousepad-front.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615593206-mousepad-angle.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FaPrdSD.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This NZXT Mouse pad is crafted from high-quality materials, making it durable and comfortable for extended periods of gaming.",
+		"inside": ["NZXT Standard Mouse Pad"],
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "product/nzxt-large-mouse-pad",
+		"name": "NZXT Large Mouse Pad",
+		"sub": "Large Premium Mouse Pad",
+		"price": 2999,
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1619579331-mouse-pad-long-perspective.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615593130-mouse-pad-long-angle.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615593107-mouse-pad-long-enviroment.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2Fe8SLKc.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This NZXT Mouse pad is crafted from high-quality materials, making it durable and comfortable for extended periods of gaming.",
+		"inside": ["NZXT Large Mouse Pad"],
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/puck",
+		"name": "Puck",
+		"sub": "Magnetic Organizer",
+		"price": 1999,
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615593720-puck-whitefront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615599955-puck-feature2-simple-and-versatile.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615593742-puck-blackfront-34.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FEdzKqi.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "Easily store any VR or audio headsets while keeping cables organized.",
+		"inside": ["Puck"],
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/pan-puck",
+		"name": "Pan Puck",
+		"sub": "Magnetic Organizer",
+		"price": 1999,
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615592880-puck-pubgmain.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615592911-puck-pubgtop-left.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615601754-pan-puck-feature2-made-for-headsets-not-headshots.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/assets/cms/34299/1615592911-puck-pubgtop-left.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"colors": ["#fff", "#000"],
+		"description": "Out of the Battle Royale and into the frying pan, the limited edition NZXT Pan Puck provides the perfect headset and cable management solution for the PUBG player.",
+		"inside": ["Pan Puck"],
+		"instock": true,
+		"stock": 20
 	}
 ]

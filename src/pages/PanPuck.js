@@ -3,14 +3,14 @@ import Suggestion from "../components/suggest";
 import Footer from "../components/Footer";
 import ProductDisplay from "../components/singleProductHero";
 
-function StreamerPcProduct() {
+function PanPuck() {
 	return (
 		<div>
-			<ProductDisplay filter="Streaming PC" />
+			<ProductDisplay filter="Pan Puck" />
 			<Suggestion />
 			<Footer />
 		</div>
 	);
 }
 
-export default StreamerPcProduct;
+export default PanPuck;
