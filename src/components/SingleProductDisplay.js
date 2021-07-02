@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { FaCircle, FaShoppingCart } from "react-icons/fa";
 import Products from "../products.json";
+import { Link } from "react-router-dom";
 import { formatPrice } from "../helpers";
+import { useCartContext } from "../context/cart_context";
 
 function SingleProductDisplay({ filter, title, details, height }) {
+	const { addToCart } = useCartContext();
 	const DisplayedProducts = Products.filter(
 		(product) => product.category === filter
 	);
@@ -17,22 +20,43 @@ function SingleProductDisplay({ filter, title, details, height }) {
 				</div>
 				<div className="products-display">
 					{DisplayedProducts.map((product) => {
+						const {
+							id,
+							displayImage,
+							name,
+							sub,
+							price,
+							color,
+							stock,
+							cartImage,
+						} = product;
+						const amount = 1;
 						return (
 							<div className="product">
-								<button className="cart-btn">
+								<button
+									onClick={() =>
+										addToCart(cartImage, name, price, color, id, amount, stock)
+									}
+									className="cart-btn"
+								>
 									<FaShoppingCart />
 								</button>
 								<div>
-									<div className="image-wrapper">
-										<img
-											className="prod-image"
-											src={product.displayImage}
-										></img>
-									</div>
-									<h3 className="name">{product.name}</h3>
-									<p className="sub">{product.sub}</p>
+									<Link
+										to={id}
+										style={{
+											textDecoration: "none",
+											color: "black",
+										}}
+									>
+										<div className="image-wrapper">
+											<img className="prod-image" src={displayImage}></img>
+										</div>
+										<h3 className="name">{name}</h3>
+										<p className="sub">{sub}</p>
+									</Link>
 									<div className="selection">
-										<h4>{formatPrice(product.price)}</h4>
+										<h4>{formatPrice(price)}</h4>
 										<div className="colors">
 											<button className="black color-btn">
 												<FaCircle />

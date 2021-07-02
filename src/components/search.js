@@ -7,13 +7,14 @@ import {
 	FaUserSlash,
 	FaUserAltSlash,
 } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useUserContext } from "../context/user_context";
 import { useCartContext } from "../context/cart_context";
 import { Link } from "react-router-dom";
 
 function Search() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
-	const { openCart, isCartOpen, closeCart } = useCartContext();
+	const { openCart, total_items, isCartOpen, closeCart } = useCartContext();
 
 	return (
 		<Searchbar>
@@ -52,12 +53,26 @@ function Search() {
 							</button>
 						)}
 					</li>
-					<li>
-						<button type="button" className="auth-btn" onClick={openCart}>
-							<h3 className="signOut">
-								<FaShoppingCart />
-							</h3>
-						</button>
+					<li className="shoppingCart-btn">
+						<div>
+							<button
+								type="button"
+								className="auth-btn cart-nav-button"
+								onClick={openCart}
+							>
+								<h3 className="signOut">
+									<AiOutlineShoppingCart />
+								</h3>
+							</button>
+						</div>
+						<p
+							style={{
+								display: `${total_items ? "block" : "none"}`,
+							}}
+							className="total-cart-items"
+						>
+							{total_items}
+						</p>
 					</li>
 				</ul>
 			</div>
@@ -124,6 +139,29 @@ const Searchbar = styled.nav`
 		padding-left: 20px;
 		font-size: 25px;
 		font-weight: 100;
+	}
+
+	.shoppingCart-btn {
+		display: flex;
+	}
+
+	.cart-nav-button {
+		font-size: 22px;
+	}
+
+	.total-cart-items {
+		height: 18px;
+		width: 18px;
+		text-align: center;
+		padding-top: 2px;
+		font-size: 11px;
+		font-weight: 600;
+		border-radius: 50%;
+		margin-left: -8px;
+		margin-top: -5px;
+		z-index: 40;
+		color: black;
+		background-color: white;
 	}
 
 	@media (max-width: 990px) {

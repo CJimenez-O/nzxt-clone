@@ -21,7 +21,7 @@ function Starter() {
 			<ProductDisplays
 				title="TIME TO START"
 				details="The Starter PC Series is built by experts to give gamers a competitive advantage."
-				filter="collection/streaming"
+				filter="collection/starter"
 				height="350px"
 			/>
 

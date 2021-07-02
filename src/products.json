@@ -68,7 +68,7 @@
 		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FUXq20T.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "A great first PC The Starter PC Series is built by experts and gives you a competitive advantage.",
-		"category": "collection/starter-plus",
+		"category": "collection/starter",
 		"instock": true,
 		"stock": 5
 	},

@@ -14,7 +14,6 @@ function CartSideBar() {
 		toggleAmount,
 		cart,
 		removeItem,
-		stock,
 	} = useCartContext();
 
 	return (

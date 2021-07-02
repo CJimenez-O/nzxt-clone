@@ -23,6 +23,7 @@ function GamingSec() {
 						to="/collection/creator"
 						className="link"
 						style={{ "text-decoration": "none" }}
+						onClick={closePrebuilt}
 					>
 						<p>Creator PC</p>
 						<p className="sub">Prebuilt Content Creation PC</p>
@@ -40,7 +41,7 @@ function GamingSec() {
 					</Link>
 					<Link
 						to="/collection/h1-mini-pc"
-						className="link"
+						className="link h1-mini"
 						style={{ "text-decoration": "none" }}
 						onClick={closePrebuilt}
 					>
@@ -97,6 +98,10 @@ const Wrapper = styled.div`
 		font-size: 15px;
 		font-weight: 600;
 		margin-bottom: 20px;
+	}
+
+	.h1-mini {
+		margin-left: -10px;
 	}
 
 	.sub {
