@@ -15,6 +15,12 @@ function sidebarReducer(state, action) {
 	if (action.type === "PREBUILT_CLOSE") {
 		return { ...state, isPrebuiltOpen: false };
 	}
+	if (action.type === "PREBUILT_SIDEBAR_OPEN") {
+		return { ...state, isPrebuiltSideBarMenuOpen: true };
+	}
+	if (action.type === "PREBUILT_SIDEBAR_CLOSE") {
+		return { ...state, isPrebuiltSideBarMenuOpen: false };
+	}
 
 	if (action.type === "BUILTMENU_OPEN") {
 		return { ...state, isBuiltMenuOpen: true };
@@ -28,6 +34,13 @@ function sidebarReducer(state, action) {
 	}
 	if (action.type === "PERIFMENU_CLOSE") {
 		return { ...state, isPerifMenuOpen: false };
+	}
+
+	if (action.type === "PERIF_SIDEBAR_OPEN") {
+		return { ...state, isPerifSidebarMenuOpen: true };
+	}
+	if (action.type === "PERIF_SIDEBAR_CLOSE") {
+		return { ...state, isPerifSidebarMenuOpen: false };
 	}
 
 	if (action.type === "COMPANY_OPEN") {

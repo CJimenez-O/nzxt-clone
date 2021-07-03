@@ -38,7 +38,7 @@ const Navbar = () => {
 						{isSidebarOpen ? <FaRegWindowClose /> : <FaBars />}
 					</button>
 					<Link onClick={resetNav} to="/" style={{ textDecoration: "none" }}>
-						<h4 className="logo">NZXT</h4>
+						<h4 className="logo">NZXT-CLONE</h4>
 					</Link>
 					<button type="button" className="auth-btn" onClick={openCart}>
 						<h3 className="signOut">

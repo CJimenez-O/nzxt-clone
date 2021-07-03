@@ -3,76 +3,83 @@ import styled from "styled-components";
 import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../context/user_context";
-import { FaRegUser, FaRegQuestionCircle, FaShoppingCart } from "react-icons/fa";
-import PrebuiltSidebarMenu from "./PrebulitSidebar";
-import PerifSidebarMenu from "./PerifSidebarMenu";
+import { FaRegUser, FaRegQuestionCircle, FaAngleLeft } from "react-icons/fa";
 
-function Sidebar() {
+function PerifSidebar() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
 	const {
 		isSidebarOpen,
-		openPrebuiltSidebar,
-		openPerifSidebarMenu,
+		isPerifSidebarMenuOpen,
+		openSidebar,
 		closeSidebar,
 	} = useProductsContext();
 	return (
 		<SidebarContainer>
 			<aside
 				style={{
-					display: `${isSidebarOpen ? "block" : "none"}`,
+					display: `${isPerifSidebarMenuOpen ? "block" : "none"}`,
 				}}
 				className="standard"
 			>
-				<div className="search">
-					<input type="text" placeholder="Search NZXT"></input>
+				<div className="sidebar-header">
+					<div className="return">
+						<button className="arrow" onClick={openSidebar}>
+							<FaAngleLeft />
+						</button>
+					</div>
+					<div className="sidebar-title">
+						<h3>Peripherals</h3>
+					</div>
 				</div>
 				<ul className="nav_links">
 					<li>
-						<button
-							className="link"
-							style={{ textDecoration: "none" }}
-							onClick={openPrebuiltSidebar}
-						>
-							Gaming PCs
-						</button>
-					</li>
-					<li>
-						<button
-							className="link"
-							to="/audio"
-							style={{ textDecoration: "none" }}
-						>
-							PC Building
-						</button>
-					</li>
-					<li>
-						<button
-							className="link"
-							to="/pc-products-accessories"
-							style={{ textDecoration: "none" }}
-							onClick={openPerifSidebarMenu}
-						>
-							Peripherals
-						</button>
-					</li>
-					<li>
 						<Link
 							className="link"
-							to="/software"
 							style={{ textDecoration: "none" }}
+							to="/collection/audio"
 							onClick={closeSidebar}
 						>
-							Software
+							<h3 className="link-title">Audio</h3>
 						</Link>
 					</li>
 					<li>
 						<Link
 							className="link"
-							to="/company"
 							style={{ textDecoration: "none" }}
+							to="/product/standard-mouse-pad"
 							onClick={closeSidebar}
 						>
-							Community
+							<h3 className="link-title">NZXT Standard Mouse Pad</h3>
+						</Link>
+					</li>
+					<li>
+						<Link
+							className="link"
+							style={{ textDecoration: "none" }}
+							to="/product/large-mouse-pad"
+							onClick={closeSidebar}
+						>
+							<h3 className="link-title">NZXT Large Mouse Pad</h3>
+						</Link>
+					</li>
+					<li>
+						<Link
+							className="link"
+							style={{ textDecoration: "none" }}
+							to="/product/puck"
+							onClick={closeSidebar}
+						>
+							<h3 className="link-title">Puck</h3>
+						</Link>
+					</li>
+					<li>
+						<Link
+							className="link"
+							style={{ textDecoration: "none" }}
+							to="/product/pan-puck"
+							onClick={closeSidebar}
+						>
+							<h3 className="link-title">Pan Puck</h3>
 						</Link>
 					</li>
 				</ul>
@@ -112,8 +119,6 @@ function Sidebar() {
 					)}
 				</div>
 			</aside>
-			<PrebuiltSidebarMenu />
-			<PerifSidebarMenu />
 		</SidebarContainer>
 	);
 }
@@ -128,9 +133,13 @@ const SidebarContainer = styled.nav`
 		height: 100vh;
 	}
 
+	.nav_links {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
 	li {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 15px;
 		font-size: 16px;
 		padding-left: 20px;
 	}
@@ -152,31 +161,33 @@ const SidebarContainer = styled.nav`
 		display: block;
 	}
 
-	.search {
+	.sidebar-header {
+		display: flex;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		border-bottom: 1px solid lightgray;
 	}
 
-	input {
-		margin-top: 10px;
-		margin-left: 20px;
-		margin-bottom: 10px;
-		font-size: 18px;
-		border-radius: 5px;
-		padding: 5px;
-		padding-left: 10px;
+	.arrow {
+		margin-top: 5px;
 		border: none;
-		background-color: #e3e5e8;
+		background-color: transparent;
+		cursor: pointer;
+	}
+	.sidebar-title {
+		margin-left: 20%;
 	}
 
-	input::placeholder {
-		font-size: 14px;
-		font-weight: 400;
-		letter-spacing: 0.5px;
+	.link-title {
+		font-size: 16px;
+		margin-bottom: 5px;
 	}
 
-	input[type="text"]:focus {
-		outline: none;
-		border: 4px solid #7f00f5;
+	.link-sub {
+		font-size: 10px;
+		color: gray;
 	}
 
 	.support {
@@ -237,4 +248,4 @@ const SidebarContainer = styled.nav`
 	}
 `;
 
-export default Sidebar;
+export default PerifSidebar;

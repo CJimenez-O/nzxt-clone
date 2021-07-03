@@ -1,14 +1,18 @@
-import React, { useContext, useReducer, useEffect } from "react";
+import React, { useContext, useReducer } from "react";
 import reducer from "../reducer/sidebarReducer";
 import {
 	SIDEBAR_OPEN,
 	SIDEBAR_CLOSE,
 	PREBUILT_OPEN,
 	PREBUILT_CLOSE,
+	PREBUILT_SIDEBAR_OPEN,
+	PREBUILT_SIDEBAR_CLOSE,
 	BUILTMENU_OPEN,
 	BUILTMENU_CLOSE,
 	PERIFMENU_OPEN,
 	PERIFMENU_CLOSE,
+	PERIF_SIDEBAR_OPEN,
+	PERIF_SIDEBAR_CLOSE,
 	COMPANY_OPEN,
 	COMPANY_CLOSE,
 	ABOUT_OPEN,
@@ -28,8 +32,10 @@ import {
 const initialState = {
 	isSidebarOpen: false,
 	isPrebuiltOpen: false,
+	isPrebuiltSideBarMenuOpen: false,
 	isBuiltMenuOpen: false,
 	isPerifMenuOpen: false,
+	isPerifSidebarMenuOpen: false,
 	isCompanyLinkOpen: false,
 	isAboutOpen: false,
 	isCommunityOpen: false,
@@ -47,13 +53,20 @@ export const ProductsProvider = ({ children }) => {
 		dispatch({ type: BUILTMENU_CLOSE });
 		dispatch({ type: PERIFMENU_CLOSE });
 		dispatch({ type: PREBUILT_CLOSE });
+		dispatch({ type: SIDEBAR_CLOSE });
+		dispatch({ type: PREBUILT_SIDEBAR_CLOSE });
+		dispatch({ type: PERIF_SIDEBAR_CLOSE });
 	};
 
 	const openSidebar = () => {
 		dispatch({ type: SIDEBAR_OPEN });
+		dispatch({ type: PREBUILT_SIDEBAR_CLOSE });
+		dispatch({ type: PERIF_SIDEBAR_CLOSE });
 	};
 	const closeSidebar = () => {
 		dispatch({ type: SIDEBAR_CLOSE });
+		dispatch({ type: PREBUILT_SIDEBAR_CLOSE });
+		dispatch({ type: PERIF_SIDEBAR_CLOSE });
 	};
 
 	const openPrebuilt = () => {
@@ -63,6 +76,13 @@ export const ProductsProvider = ({ children }) => {
 	};
 	const closePrebuilt = () => {
 		dispatch({ type: PREBUILT_CLOSE });
+	};
+
+	const openPrebuiltSidebar = () => {
+		dispatch({ type: PREBUILT_SIDEBAR_OPEN });
+	};
+	const closePrebuiltSidebar = () => {
+		dispatch({ type: PREBUILT_SIDEBAR_CLOSE });
 	};
 
 	const openBuiltMenu = () => {
@@ -81,6 +101,13 @@ export const ProductsProvider = ({ children }) => {
 	};
 	const closePerifMenu = () => {
 		dispatch({ type: PERIFMENU_CLOSE });
+	};
+
+	const openPerifSidebarMenu = () => {
+		dispatch({ type: PERIF_SIDEBAR_OPEN });
+	};
+	const closePerifSidebarMenu = () => {
+		dispatch({ type: PERIF_SIDEBAR_CLOSE });
 	};
 
 	const openCompanyLinks = () => {
@@ -134,10 +161,14 @@ export const ProductsProvider = ({ children }) => {
 				closeSidebar,
 				openPrebuilt,
 				closePrebuilt,
+				openPrebuiltSidebar,
+				closePrebuiltSidebar,
 				openBuiltMenu,
 				closeBuiltMenu,
 				openPerifMenu,
 				closePerifMenu,
+				openPerifSidebarMenu,
+				closePerifSidebarMenu,
 				openCompanyLinks,
 				closeCompanyLinks,
 				openAboutLinks,
