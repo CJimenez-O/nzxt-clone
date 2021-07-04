@@ -133,11 +133,13 @@ function SingleProductHero({ filter }) {
 								</div>
 								<p className="estimated-perform">Estimated Performance</p>
 								<div className="quality-options">
-									<div className="1080">
-										<button className="quality-chosen">1080</button>
-									</div>
-									<div className="1440">
-										<button className="quality">1440</button>
+									<div className="quality-btn">
+										<div className="1080">
+											<button className="quality-chosen">1080</button>
+										</div>
+										<div className="1440">
+											<button className="quality">1440</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -370,13 +372,17 @@ const Wrapper = styled.div`
 	}
 
 	.quality-options {
+		justify-content: center;
+	}
+
+	.quality-btn {
 		display: flex;
 		gap: 40px;
 		justify-content: center;
 		background-color: #f2f3f5;
-		width: 60%;
-		margin-right: 20%;
-		margin-left: 20%;
+		width: 70%;
+		margin-right: 15%;
+		margin-left: 15%;
 		border-radius: 20px;
 		padding-top: 5px;
 		padding-bottom: 5px;
@@ -411,6 +417,23 @@ const Wrapper = styled.div`
 		font-weight: 600;
 		letter-spacing: 0.5px;
 		color: #4d4d4d;
+	}
+
+	@media (max-width: 1270px) {
+		.single-product-page {
+			display: block;
+		}
+
+		.secondary-images {
+			display: none;
+		}
+
+		.product-details {
+			width: 100%;
+		}
+
+		.quality-options {
+		}
 	}
 `;
 

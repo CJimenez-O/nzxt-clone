@@ -17,7 +17,10 @@ function Company() {
 					</p>
 				</div>
 				<div className="about-image">
-					<img src="https://nzxt.com/assets/cms/34299/1617117602-image-4.png?auto=format&dpr=2&fit=max&fm=webp&h=690&w=690"></img>
+					<img
+						className="company-img"
+						src="https://nzxt.com/assets/cms/34299/1617117602-image-4.png?auto=format&dpr=2&fit=max&fm=webp&h=690&w=690"
+					></img>
 				</div>
 			</div>
 			<div className="importance">
@@ -338,6 +341,69 @@ const About = styled.div`
 		letter-spacing: 0.5px;
 		font-weight: 400;
 		font-size: 18px;
+	}
+
+	@media (max-width: 990px) {
+		padding-top: 60px !important;
+		.support {
+			display: block;
+		}
+
+		.support-header-title {
+			font-size: 30px;
+		}
+
+		.contact {
+			text-align: center;
+			width: 100%;
+		}
+
+		.contact-info {
+			display: block;
+		}
+
+		.hq {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.thanks {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
+	@media (max-width: 1170px) {
+		padding-top: 80px;
+		.about-content {
+			display: block;
+		}
+
+		.about-details {
+			width: 100%;
+			text-align: center;
+		}
+		.title {
+			width: 100%;
+		}
+
+		.about-details p {
+			width: 100%;
+		}
+
+		.about-image {
+			width: 90%;
+
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.company-img {
+			padding-top: 50px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 `;
 
