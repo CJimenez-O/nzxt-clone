@@ -41,13 +41,14 @@ function ProductDisplay({ filter, title, details, height }) {
 								>
 									<FaShoppingCart />
 								</button>
-								<div>
+								<div className="prod-content">
 									<Link
 										to={id}
 										style={{
 											textDecoration: "none",
 											color: "black",
 										}}
+										className="product-link-item"
 									>
 										<img className="prod-image" src={displayImage}></img>
 										<h3 className="name">{name}</h3>
@@ -154,6 +155,51 @@ const DisplayWrapper = styled.div`
 
 	.white {
 		color: white;
+	}
+
+	@media (max-width: 690px) {
+	}
+
+	@media (max-width: 1090px) {
+		margin-top: 40px;
+
+		.details p {
+			width: 80%;
+			margin: auto;
+		}
+		.product-section {
+			display: grid;
+			justify-items: center;
+			width: 100%;
+			margin: auto;
+		}
+
+		.details {
+			width: 100%;
+		}
+
+		.products-display {
+			display: grid;
+			margin: auto;
+			margin: 30px auto;
+			position: relative;
+		}
+
+		.product {
+			margin: auto;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+
+		.prod-content {
+			align-items: center;
+			justify-items: center;
+		}
+
+		.selection {
+			gap: 150px;
+		}
 	}
 `;
 export default ProductDisplay;
