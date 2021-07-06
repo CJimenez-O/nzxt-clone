@@ -31,7 +31,7 @@ function SingleProductHero({ filter }) {
 				return (
 					<div className="single-product-page">
 						<div className="display-images">
-							<div>
+							<div className="primary-disply-img">
 								<img className="main-image" src={images[0]}></img>
 							</div>
 							<div className="secondary-images">
@@ -419,7 +419,21 @@ const Wrapper = styled.div`
 		color: #4d4d4d;
 	}
 
+	@media (max-width: 670px) {
+		.main-image {
+			height: 400px !important;
+		}
+	}
+
+	@media (max-width: 990px) {
+		padding-top: 120px;
+	}
+
 	@media (max-width: 1270px) {
+		.primary-display-img {
+			display: block;
+			margin: auto;
+		}
 		.single-product-page {
 			display: block;
 		}
@@ -433,6 +447,12 @@ const Wrapper = styled.div`
 		}
 
 		.quality-options {
+		}
+
+		.main-image {
+			display: block;
+			margin: auto;
+			height: 600px;
 		}
 	}
 `;

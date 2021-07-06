@@ -140,6 +140,7 @@ const SupportContainer = styled.div`
 	.support-hero-text h1 {
 		font-size: 5rem;
 		margin-bottom: 20px;
+		color: #000;
 	}
 
 	.support-hero-image {
@@ -282,6 +283,66 @@ const SupportContainer = styled.div`
 		font-size: 18px;
 		font-weight: 400;
 		padding-top: 15px;
+	}
+
+	@media (max-width: 1070px) {
+		padding-top: 120px;
+		.support-hero {
+			display: grid;
+			text-align: center;
+			width: 90%;
+			margin: auto;
+		}
+
+		.support-hero-text h1 {
+			font-size: 4rem;
+			margin-bottom: 20px;
+		}
+
+		.support-hero-image {
+			height: 250px;
+		}
+
+		.support-wrapper {
+			width: 90%;
+			margin: auto;
+		}
+
+		.support {
+			display: block;
+		}
+
+		.thanks {
+			padding-right: 100px;
+		}
+
+		.company-quality {
+			margin-bottom: 50px;
+		}
+
+		.search-input {
+			margin: 20px auto;
+			width: 100%;
+		}
+
+		.search-title {
+			font-size: 30px;
+		}
+
+		.search-button-div {
+			display: grid;
+			align-items: center;
+		}
+
+		.slogans {
+			display: block;
+			width: 100%;
+			margin: 20px auto;
+		}
+
+		.slogan {
+			width: 100%;
+		}
 	}
 `;
 

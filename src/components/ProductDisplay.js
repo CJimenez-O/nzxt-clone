@@ -157,11 +157,8 @@ const DisplayWrapper = styled.div`
 		color: white;
 	}
 
-	@media (max-width: 690px) {
-	}
-
 	@media (max-width: 1090px) {
-		margin-top: 40px;
+		margin-top: 60px;
 
 		.details p {
 			width: 80%;
