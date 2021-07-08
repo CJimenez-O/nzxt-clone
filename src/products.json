@@ -9,6 +9,11 @@
 			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
 			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
 		],
+		"blackImages": [
+			"https://nzxt.com/assets/cms/34299/1616124418-streamingpcblktomohawkmobohero.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616124437-streamingpcblktomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1616124412-streamingpcblktomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
 		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FUXq20T.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "Alongside the GEFORCE RTX 3070 graphics card, all components in the Streaming PC were hand-selected to run the most popular games beautifully while smoothly operating your stream.",

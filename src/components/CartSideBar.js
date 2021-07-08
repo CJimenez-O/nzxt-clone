@@ -23,6 +23,9 @@ function CartSideBar() {
 		toggleAmount,
 		cart,
 		removeItem,
+		color,
+		whiteChosen,
+		blackChosen,
 	} = useCartContext();
 
 	const onClose = () => {
@@ -114,7 +117,7 @@ function CartSideBar() {
 										</div>
 										<div className="item-name">
 											<h4>{cart.name}</h4>
-											<h4>{cart.color}</h4>
+											<h4>{color}</h4>
 										</div>
 									</div>
 									<div className="remove-item">

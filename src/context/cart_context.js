@@ -29,8 +29,9 @@ const initialState = {
 	total_items: 0,
 	total_amount: 0,
 	shipping_fee: 534,
-	whiteColor: true,
+	whiteColor: false,
 	blackColor: false,
+	color: "",
 };
 
 const CartContext = React.createContext();

@@ -1,10 +1,10 @@
 function cartReducer(state, action) {
 	if (action.type === "COLOR_WHITE") {
 		// console.log(action);
-		return { ...state, whiteColor: true, blackColor: false };
+		return { ...state, color: "White" };
 	}
 	if (action.type === "COLOR_BLACK") {
-		return { ...state, blackColor: true, whiteColor: false };
+		return { ...state, color: "Black" };
 	}
 
 	if (action.type === "CART_OPEN") {
