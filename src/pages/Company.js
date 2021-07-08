@@ -343,7 +343,29 @@ const About = styled.div`
 		font-size: 18px;
 	}
 
+	@media (max-width: 790px) {
+		.import-lists {
+			display: block;
+		}
+		.support-lists {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			display: block;
+		}
+
+		.support-lists:nth-child(2) {
+			padding-top: 0px;
+		}
+
+		.support-list {
+			margin-top: 30px;
+		}
+	}
+
 	@media (max-width: 990px) {
+		.title {
+			font-size: 45px;
+		}
 		padding-top: 60px !important;
 		.support {
 			display: block;

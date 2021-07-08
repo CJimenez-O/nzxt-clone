@@ -8,6 +8,8 @@ import {
 	TOGGLE_CART_ITEM_AMOUNT,
 	CLEAR_CART,
 	COUNT_CART_TOTALS,
+	COLOR_WHITE,
+	COLOR_BLACK,
 } from "../actions";
 
 const getLocalStorage = () => {
@@ -27,12 +29,21 @@ const initialState = {
 	total_items: 0,
 	total_amount: 0,
 	shipping_fee: 534,
+	whiteColor: true,
+	blackColor: false,
 };
 
 const CartContext = React.createContext();
 
 export const CartProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(reducer, initialState);
+
+	const whiteChosen = () => {
+		dispatch({ type: COLOR_WHITE });
+	};
+	const blackChosen = () => {
+		dispatch({ type: COLOR_BLACK });
+	};
 
 	const openCart = () => {
 		dispatch({ type: CART_OPEN });
@@ -85,6 +96,8 @@ export const CartProvider = ({ children }) => {
 				removeItem,
 				toggleAmount,
 				clearCart,
+				whiteChosen,
+				blackChosen,
 			}}
 		>
 			{children}

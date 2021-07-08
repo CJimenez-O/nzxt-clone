@@ -285,8 +285,11 @@ const SupportContainer = styled.div`
 		padding-top: 15px;
 	}
 
-	@media (max-width: 1070px) {
+	@media (max-width: 990px) {
 		padding-top: 120px;
+	}
+
+	@media (max-width: 1070px) {
 		.support-hero {
 			display: grid;
 			text-align: center;

@@ -72,7 +72,7 @@ function Sidebar() {
 							style={{ textDecoration: "none" }}
 							onClick={closeSidebar}
 						>
-							Community
+							Company
 						</Link>
 					</li>
 				</ul>

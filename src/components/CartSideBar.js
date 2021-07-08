@@ -166,7 +166,7 @@ function CartSideBar() {
 						<div>FREE</div>
 					</div>
 					<StripeCheckout
-						close={onClose}
+						token={onClose}
 						name="NZXT-CLONE"
 						description={totalString}
 						stripeKey="pk_test_51IFWJgEwYzftIafUrf5P4aScZ8sNUpfns1XxIpmEnSmzyRfRVRS1bikIXFwB2pBcIKgxGPJFC9q4TGDZZJ6iM85k00FSFuGFdt"
