@@ -27,7 +27,7 @@ function SingleProductHero({ filter }) {
 					stock,
 					cartImage,
 				} = product;
-				const amount = 1;
+				let amount = 1;
 				return (
 					<div className="single-product-page">
 						<div className="display-images">
@@ -64,7 +64,13 @@ function SingleProductHero({ filter }) {
 							<div className="add-to-cart">
 								<div className="amount">
 									<p className="quant">QTY</p>
-									<select type="text" className="selector">
+									<select
+										type="text"
+										className="selector"
+										onChange={(event) =>
+											(amount = parseInt(event.target.value) * 1)
+										}
+									>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
