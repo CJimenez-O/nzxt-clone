@@ -51,7 +51,11 @@ function Crft() {
 				<div className="cam">
 					<h3>NZXT CAM</h3>
 					<h6>The Best Gaming PC Monitoring App</h6>
-					<Link className="link" style={{ textDecoration: "none" }}>
+					<Link
+						className="link"
+						to="/software"
+						style={{ textDecoration: "none" }}
+					>
 						Learn More
 					</Link>
 					<img src="https://nzxt.com/assets/cms/34299/1620336914-cam-home-page.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"></img>
@@ -59,7 +63,11 @@ function Crft() {
 				<div className="cam">
 					<h3>Starter Series</h3>
 					<h6>Prebuilt PCs to Start any Gaming Journey</h6>
-					<Link className="link" style={{ textDecoration: "none" }}>
+					<Link
+						className="link"
+						to="/collection/starter-pc"
+						style={{ textDecoration: "none" }}
+					>
 						Learn More
 					</Link>
 					<img src="https://nzxt.com/assets/cms/34299/1620339562-starter-series-home-page-2x.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"></img>
