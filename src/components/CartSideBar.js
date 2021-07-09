@@ -65,8 +65,8 @@ function CartSideBar() {
 				<div className="button-links">
 					<div className="browse">
 						<Link
+							onClick={closeCart}
 							className="browse-btn"
-							to="/"
 							style={{ textDecoration: "none" }}
 						>
 							Keep Browsing
@@ -74,11 +74,12 @@ function CartSideBar() {
 					</div>
 					<div className="build">
 						<Link
+							onClick={closeCart}
 							className="build-btn"
-							to="/"
+							to="/collection/starter-pc"
 							style={{ textDecoration: "none" }}
 						>
-							Create Build
+							Prebuilt PCs
 						</Link>
 					</div>
 				</div>

@@ -23,12 +23,14 @@ import Puck from "./pages/Puck";
 import PanPuck from "./pages/PanPuck";
 import AuthWrapper from "./pages/AuthWrapper";
 import CartSideBar from "./components/CartSideBar";
+import H710 from "./pages/Pc-building/H710Page";
+import H710Prod from "./pages/Pc-building/H710SingleProd";
+import H710i from "./pages/Pc-building/H710i";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
 import Checkout from "./pages/CheckoutPage";
 import { links } from "./link";
-import Child from "./components/child";
 import Error from "./pages/ErrorPage";
 import MailingForm from "./components/mailingListForm";
 import CheckoutPage from "./pages/CheckoutPage";
@@ -76,8 +78,17 @@ function App() {
 					<Route exact path="/collection/product/h1-mini-pc">
 						<MiniPcProd />
 					</Route>
+					<Route exact path="/collection/h710">
+						<H710 />
+					</Route>
+					<Route exact path="/product/h710">
+						<H710Prod />
+					</Route>
 					<Route exact path="/product/standard-mouse-pad">
 						<MousePad />
+					</Route>
+					<Route exact path="/product/h710i">
+						<H710Prod />
 					</Route>
 					<Route exact path="/product/large-mouse-pad">
 						<LargeMousePad />

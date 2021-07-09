@@ -180,5 +180,43 @@
 		"inside": ["Pan Puck"],
 		"instock": true,
 		"stock": 20
+	},
+	{
+		"id": "/product/h710",
+		"name": "H710",
+		"sub": "Mid-Tower Case with Tempered Glass",
+		"price": 15999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615567632-h710-white-black-mainw-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615567632-h710-white-black-mainw-system.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615567642-h710-white-black-system-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615567693-h710-whiteblack-no-system-rear.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fnzxt-products%2F116%2F240%2Fmain_5ec553ea04dd2.jpg&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This mid-tower case is excellent for ambitious builds with plenty of space for 360mm AIOs and other premium components while bringing the easy-to-build-in features of the compact H510 case series.",
+		"inside": ["H710 Case"],
+		"category": "collection/h710",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/h710i",
+		"name": "H710i",
+		"sub": "Mid-Tower Case with RGB",
+		"price": 17999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615570836-h710i-2020-white-black-kraken-x-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615567632-h710-white-black-mainw-system.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615570815-h710i-2020-white-black-kraken-x-system-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615570887-h710i-whiteblack-no-system-rear.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fsta3-nzxtcorporation.netdna-ssl.com%2Fuploads%2Fproduct%2Fcover_image_content%2F829%2Fcard_a2e260eb03ee5b76.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This mid-tower case is excellent for ambitious builds with plenty of space for large or premium components plus two RGB strips and intuitive RGB and fan control with NZXT CAM while bringing the easy-to-build-in features of the compact H510 case series.",
+		"inside": ["H710 Case"],
+		"category": "collection/h710",
+		"instock": true,
+		"stock": 20
 	}
 ]

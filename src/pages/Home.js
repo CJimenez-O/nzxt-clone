@@ -34,13 +34,13 @@ function Home() {
 						src="https://nzxt.com/assets/cms/34299/1618960827-elite5grid.png?auto=format&dpr=1.5&fit=max&fm=webp&h=900&w=900"
 					/>
 					<h2>Gaming PCs Made Simple</h2>
-					<p>Choose from curated parts and we’ll build it for you</p>
+					<p>Content creation hs never been easier</p>
 					<Link
-						to="/components"
+						to="/collection/creator"
 						className="start_button"
 						style={{ textDecoration: "none" }}
 					>
-						Start Your Build
+						Shop Now
 					</Link>
 				</div>
 				<div>

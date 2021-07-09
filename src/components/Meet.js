@@ -16,7 +16,11 @@ function Meet() {
 						highest quality: to make creating extraordinary PCs achievable and
 						fun for all gamers.
 					</p>
-					<Link className="founder-button" style={{ textDecoration: "none" }}>
+					<Link
+						to="/company"
+						className="founder-button"
+						style={{ textDecoration: "none" }}
+					>
 						Read More{" "}
 					</Link>
 				</div>

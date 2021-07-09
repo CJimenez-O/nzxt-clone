@@ -11,7 +11,30 @@ function SingleProductHero({ filter }) {
 		(product) => product.name === filter
 	);
 
-	console.log(DisplayedProducts);
+	let onSwitch = false;
+	let filterProd = [
+		"Starter-PC",
+		"Streaming Pro PC",
+		"The Starter",
+		"Starter Plus",
+		"Creator PC",
+		"H1 Mini PC",
+	];
+
+	for (let i = 0; i < filterProd.length; i++) {
+		console.log(filter, filterProd[i]);
+		if (filter === filterProd[i]) {
+			console.log("match");
+			onSwitch = true;
+			i = filterProd.length;
+		} else {
+			onSwitch = false;
+		}
+	}
+
+	console.log(DisplayedProducts[0].name);
+	console.log(onSwitch);
+
 	return (
 		<Wrapper>
 			{DisplayedProducts.map((product) => {
@@ -93,7 +116,12 @@ function SingleProductHero({ filter }) {
 								</div>
 								<p className="product-info">{description}</p>
 							</div>
-							<div className="performance">
+							<div
+								style={{
+									display: `${onSwitch ? "block" : "none"}`,
+								}}
+								className="performance"
+							>
 								<div className="perform-title">
 									<span>Performance</span>
 								</div>
