@@ -24,7 +24,6 @@ function SingleProductHero({ filter }) {
 	for (let i = 0; i < filterProd.length; i++) {
 		console.log(filter, filterProd[i]);
 		if (filter === filterProd[i]) {
-			console.log("match");
 			onSwitch = true;
 			i = filterProd.length;
 		} else {

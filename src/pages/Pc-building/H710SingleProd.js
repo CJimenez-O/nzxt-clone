@@ -6,7 +6,7 @@ import ProductDisplay from "../../components/singleProductHero";
 function H710PcProduct() {
 	return (
 		<div>
-			<ProductDisplay filter="H710i" />
+			<ProductDisplay filter="H710" />
 			<Suggestion />
 			<Footer />
 		</div>

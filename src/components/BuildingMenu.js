@@ -15,7 +15,7 @@ function BuildingMenu() {
 				<div className="link-list">
 					<h4 className="nav-title">CASES</h4>
 					<Link
-						to="/collection/starter-pc"
+						to="/collection/h710"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}

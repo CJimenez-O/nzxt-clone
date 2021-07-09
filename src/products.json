@@ -184,7 +184,7 @@
 	{
 		"id": "/product/h710",
 		"name": "H710",
-		"sub": "Mid-Tower Case with Tempered Glass",
+		"sub": "Mid-Tower w/ Tempered Glass",
 		"price": 15999,
 		"displayImage": "https://nzxt.com/assets/cms/34299/1615567632-h710-white-black-mainw-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
 		"images": [
@@ -203,7 +203,7 @@
 	{
 		"id": "/product/h710i",
 		"name": "H710i",
-		"sub": "Mid-Tower Case with RGB",
+		"sub": "Mid-Tower Case w/ RGB",
 		"price": 17999,
 		"displayImage": "https://nzxt.com/assets/cms/34299/1615570836-h710i-2020-white-black-kraken-x-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
 		"images": [
