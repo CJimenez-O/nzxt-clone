@@ -18,11 +18,11 @@ function cartReducer(state, action) {
 	if (action.type === "ADD_TO_CART") {
 		const { cartImage, name, price, color, id, amount, stock } = action.payload;
 
-		console.log("name:" + name);
-		console.log("id:" + id);
+		// console.log("name:" + name);
+		// console.log("id:" + id);
 		console.log("amount:" + amount);
-		console.log("image:" + cartImage);
-		console.log("price:" + price);
+		// console.log("image:" + cartImage);
+		// console.log("price:" + price);
 
 		const tempItem = state.cart.find((i) => i.id === id);
 		if (tempItem) {
@@ -43,8 +43,8 @@ function cartReducer(state, action) {
 			const newItem = {
 				id: id,
 				name: name,
-				color: "white",
-				amount: 1,
+				color: color,
+				amount: amount,
 				image: cartImage,
 				price: price,
 				max: stock,

@@ -22,7 +22,6 @@ function SingleProductHero({ filter }) {
 	];
 
 	for (let i = 0; i < filterProd.length; i++) {
-		console.log(filter, filterProd[i]);
 		if (filter === filterProd[i]) {
 			onSwitch = true;
 			i = filterProd.length;
@@ -31,8 +30,11 @@ function SingleProductHero({ filter }) {
 		}
 	}
 
-	console.log(DisplayedProducts[0].name);
-	console.log(onSwitch);
+	function calcAmount(event, amount) {
+		amount = parseInt(event.target.value) * 1;
+		console.log(parseInt(event.target.value));
+		console.log(amount);
+	}
 
 	return (
 		<Wrapper>
