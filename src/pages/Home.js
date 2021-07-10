@@ -13,7 +13,7 @@ function Home() {
 					<h1>Meet the H510 Series</h1>
 					<h5>Quiet, cool, and brilliant.</h5>
 					<Link
-						to="/components"
+						to="/collection/h510"
 						className="button"
 						style={{ textDecoration: "none" }}
 					>
@@ -255,6 +255,13 @@ const MainContainer = styled.div`
 		height: 50%;
 		padding-left: 20px;
 		margin-top: 20px;
+		cursor: pointer;
+	}
+
+	.products:hover {
+		-moz-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+		-webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+		box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 	}
 
 	.prod_display {

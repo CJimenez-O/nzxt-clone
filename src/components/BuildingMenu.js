@@ -24,7 +24,7 @@ function BuildingMenu() {
 						<p className="sub">Mid-Tower</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/h510"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}
@@ -33,7 +33,7 @@ function BuildingMenu() {
 						<p className="sub">Mid-Tower</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/h210"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}

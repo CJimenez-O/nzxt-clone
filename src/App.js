@@ -32,6 +32,8 @@ import H510i from "./pages/Pc-building/H510i";
 import H210Page from "./pages/Pc-building/H210Page";
 import H210 from "./pages/Pc-building/H210SingleProd";
 import H210i from "./pages/Pc-building/H210i";
+import H1 from "./pages/Pc-building/H1Page";
+import H1Prod from "./pages/Pc-building/H1Prod";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
@@ -110,6 +112,12 @@ function App() {
 					</Route>
 					<Route exact path="/product/h210i">
 						<H210i />
+					</Route>
+					<Route exact path="/collection/h1">
+						<H1 />
+					</Route>
+					<Route exact path="/product/h1">
+						<H1Prod />
 					</Route>
 					<Route exact path="/product/standard-mouse-pad">
 						<MousePad />

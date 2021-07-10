@@ -294,5 +294,24 @@
 		"category": "collection/h210",
 		"instock": true,
 		"stock": 20
+	},
+	{
+		"id": "/product/h1",
+		"name": "H1",
+		"sub": "13-liter Mini-ITX",
+		"price": 34999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615553936-h1-white-black-hero-left-no-eps-less-dramatic-with-mb-gpu.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615553936-h1-white-black-hero-left-no-eps-less-dramatic-with-mb-gpu.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615553982-h1-gpu-side-with-mb.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615553952-h1-white-black-exploded-all.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fsta3-nzxtcorporation.netdna-ssl.com%2Fuploads%2Fproduct_image%2Fimage%2F2978%2Fcover_f6dd6bcf1dc5957e.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "The H1 is a small form factor case without the hassle, with pre-routed cables and an integrated PSU, AIO, and PCIe Gen3 Riser cable.",
+		"inside": ["H1 Case"],
+		"category": "collection/h1",
+		"instock": true,
+		"stock": 20
 	}
 ]
