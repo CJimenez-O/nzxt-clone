@@ -218,5 +218,81 @@
 		"category": "collection/h710",
 		"instock": true,
 		"stock": 20
+	},
+	{
+		"id": "/product/h510",
+		"name": "H510",
+		"sub": "Compact mid-tower",
+		"price": 7499,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1617970872-h510-white-black-mainw-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615567632-h710-white-black-mainw-system.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1617970853-h510-white-black-system-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1617970881-h510-whiteblack-frontfilter-bottomfilter-explore.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/assets/cms/34299/1617970853-h510-white-black-system-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"colors": ["#fff", "#000"],
+		"description": "This compact mid-tower is an ideal case for the majority of builds. The H510 is easy-to-build-in and offers flexibility for a variety of ATX parts.",
+		"inside": ["H510 Case"],
+		"category": "collection/h510",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/h510i",
+		"name": "H510i",
+		"sub": "Compact mid-tower w/ RGB",
+		"price": 10999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1617971513-h510i-2020-white-black-kraken-x-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1617971513-h510i-2020-white-black-kraken-x-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+			"https://nzxt.com/assets/cms/34299/1617971377-h510i-whiteblack-no-system-no-glass-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1617971504-h510i-whiteblack-frontfilter-bottomfilter-explore.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/assets/cms/34299/1617971513-h510i-2020-white-black-kraken-x-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"colors": ["#fff", "#000"],
+		"description": "Taking it a step up from the H510, the H510i brings even more features to the H Series.",
+		"inside": ["H510i Case"],
+		"category": "collection/h510",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/h210",
+		"name": "H210",
+		"sub": "Mini-ITX w/ tempered glass",
+		"price": 7999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615555828-h210-white-black-mainw-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615555828-h210-white-black-mainw-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+			"https://nzxt.com/assets/cms/34299/1615555897-h210-white-black-system-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615555088-h210-blackblack-no-system-rear.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fnzxt-products%2F93%2F200%2Fmain_5ec553ca92600.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This Mini-ITX tower is an excellent case for smaller form-factor builds. The H210 is easy-to-build-in and offers flexibility for a variety of Mini-ITX parts.",
+		"inside": ["H210 Case"],
+		"category": "collection/h210",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/h210i",
+		"name": "H210i",
+		"sub": "Mini-ITX w/ RGB",
+		"price": 10999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615556894-h210i-2020-white-black-kraken-x-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615556894-h210i-2020-white-black-kraken-x-system.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+			"https://nzxt.com/assets/cms/34299/1615556882-h210i-2020-white-black-kraken-x-system-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615555088-h210-blackblack-no-system-rear.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fnzxt-products%2F93%2F200%2Fmain_5ec553ca92600.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This Mini-ITX tower is an excellent case for smaller form-factor builds. The H210 is easy-to-build-in and offers flexibility for a variety of Mini-ITX parts.",
+		"inside": ["H210i Case"],
+		"category": "collection/h210",
+		"instock": true,
+		"stock": 20
 	}
 ]

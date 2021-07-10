@@ -26,6 +26,12 @@ import CartSideBar from "./components/CartSideBar";
 import H710 from "./pages/Pc-building/H710Page";
 import H710Prod from "./pages/Pc-building/H710SingleProd";
 import H710i from "./pages/Pc-building/H710i";
+import H510Page from "./pages/Pc-building/H510Page";
+import H510 from "./pages/Pc-building/H510SingleProd";
+import H510i from "./pages/Pc-building/H510i";
+import H210Page from "./pages/Pc-building/H210Page";
+import H210 from "./pages/Pc-building/H210SingleProd";
+import H210i from "./pages/Pc-building/H210i";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
@@ -84,11 +90,29 @@ function App() {
 					<Route exact path="/product/h710">
 						<H710Prod />
 					</Route>
+					<Route exact path="/product/h710i">
+						<H710i />
+					</Route>
+					<Route exact path="/collection/h510">
+						<H510Page />
+					</Route>
+					<Route exact path="/product/h510">
+						<H510 />
+					</Route>
+					<Route exact path="/product/h510i">
+						<H510i />
+					</Route>
+					<Route exact path="/collection/h210">
+						<H210Page />
+					</Route>
+					<Route exact path="/product/h210">
+						<H210 />
+					</Route>
+					<Route exact path="/product/h210i">
+						<H210i />
+					</Route>
 					<Route exact path="/product/standard-mouse-pad">
 						<MousePad />
-					</Route>
-					<Route exact path="/product/h710i">
-						<H710Prod />
 					</Route>
 					<Route exact path="/product/large-mouse-pad">
 						<LargeMousePad />

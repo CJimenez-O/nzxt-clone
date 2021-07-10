@@ -30,10 +30,8 @@ function SingleProductHero({ filter }) {
 		}
 	}
 
-	function calcAmount(event, amount) {
-		amount = parseInt(event.target.value) * 1;
-		console.log(parseInt(event.target.value));
-		console.log(amount);
+	function reset(event) {
+		event.target.value = 1;
 	}
 
 	return (
