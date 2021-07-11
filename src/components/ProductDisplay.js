@@ -7,7 +7,7 @@ import { formatPrice } from "../helpers";
 import { useCartContext } from "../context/cart_context";
 
 function ProductDisplay({ filter, title, details, height }) {
-	const { addToCart } = useCartContext();
+	const { addToCart, whiteChosen, blackChosen } = useCartContext();
 	const DisplayedProducts = Products.filter(
 		(product) => product.category === filter
 	);
@@ -57,10 +57,10 @@ function ProductDisplay({ filter, title, details, height }) {
 									<div className="selection">
 										<h4>{formatPrice(price)}</h4>
 										<div className="colors">
-											<button className="black color-btn">
+											<button onClick={blackChosen} className="black color-btn">
 												<FaCircle />
 											</button>
-											<button className="white color-btn">
+											<button onClick={whiteChosen} className="white color-btn">
 												<FaCircle />
 											</button>
 										</div>

@@ -6,7 +6,7 @@ import { formatPrice } from "../helpers";
 import { useCartContext } from "../context/cart_context";
 
 function SingleProductHero({ filter }) {
-	const { addToCart, whiteChosen, blackChosen } = useCartContext();
+	const { addToCart, whiteChosen, blackChosen, colorChosen } = useCartContext();
 	const DisplayedProducts = Products.filter(
 		(product) => product.name === filter
 	);
@@ -73,7 +73,7 @@ function SingleProductHero({ filter }) {
 								</div>
 							</div>
 							<div className="color-selection">
-								<p>Color:</p>
+								<p>Color:{colorChosen}</p>
 								<div className="colors">
 									<button onClick={blackChosen} className="black color-btn">
 										<FaCircle />
@@ -102,7 +102,15 @@ function SingleProductHero({ filter }) {
 								</div>
 								<button
 									onClick={() =>
-										addToCart(cartImage, name, price, color, id, amount, stock)
+										addToCart(
+											cartImage,
+											name,
+											price,
+											colorChosen,
+											id,
+											amount,
+											stock
+										)
 									}
 									className="cart-button"
 								>

@@ -31,7 +31,7 @@ const initialState = {
 	shipping_fee: 534,
 	whiteColor: false,
 	blackColor: false,
-	color: "",
+	colorChosen: "",
 };
 
 const CartContext = React.createContext();
@@ -62,6 +62,7 @@ export const CartProvider = ({ children }) => {
 				name,
 				id,
 				price,
+				color,
 				amount,
 				stock,
 			},

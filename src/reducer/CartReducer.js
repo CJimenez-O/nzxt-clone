@@ -1,10 +1,10 @@
 function cartReducer(state, action) {
 	if (action.type === "COLOR_WHITE") {
 		// console.log(action);
-		return { ...state, color: "White" };
+		return { ...state, colorChosen: "White" };
 	}
 	if (action.type === "COLOR_BLACK") {
-		return { ...state, color: "Black" };
+		return { ...state, colorChosen: "Black" };
 	}
 
 	if (action.type === "CART_OPEN") {
@@ -20,7 +20,8 @@ function cartReducer(state, action) {
 
 		// console.log("name:" + name);
 		// console.log("id:" + id);
-		console.log("amount:" + amount);
+		// console.log("amount:" + amount);
+		console.log("color:" + color);
 		// console.log("image:" + cartImage);
 		// console.log("price:" + price);
 
