@@ -34,6 +34,9 @@ import H210 from "./pages/Pc-building/H210SingleProd";
 import H210i from "./pages/Pc-building/H210i";
 import H1 from "./pages/Pc-building/H1Page";
 import H1Prod from "./pages/Pc-building/H1Prod";
+import CRFT from "./pages/Pc-building/Crft";
+import Val from "./pages/Pc-building/val";
+import Nuka from "./pages/Pc-building/Nuka";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
@@ -118,6 +121,15 @@ function App() {
 					</Route>
 					<Route exact path="/product/h1">
 						<H1Prod />
+					</Route>
+					<Route exact path="/collection/crft">
+						<CRFT />
+					</Route>
+					<Route exact path="/product/h700-nuka-cola">
+						<Nuka />
+					</Route>
+					<Route exact path="/product/h510-valhalla">
+						<Val />
 					</Route>
 					<Route exact path="/product/standard-mouse-pad">
 						<MousePad />

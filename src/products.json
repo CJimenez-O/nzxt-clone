@@ -313,5 +313,43 @@
 		"category": "collection/h1",
 		"instock": true,
 		"stock": 20
+	},
+	{
+		"id": "/product/h510-valhalla",
+		"name": "H510 Valhalla",
+		"sub": "Limited Edition Compact Mid-Tower",
+		"price": 24999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1621467546-h510-valhalla-side-front.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1621467546-h510-valhalla-side-front.png?ar=1%3A1&auto=format&bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=400&w=400",
+			"https://nzxt.com/assets/cms/34299/1621467420-h510-valhalla-full-front.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1621467532-h510-valhalla-side.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FxueKPR.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This H510 is fit for a Viking down to the last detail. The motherboard tray appears in Assassin's Creed Valhalla thematic colors. The limited edition puck has been crafted in the design of Eivor's crested shield, with a removable arrow.",
+		"inside": ["H510 Valhalla Case"],
+		"category": "collection/crft",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/h700-nuka-cola",
+		"name": "H700 Nuka-Cola",
+		"sub": "Limited Edition Compact Mid-Tower",
+		"price": 29999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1621181706-01h700-nuka-cola-main.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1621181706-01h700-nuka-cola-main.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1621181785-07h700-nuka-cola-left.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1621181751-04h700-nuka-cola-front.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/assets/cms/34299/1621181706-01h700-nuka-cola-main.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"colors": ["#fff", "#000"],
+		"description": "NZXT has teamed up with Bethesda to bring you the H700 in an all-new Nuka-Cola flavor.",
+		"inside": ["H700 Nuka-Cola"],
+		"category": "collection/crft",
+		"instock": true,
+		"stock": 20
 	}
 ]

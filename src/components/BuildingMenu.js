@@ -42,7 +42,7 @@ function BuildingMenu() {
 						<p className="sub">Mini-ITX</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/h1"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}
@@ -51,7 +51,7 @@ function BuildingMenu() {
 						<p className="sub">Small Form Mini ITX</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/crft"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}

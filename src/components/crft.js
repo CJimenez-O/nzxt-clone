@@ -18,7 +18,11 @@ function Crft() {
 							This custom Assassin's Creed Valhalla Case + Charm + Puck is our
 							latest drop.
 						</p>
-						<Link className="see_button" style={{ textDecoration: "none" }}>
+						<Link
+							to="/collection/crft"
+							className="see_button"
+							style={{ textDecoration: "none" }}
+						>
 							See Collection
 						</Link>
 					</div>
