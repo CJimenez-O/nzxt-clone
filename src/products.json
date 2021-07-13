@@ -351,5 +351,81 @@
 		"category": "collection/crft",
 		"instock": true,
 		"stock": 20
+	},
+	{
+		"id": "/product/KrakenZ53",
+		"name": "Kraken Z53",
+		"sub": "240mm Liquid Cooler with LCD Display",
+		"price": 22999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615586090-kraken-z53frontbnwith-fanui.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615586090-kraken-z53frontbnwith-fanui.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615586099-kraken-z53frontmainno-fanmainui.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615586152-kraken-zpumpfrontuinzxt.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fnzxt-products%2F28%2F52%2Fmain_5ec447a01b96c.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This All-in-One (AIO) liquid cooler is designed with the ability to fit comfortably in most cases. Show CPU/GPU temperatures or customize with GIFs with the Kraken Z LCD display.",
+		"inside": ["Kraken Z53"],
+		"category": "collection/krakenz",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/KrakenZ63",
+		"name": "Kraken Z63",
+		"sub": "280mm Liquid Cooler with LCD Display",
+		"price": 24999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615586090-kraken-z53frontbnwith-fanui.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615586090-kraken-z53frontbnwith-fanui.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615586099-kraken-z53frontmainno-fanmainui.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615586152-kraken-zpumpfrontuinzxt.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fnzxt-products%2F28%2F52%2Fmain_5ec447a01b96c.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This All-in-One (AIO) liquid cooler is designed with the ability to fit comfortably in most cases. Show CPU/GPU temperatures or customize with GIFs with the Kraken Z LCD display.",
+		"inside": ["Kraken Z63"],
+		"category": "collection/krakenz",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/Krakenx53",
+		"name": "Kraken X53",
+		"sub": "240mm Liquid Cooler",
+		"price": 12999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615583243-kraken-x53frontbnwith-fanpurple.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615583243-kraken-x53frontbnwith-fanpurple.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615583225-kraken-xpumpfrontanglerainbow.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615410841-kraken-xpumpexploded.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fsta3-nzxtcorporation.netdna-ssl.com%2Fuploads%2Fproduct_image%2Fimage%2F2957%2Fcover_7a5f083cb90003f9.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This All-in-One (AIO) liquid cooler is designed with the ability to fit comfortably in most cases, with two 120mm Aer P radiator fans it keeps CPU performance high while keeping temperatures down.",
+		"inside": ["Kraken X53"],
+		"category": "collection/krakenx",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/Krakenx53-rgb",
+		"name": "Kraken X53 RGB",
+		"sub": "240mm Liquid Cooler",
+		"price": 15999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615584271-kraken-x53-rgbsfrontbnwith-purple-fan.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615584271-kraken-x53-rgbsfrontbnwith-purple-fan.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615584324-kraken-xpumpfrontanglerainbow.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615584282-kraken-x53-rgbs-h710isystemside-rgb.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fsta3-nzxtcorporation.netdna-ssl.com%2Fuploads%2Fproduct_image%2Fimage%2F2957%2Fcover_7a5f083cb90003f9.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This All-in-One (AIO) liquid cooler is designed with the ability to fit comfortably in most cases. With two 120mm Aer RGB 2 radiator fans it adds RGB lighting while keeping CPU performance high and keeping temperatures down.",
+		"inside": ["Kraken X53 RGB"],
+		"category": "collection/krakenx",
+		"instock": true,
+		"stock": 20
 	}
 ]

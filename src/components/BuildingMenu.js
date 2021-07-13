@@ -63,7 +63,7 @@ function BuildingMenu() {
 				<div className="link-list mid">
 					<h4 className="nav-title">COOLING</h4>
 					<Link
-						to="/collection/starter-pc"
+						to="/collection/kraken-z"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}
@@ -72,7 +72,7 @@ function BuildingMenu() {
 						<p className="sub">AIO Liquid Cooler with LCD Display</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/kraken-x"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}

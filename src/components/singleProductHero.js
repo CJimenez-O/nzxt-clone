@@ -73,7 +73,9 @@ function SingleProductHero({ filter }) {
 								</div>
 							</div>
 							<div className="color-selection">
-								<p>Color:{colorChosen}</p>
+								<p>
+									Color: <span className="colorChosen">{colorChosen}</span>
+								</p>
 								<div className="colors">
 									<button onClick={blackChosen} className="black color-btn">
 										<FaCircle />
@@ -263,6 +265,9 @@ const Wrapper = styled.div`
 		padding-top: 20px;
 		padding-bottom: 20px;
 		border-top: 1px solid lightgray;
+	}
+	.colorChosen {
+		margin-left: 3px;
 	}
 	.color-btn {
 		border-radius: 50px;

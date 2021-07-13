@@ -37,6 +37,12 @@ import H1Prod from "./pages/Pc-building/H1Prod";
 import CRFT from "./pages/Pc-building/Crft";
 import Val from "./pages/Pc-building/val";
 import Nuka from "./pages/Pc-building/Nuka";
+import KrakenZPage from "./pages/Pc-building/Cooling/KrankenZPage";
+import Z53 from "./pages/Pc-building/Cooling/Z53";
+import Z63 from "./pages/Pc-building/Cooling/Z63";
+import KrakenX from "./pages/Pc-building/Cooling/KrakenXPage";
+import X53 from "./pages/Pc-building/Cooling/X53.js";
+import X53RGB from "./pages/Pc-building/Cooling/X53RGB";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
@@ -131,6 +137,25 @@ function App() {
 					<Route exact path="/product/h510-valhalla">
 						<Val />
 					</Route>
+					<Route exact path="/collection/kraken-z">
+						<KrakenZPage />
+					</Route>
+					<Route exact path="/product/KrakenZ53">
+						<Z53 />
+					</Route>
+					<Route exact path="/product/KrakenZ63">
+						<Z63 />
+					</Route>
+					<Route exact path="/collection/kraken-x">
+						<KrakenX />
+					</Route>
+					<Route exact path="/product/Krakenx53">
+						<X53 />
+					</Route>
+					<Route exact path="/product/Krakenx53-rgb">
+						<X53RGB />
+					</Route>
+
 					<Route exact path="/product/standard-mouse-pad">
 						<MousePad />
 					</Route>
