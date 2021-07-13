@@ -4,6 +4,9 @@ import Footer from "../components/Footer";
 import ProductDisplay from "../components/singleProductHero";
 
 function Puck() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<ProductDisplay filter="Puck" />

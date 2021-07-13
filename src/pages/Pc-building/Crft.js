@@ -10,6 +10,9 @@ import Footer from "../../components/Footer";
 import ProductDisplay from "../../components/ProductDisplay";
 
 function CRFT() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<Wrapper>
 			<ProductHero

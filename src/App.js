@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
@@ -43,6 +43,11 @@ import Z63 from "./pages/Pc-building/Cooling/Z63";
 import KrakenX from "./pages/Pc-building/Cooling/KrakenXPage";
 import X53 from "./pages/Pc-building/Cooling/X53.js";
 import X53RGB from "./pages/Pc-building/Cooling/X53RGB";
+import M22Page from "./pages/Pc-building/Cooling/KrakenMPage";
+import M22 from "./pages/Pc-building/Cooling/M22";
+import AERPage from "./pages/Pc-building/Cooling/AERPage";
+import AERRGB from "./pages/Pc-building/Cooling/AERRGB";
+import AERF from "./pages/Pc-building/Cooling/AERF";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
@@ -155,7 +160,21 @@ function App() {
 					<Route exact path="/product/Krakenx53-rgb">
 						<X53RGB />
 					</Route>
-
+					<Route exact path="/collection/kraken-m">
+						<M22Page />
+					</Route>
+					<Route exact path="/product/Krakenm22">
+						<M22 />
+					</Route>
+					<Route exact path="/collection/aer">
+						<AERPage />
+					</Route>
+					<Route exact path="/product/aer-rgb">
+						<AERRGB />
+					</Route>
+					<Route exact path="/product/aer-f">
+						<AERF />
+					</Route>
 					<Route exact path="/product/standard-mouse-pad">
 						<MousePad />
 					</Route>

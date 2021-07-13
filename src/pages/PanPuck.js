@@ -4,6 +4,9 @@ import Footer from "../components/Footer";
 import ProductDisplay from "../components/singleProductHero";
 
 function PanPuck() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<ProductDisplay filter="Pan Puck" />

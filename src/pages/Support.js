@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 
 function Support() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<SupportContainer>
 			<div className="support-hero">

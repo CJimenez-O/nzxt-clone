@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ProductHero from "../components/ProductHero";
 import ProductImageLeft from "../components/productFlexLeft";
@@ -15,6 +15,9 @@ import MailForm from "../components/mailingListForm";
 import { Link } from "react-router-dom";
 
 function StreamingPc() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<StreamerPc>
 			<ProductHero

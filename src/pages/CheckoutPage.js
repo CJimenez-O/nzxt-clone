@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 // if cart has nothing inside display its empty else
 
 const CheckoutPage = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<main>
 			<Wrapper>

@@ -4,6 +4,9 @@ import Footer from "../../../components/Footer";
 import ProductDisplay from "../../../components/singleProductHero";
 
 function X53() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<ProductDisplay filter="Kraken X53 RGB" />

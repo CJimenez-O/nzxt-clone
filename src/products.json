@@ -427,5 +427,62 @@
 		"category": "collection/krakenx",
 		"instock": true,
 		"stock": 20
+	},
+	{
+		"id": "/product/Krakenm22",
+		"name": "Kraken M22",
+		"sub": "120mm Liquid Cooler",
+		"price": 7999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615582998-kraken-m22-new-shot-34-main.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615582998-kraken-m22-new-shot-34-main.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615582989-krakenm22frontangledpumpnofanwhite.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615583017-krakenm22pumppurple.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fnzxt-products%2F9%2F17%2Fmain_5ec4467d2d929.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "Get liquid cooling that fits almost anywhere you need it.",
+		"inside": ["Kraken M22"],
+		"category": "collection/krakenm",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/aer-rgb",
+		"name": "Aer RGB 2 120mm",
+		"sub": "RGB case fan",
+		"price": 2799,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615574112-aerrgb120frontrainbow.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615574112-aerrgb120frontrainbow.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615574139-aer-rgb-single-fan-120-1rainbow.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615574211-aer-rgb-single-fan-120-leftrainbow.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FJHDCP1.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "These RGB case fans deliver optimal airﬂow and advanced lighting effects powered by NZXT CAM.",
+		"inside": ["Aer RGB 2 120mm"],
+		"category": "collection/aer",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/aer-f",
+		"name": "Aer F 120mm",
+		"sub": "RGB case fan",
+		"price": 1799,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615571722-aer-f-120white-main-front.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615571722-aer-f-120white-main-front.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615571711-aer-f-120gray-front45.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615571732-aer-f-120-rear.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fsta3-nzxtcorporation.netdna-ssl.com%2Fuploads%2Fproduct%2Fcover_image_content%2F759%2Fcard_b3811588b0639c2f.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This performance case fan is designed to efficiently maximize airflow through any build.",
+		"inside": ["Aer F 120mm"],
+		"category": "collection/aer",
+		"instock": true,
+		"stock": 20
 	}
 ]

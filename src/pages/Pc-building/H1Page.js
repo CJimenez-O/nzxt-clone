@@ -10,6 +10,9 @@ import Footer from "../../components/Footer";
 import ProductDisplay from "../../components/SingleProductDisplay";
 
 function H1() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<Wrapper>
 			<ProductHero

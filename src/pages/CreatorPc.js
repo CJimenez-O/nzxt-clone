@@ -16,6 +16,9 @@ import MailForm from "../components/mailingListForm";
 import { Link } from "react-router-dom";
 
 function CreatorPc() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<ProductHero

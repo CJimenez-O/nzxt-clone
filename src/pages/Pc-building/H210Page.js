@@ -9,6 +9,9 @@ import Footer from "../../components/Footer";
 import ProductDisplay from "../../components/ProductDisplay";
 
 function H210() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<Wrapper>
 			<ProductHero

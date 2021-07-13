@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Suggestion from "../../../components/suggest";
 import Footer from "../../../components/Footer";
 import ProductDisplay from "../../../components/singleProductHero";
 
-function Z63() {
-	React.useEffect(() => {
+function AER() {
+	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
 		<div>
-			<ProductDisplay filter="Kraken Z63" />
+			<ProductDisplay filter="Aer RGB 2 120mm" />
 			<Suggestion />
 			<Footer />
 		</div>
 	);
 }
 
-export default Z63;
+export default AER;

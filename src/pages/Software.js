@@ -8,6 +8,9 @@ import Footer from "../components/CustomeFooter";
 import { Link } from "react-router-dom";
 
 function Software() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<SoftwareContainer>
 			<div className="software-content">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Crft from "../components/crft";
@@ -6,6 +6,9 @@ import Meet from "../components/Meet";
 import Footer from "../components/Footer";
 
 function Home() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<MainContainer>
 			<div className="landing">
@@ -46,51 +49,71 @@ function Home() {
 				<div>
 					<div className="flex">
 						<div className="products">
-							<h3 className="title">CRFT 08: H510</h3>
-							<div className="prod_display">
-								<div className="description">
-									<p className="sub-title">Build The Legend</p>
-									<p className="company">CRFT</p>
+							<Link
+								to="/product/h510-valhalla"
+								style={{ textDecoration: "none", color: "black" }}
+							>
+								<h3 className="title">CRFT 08: H510</h3>
+								<div className="prod_display">
+									<div className="description">
+										<p className="sub-title">Build The Legend</p>
+										<p className="company">CRFT</p>
+									</div>
+									<img src="https://www.datocms-assets.com/34299/1621467509-h510-valhalla-rear-with-cover.png?auto=format&fit=max&h=460&w=654"></img>
 								</div>
-								<img src="https://www.datocms-assets.com/34299/1621467509-h510-valhalla-rear-with-cover.png?auto=format&fit=max&h=460&w=654"></img>
-							</div>
+							</Link>
 						</div>
 						<div className="products">
-							<h3 className="title">Kraken X RGB </h3>
-							<div className="prod_display">
-								<div className="description">
-									<p className="sub-title">
-										Liquid Cooler with Infinity Mirror Display
-									</p>
-									<p className="company">Kraken X</p>
+							<Link
+								to="/product/Krakenx53-rgb"
+								style={{ textDecoration: "none", color: "black" }}
+							>
+								<h3 className="title">Kraken X RGB </h3>
+								<div className="prod_display">
+									<div className="description">
+										<p className="sub-title">
+											Liquid Cooler with Infinity Mirror Display
+										</p>
+										<p className="company">Kraken X</p>
+									</div>
+									<img
+										className="cooler"
+										src="https://nzxt.com/assets/cms/34299/1615584271-kraken-x53-rgbsfrontbnwith-purple-fan.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+									></img>
 								</div>
-								<img
-									className="cooler"
-									src="https://www.datocms-assets.com/34299/1615738803-kraken-x73-rgb-keyshot.png?auto=format&fit=max&h=460&w=654"
-								></img>
-							</div>
+							</Link>
 						</div>
 					</div>
 					<div className="flex">
 						<div className="products">
-							<h3 className="title">Kraken Z </h3>
-							<div className="prod_display">
-								<div className="description">
-									<p className="sub-title">Liquid Cooler with LCD Display</p>
-									<p className="company">Kraken Z</p>
+							<Link
+								to="/collection/kraken-z"
+								style={{ textDecoration: "none", color: "black" }}
+							>
+								<h3 className="title">Kraken Z </h3>
+								<div className="prod_display">
+									<div className="description">
+										<p className="sub-title">Liquid Cooler with LCD Display</p>
+										<p className="company">Kraken Z</p>
+									</div>
+									<img src="https://www.datocms-assets.com/34299/1615589318-kraken-zpumpfrontangleui.png?auto=format&fit=max&h=460&w=654"></img>
 								</div>
-								<img src="https://www.datocms-assets.com/34299/1615589318-kraken-zpumpfrontangleui.png?auto=format&fit=max&h=460&w=654"></img>
-							</div>
+							</Link>
 						</div>
 						<div className="products">
-							<h3 className="title">AER Series </h3>
-							<div className="prod_display">
-								<div className="description">
-									<p className="sub-title">High performance RGB Fans</p>
-									<p className="company">AER</p>
+							<Link
+								to="/collection/aer"
+								style={{ textDecoration: "none", color: "black" }}
+							>
+								<h3 className="title">AER Series </h3>
+								<div className="prod_display">
+									<div className="description">
+										<p className="sub-title">High performance RGB Fans</p>
+										<p className="company">AER</p>
+									</div>
+									<img src="https://www.datocms-assets.com/34299/1615574435-aerrgb140frontrainbow.png?auto=format&fit=max&h=460&w=654"></img>
 								</div>
-								<img src="https://www.datocms-assets.com/34299/1615574435-aerrgb140frontrainbow.png?auto=format&fit=max&h=460&w=654"></img>
-							</div>
+							</Link>
 						</div>
 					</div>
 				</div>

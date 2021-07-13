@@ -83,7 +83,7 @@ function BuildingMenu() {
 						</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/kraken-m"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}
@@ -94,7 +94,7 @@ function BuildingMenu() {
 						</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/aer"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}

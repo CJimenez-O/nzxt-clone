@@ -5,6 +5,9 @@ import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
 
 function Audio() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<AudioContainer>
 			<div className="wrapper">
