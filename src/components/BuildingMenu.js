@@ -106,7 +106,7 @@ function BuildingMenu() {
 				<div className="link-list right">
 					<h4 className="nav-title">COMPONENTS</h4>
 					<Link
-						to="/collection/starter-pc"
+						to="/collection/motherboards"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}
@@ -115,7 +115,7 @@ function BuildingMenu() {
 						<p className="sub">Gming Motherboards</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/psu"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}
@@ -124,7 +124,7 @@ function BuildingMenu() {
 						<p className="sub">80 Plus Rated PSUs</p>
 					</Link>
 					<Link
-						to="/collection/creator"
+						to="/collection/lighting"
 						className="link"
 						style={{ "text-decoration": "none" }}
 						onClick={closeBuiltMenu}
