@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Promo() {
 	return (
 		<Ad>
-			<p>Free shipping over $25 (excluding BLD Gaming PCs).</p>
+			<p>This website is for educational purposes only.</p>
 		</Ad>
 	);
 }

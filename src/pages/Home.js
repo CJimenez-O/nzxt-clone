@@ -159,7 +159,11 @@ function Home() {
 					<h6>AIO Liquid Cooling</h6>
 					<h3>COOLER THAN COOL</h3>
 					<h6 className="keep">Keep your cool. Keep your style.</h6>
-					<Link className="button" style={{ textDecoration: "none" }}>
+					<Link
+						to="/collection/kraken-z"
+						className="button"
+						style={{ textDecoration: "none" }}
+					>
 						Shop Now
 					</Link>
 				</div>

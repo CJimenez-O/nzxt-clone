@@ -9,11 +9,6 @@
 			"https://nzxt.com/assets/cms/34299/1616124338-streamingpcwhttomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
 			"https://nzxt.com/assets/cms/34299/1616124313-streamingpcwhttomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
 		],
-		"blackImages": [
-			"https://nzxt.com/assets/cms/34299/1616124418-streamingpcblktomohawkmobohero.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
-			"https://nzxt.com/assets/cms/34299/1616124437-streamingpcblktomohawkmobostraight.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
-			"https://nzxt.com/assets/cms/34299/1616124412-streamingpcblktomohawkmobofront.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
-		],
 		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FUXq20T.png&w=384&q=75",
 		"colors": ["#fff", "#000"],
 		"description": "Alongside the GEFORCE RTX 3070 graphics card, all components in the Streaming PC were hand-selected to run the most popular games beautifully while smoothly operating your stream.",
@@ -482,6 +477,120 @@
 		"description": "This performance case fan is designed to efficiently maximize airflow through any build.",
 		"inside": ["Aer F 120mm"],
 		"category": "collection/aer",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/n7-z590",
+		"name": "N7 Z590",
+		"sub": "Intel motherboard w/ Wi-Fi & CAM features",
+		"price": 27999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1622240087-n7-z590-white-upright.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1622240087-n7-z590-white-upright.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1622240064-n7-z590-white-front-1.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1622240098-n7-z590-white-vertical.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FUDKUTf.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This motherboard enables a visually seamless backdrop for any build with all the features of the new Intel Z590 chipset.",
+		"inside": ["N7 Z590"],
+		"category": "collection/motherboards",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/n7-z490",
+		"name": "N7 Z490",
+		"sub": "Intel motherboard w/ Wi-Fi & CAM features",
+		"price": 22999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1618364671-n7-z490-black-main.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1618364671-n7-z490-black-main.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1618364699-n7-z490-black-flat-sloped.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1618364658-n7-z490-black-front.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FMAXQeq.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This motherboard enables a visually seamless backdrop for any build with all the features of the new Intel Z490 chipset.",
+		"inside": ["N7 Z490"],
+		"category": "collection/motherboards",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/e850",
+		"name": "E850",
+		"sub": "Fully Modular 850 Watt PSU",
+		"price": 17999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615597355-e850main-front-right-45.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615597355-e850main-front-right-45.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615597375-e850vents-up-right.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615597385-e850vents-down-ports.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/assets/cms/34299/1615597375-e850vents-up-right.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"colors": ["#fff", "#000"],
+		"description": "This PSU delivers 850 watts of clean, stable power which is ideal for gaming PCs with multiple GPUs, or higher power requirements with additional ability to monitor power usage and set over-current protections with NZXT CAM.",
+		"inside": ["E850"],
+		"category": "collection/psu",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/c850",
+		"name": "C850",
+		"sub": "Fully Modular 850 Watt PSU",
+		"price": 13999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615597145-c-series-psu-c850-main-front-right-45.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615597145-c-series-psu-c850-main-front-right-45.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615597167-c-series-psu-c850-vents-down-right-45.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615597177-c-series-psu-c850-vents-down-ports.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2F6uRfDt.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This PSU delivers 850 watts of clean, stable power which is ideal for gaming PCs with multiple GPUs, or higher power requirements with additional ability to monitor power usage and set over-current protections with NZXT CAM.",
+		"inside": ["C850"],
+		"category": "collection/psu",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/lighting-kit",
+		"name": "Ambient Lighting Kit (Ultrawide)",
+		"sub": "Desktop Lighting System",
+		"price": 5999,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615594004-hue-2-ambient-for-salestool-121918-rgb.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615594004-hue-2-ambient-for-salestool-121918-rgb.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615594056-hue-2-ambient-rgb-lighting-kit-environmentwsystem.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615594039-hue-2-ambient-rgb-lighting-kit-strips-monitor-21-26.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/assets/cms/34299/1615594039-hue-2-ambient-rgb-lighting-kit-strips-monitor-21-26.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"colors": ["#fff", "#000"],
+		"description": "Easily add underglow lighting to any build controlled via NZXT CAM.",
+		"inside": ["Desktop Lighting System"],
+		"category": "collection/lighting",
+		"instock": true,
+		"stock": 20
+	},
+	{
+		"id": "/product/usb-hub",
+		"name": "Internal USB Hub (Gen 3)",
+		"sub": "Internal USB 2.0 Expansion Hub",
+		"price": 2299,
+		"displayImage": "https://nzxt.com/assets/cms/34299/1615571268-internal-usb-hub-3-top.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+		"images": [
+			"https://nzxt.com/assets/cms/34299/1615571268-internal-usb-hub-3-top.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615571261-internal-usb-hub-3-right-logo-down.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576",
+			"https://nzxt.com/assets/cms/34299/1615571231-internal-usb-hub-3-h510-elite-system-1.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+		],
+		"cartImage": "https://nzxt.com/_next/image?url=https%3A%2F%2Fcdn.letsbld.com%2Fapp%2Fstorage%2Fcache%2Fdata%2FCrHwF9.png&w=384&q=75",
+		"colors": ["#fff", "#000"],
+		"description": "This Internal USB Hub enables connection of an additional 4 USB 2.0 devices and is designed to be tucked away and installed quickly.",
+		"inside": ["USB hub"],
+		"category": "collection/lighting",
 		"instock": true,
 		"stock": 20
 	}

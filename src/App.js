@@ -48,6 +48,15 @@ import M22 from "./pages/Pc-building/Cooling/M22";
 import AERPage from "./pages/Pc-building/Cooling/AERPage";
 import AERRGB from "./pages/Pc-building/Cooling/AERRGB";
 import AERF from "./pages/Pc-building/Cooling/AERF";
+import Motherboards from "./pages/Pc-building/components/motherboard";
+import Z590 from "./pages/Pc-building/components/Z590";
+import Z490 from "./pages/Pc-building/components/Z490";
+import PSU from "./pages/Pc-building/components/psu";
+import E850 from "./pages/Pc-building/components/E850";
+import C850 from "./pages/Pc-building/components/C850";
+import Lighting from "./pages/Pc-building/components/lighting";
+import Kit from "./pages/Pc-building/components/kit";
+import Hub from "./pages/Pc-building/components/hub";
 import Company from "./pages/Company";
 import Software from "./pages/Software";
 import Support from "./pages/Support";
@@ -174,6 +183,33 @@ function App() {
 					</Route>
 					<Route exact path="/product/aer-f">
 						<AERF />
+					</Route>
+					<Route exact path="/collection/motherboards">
+						<Motherboards />
+					</Route>
+					<Route exact path="/product/n7-z590">
+						<Z590 />
+					</Route>
+					<Route exact path="/product/n7-z490">
+						<Z490 />
+					</Route>
+					<Route exact path="/collection/psu">
+						<PSU />
+					</Route>
+					<Route exact path="/product/e850">
+						<E850 />
+					</Route>
+					<Route exact path="/product/c850">
+						<C850 />
+					</Route>
+					<Route exact path="/collection/lighting">
+						<Lighting />
+					</Route>
+					<Route exact path="/product/lighting-kit">
+						<Kit />
+					</Route>
+					<Route exact path="/product/usb-hub">
+						<Hub />
 					</Route>
 					<Route exact path="/product/standard-mouse-pad">
 						<MousePad />
