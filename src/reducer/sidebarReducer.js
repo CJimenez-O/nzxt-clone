@@ -29,6 +29,38 @@ function sidebarReducer(state, action) {
 		return { ...state, isBuiltMenuOpen: false };
 	}
 
+	if (action.type === "BUILTMENU_SIDEBAR_OPEN") {
+		return { ...state, isBuiltSideBarMenuOpen: true };
+	}
+	if (action.type === "BUILTMENU_SIDEBAR_CLOSE") {
+		return { ...state, isBuiltSideBarMenuOpen: false };
+	}
+
+	// PC Building sidebar menu
+
+	if (action.type === "CASE_SIDEBAR_OPEN") {
+		return { ...state, isCaseMenuOpen: true };
+	}
+	if (action.type === "CASE_SIDEBAR_CLOSE") {
+		return { ...state, isCaseMenuOpen: false };
+	}
+
+	if (action.type === "COOLING_SIDEBAR_OPEN") {
+		return { ...state, isCoolingMenuOpen: true };
+	}
+	if (action.type === "COOLING_SIDEBAR_CLOSE") {
+		return { ...state, isCoolingMenuOpen: false };
+	}
+
+	if (action.type === "COMP_SIDEBAR_OPEN") {
+		return { ...state, isCompMenuOpen: true };
+	}
+	if (action.type === "COMP_SIDEBAR_CLOSE") {
+		return { ...state, isCompMenuOpen: false };
+	}
+
+	//////////////////////////
+
 	if (action.type === "PERIFMENU_OPEN") {
 		return { ...state, isPerifMenuOpen: true };
 	}

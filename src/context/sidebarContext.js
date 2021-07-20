@@ -9,6 +9,14 @@ import {
 	PREBUILT_SIDEBAR_CLOSE,
 	BUILTMENU_OPEN,
 	BUILTMENU_CLOSE,
+	BUILTMENU_SIDEBAR_OPEN,
+	BUILTMENU_SIDEBAR_CLOSE,
+	CASE_SIDEBAR_OPEN,
+	CASE_SIDEBAR_CLOSE,
+	COOLING_SIDEBAR_OPEN,
+	COOLING_SIDEBAR_CLOSE,
+	COMP_SIDEBAR_OPEN,
+	COMP_SIDEBAR_CLOSE,
 	PERIFMENU_OPEN,
 	PERIFMENU_CLOSE,
 	PERIF_SIDEBAR_OPEN,
@@ -34,6 +42,10 @@ const initialState = {
 	isPrebuiltOpen: false,
 	isPrebuiltSideBarMenuOpen: false,
 	isBuiltMenuOpen: false,
+	isBuiltSideBarMenuOpen: false,
+	isCaseMenuOpen: false,
+	isCoolingMenuOpen: false,
+	isCompMenuOpen: false,
 	isPerifMenuOpen: false,
 	isPerifSidebarMenuOpen: false,
 	isCompanyLinkOpen: false,
@@ -56,17 +68,23 @@ export const ProductsProvider = ({ children }) => {
 		dispatch({ type: SIDEBAR_CLOSE });
 		dispatch({ type: PREBUILT_SIDEBAR_CLOSE });
 		dispatch({ type: PERIF_SIDEBAR_CLOSE });
+		dispatch({ type: BUILTMENU_SIDEBAR_CLOSE });
+		dispatch({ type: CASE_SIDEBAR_CLOSE });
 	};
 
 	const openSidebar = () => {
 		dispatch({ type: SIDEBAR_OPEN });
 		dispatch({ type: PREBUILT_SIDEBAR_CLOSE });
 		dispatch({ type: PERIF_SIDEBAR_CLOSE });
+		dispatch({ type: BUILTMENU_SIDEBAR_CLOSE });
+		dispatch({ type: CASE_SIDEBAR_CLOSE });
 	};
 	const closeSidebar = () => {
 		dispatch({ type: SIDEBAR_CLOSE });
 		dispatch({ type: PREBUILT_SIDEBAR_CLOSE });
 		dispatch({ type: PERIF_SIDEBAR_CLOSE });
+		dispatch({ type: BUILTMENU_SIDEBAR_CLOSE });
+		dispatch({ type: CASE_SIDEBAR_CLOSE });
 	};
 
 	const openPrebuilt = () => {
@@ -93,6 +111,43 @@ export const ProductsProvider = ({ children }) => {
 	const closeBuiltMenu = () => {
 		dispatch({ type: BUILTMENU_CLOSE });
 	};
+
+	const openBuiltSidebar = () => {
+		dispatch({ type: BUILTMENU_SIDEBAR_OPEN });
+	};
+	const closeBuiltSidebar = () => {
+		dispatch({ type: BUILTMENU_SIDEBAR_CLOSE });
+	};
+
+	// pc builing sidebar menu fcuntions
+	const openCaseMenu = () => {
+		dispatch({ type: CASE_SIDEBAR_OPEN });
+		dispatch({ type: COOLING_SIDEBAR_CLOSE });
+		dispatch({ type: COMP_SIDEBAR_CLOSE });
+	};
+	const closeCaseMenu = () => {
+		dispatch({ type: CASE_SIDEBAR_CLOSE });
+	};
+
+	const openCoolingMenu = () => {
+		dispatch({ type: COOLING_SIDEBAR_OPEN });
+		dispatch({ type: CASE_SIDEBAR_CLOSE });
+		dispatch({ type: COMP_SIDEBAR_CLOSE });
+	};
+	const closeCoolingMenu = () => {
+		dispatch({ type: COOLING_SIDEBAR_CLOSE });
+	};
+
+	const openCompMenu = () => {
+		dispatch({ type: COMP_SIDEBAR_OPEN });
+		dispatch({ type: COOLING_SIDEBAR_CLOSE });
+		dispatch({ type: CASE_SIDEBAR_CLOSE });
+	};
+	const closeCompMenu = () => {
+		dispatch({ type: COMP_SIDEBAR_CLOSE });
+	};
+
+	//
 
 	const openPerifMenu = () => {
 		dispatch({ type: PERIFMENU_OPEN });
@@ -165,6 +220,14 @@ export const ProductsProvider = ({ children }) => {
 				closePrebuiltSidebar,
 				openBuiltMenu,
 				closeBuiltMenu,
+				openBuiltSidebar,
+				closeBuiltSidebar,
+				openCaseMenu,
+				closeCaseMenu,
+				openCoolingMenu,
+				closeCoolingMenu,
+				openCompMenu,
+				closeCompMenu,
 				openPerifMenu,
 				closePerifMenu,
 				openPerifSidebarMenu,
