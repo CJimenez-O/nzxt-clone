@@ -4,18 +4,12 @@ import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../context/user_context";
 import { FaRegUser, FaRegQuestionCircle, FaAngleLeft } from "react-icons/fa";
-import CaseSidebar from "./CaseSidebarMenu";
-import CoolingSidebar from "./CoolingSidebarMenu";
-import CompSidebar from "./CompSidebarMenu";
 
 function Sidebar() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
 	const {
 		isSidebarOpen,
-		isBuiltSideBarMenuOpen,
-		openCaseMenu,
-		openCoolingMenu,
-		openCompMenu,
+		isCompMenuOpen,
 		openSidebar,
 		closeSidebar,
 	} = useProductsContext();
@@ -23,7 +17,7 @@ function Sidebar() {
 		<SidebarContainer>
 			<aside
 				style={{
-					display: `${isBuiltSideBarMenuOpen ? "block" : "none"}`,
+					display: `${isCompMenuOpen ? "block" : "none"}`,
 				}}
 				className="standard"
 			>
@@ -34,7 +28,7 @@ function Sidebar() {
 						</button>
 					</div>
 					<div className="sidebar-title">
-						<h3>PC Building</h3>
+						<h3>Components</h3>
 					</div>
 				</div>
 				<ul className="nav_links">
@@ -42,27 +36,30 @@ function Sidebar() {
 						<Link
 							className="link"
 							style={{ textDecoration: "none" }}
-							onClick={openCaseMenu}
+							onClick={closeSidebar}
+							to="/collection/motherboards"
 						>
-							<h3 className="link-title">Cases</h3>
+							<h3 className="link-title">Motherboards</h3>
 						</Link>
 					</li>
 					<li>
 						<Link
 							className="link"
 							style={{ textDecoration: "none" }}
-							onClick={openCoolingMenu}
+							onClick={closeSidebar}
+							to="/collection/psu"
 						>
-							<h3 className="link-title">Cooling</h3>
+							<h3 className="link-title">Power</h3>
 						</Link>
 					</li>
 					<li>
 						<Link
 							className="link"
 							style={{ textDecoration: "none" }}
-							onClick={openCompMenu}
+							onClick={closeSidebar}
+							to="/collection/lighting"
 						>
-							<h3 className="link-title">Components</h3>
+							<h3 className="link-title">Lighting</h3>
 						</Link>
 					</li>
 				</ul>
@@ -102,9 +99,6 @@ function Sidebar() {
 					)}
 				</div>
 			</aside>
-			<CaseSidebar />
-			<CoolingSidebar />
-			<CompSidebar />
 		</SidebarContainer>
 	);
 }

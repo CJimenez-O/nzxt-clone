@@ -70,6 +70,8 @@ export const ProductsProvider = ({ children }) => {
 		dispatch({ type: PERIF_SIDEBAR_CLOSE });
 		dispatch({ type: BUILTMENU_SIDEBAR_CLOSE });
 		dispatch({ type: CASE_SIDEBAR_CLOSE });
+		dispatch({ type: COOLING_SIDEBAR_CLOSE });
+		dispatch({ type: COMP_SIDEBAR_CLOSE });
 	};
 
 	const openSidebar = () => {
@@ -78,6 +80,8 @@ export const ProductsProvider = ({ children }) => {
 		dispatch({ type: PERIF_SIDEBAR_CLOSE });
 		dispatch({ type: BUILTMENU_SIDEBAR_CLOSE });
 		dispatch({ type: CASE_SIDEBAR_CLOSE });
+		dispatch({ type: COOLING_SIDEBAR_CLOSE });
+		dispatch({ type: COMP_SIDEBAR_CLOSE });
 	};
 	const closeSidebar = () => {
 		dispatch({ type: SIDEBAR_CLOSE });
@@ -85,6 +89,8 @@ export const ProductsProvider = ({ children }) => {
 		dispatch({ type: PERIF_SIDEBAR_CLOSE });
 		dispatch({ type: BUILTMENU_SIDEBAR_CLOSE });
 		dispatch({ type: CASE_SIDEBAR_CLOSE });
+		dispatch({ type: COOLING_SIDEBAR_CLOSE });
+		dispatch({ type: COMP_SIDEBAR_CLOSE });
 	};
 
 	const openPrebuilt = () => {
