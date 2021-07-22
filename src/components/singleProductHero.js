@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaCircle, FaShoppingCart } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
 import Products from "../products.json";
 import { formatPrice } from "../helpers";
 import { useCartContext } from "../context/cart_context";
@@ -30,10 +30,6 @@ function SingleProductHero({ filter }) {
 		}
 	}
 
-	function reset(event) {
-		event.target.value = 1;
-	}
-
 	return (
 		<Wrapper>
 			{DisplayedProducts.map((product) => {
@@ -45,7 +41,6 @@ function SingleProductHero({ filter }) {
 					price,
 					description,
 					inside,
-					color,
 					stock,
 					cartImage,
 				} = product;
@@ -54,11 +49,11 @@ function SingleProductHero({ filter }) {
 					<div className="single-product-page">
 						<div className="display-images">
 							<div className="primary-disply-img">
-								<img className="main-image" src={images[0]}></img>
+								<img className="main-image" src={images[0]} alt=""></img>
 							</div>
 							<div className="secondary-images">
-								<img className="sub-image" src={images[1]}></img>
-								<img className="sub-image" src={images[2]}></img>
+								<img className="sub-image" src={images[1]} alt=""></img>
+								<img className="sub-image" src={images[2]} alt=""></img>
 							</div>
 						</div>
 
@@ -139,6 +134,7 @@ function SingleProductHero({ filter }) {
 										<img
 											className="game-logo"
 											src="https://nzxt.com/assets/cms/34299/1620400903-modern-warfare-alt.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+											alt=""
 										></img>
 										<h4>
 											<span className="fps">120</span> FPS
@@ -148,6 +144,7 @@ function SingleProductHero({ filter }) {
 										<img
 											className="game-logo"
 											src="https://nzxt.com/assets/cms/34299/1620400487-fortnite-1.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+											alt=""
 										></img>
 										<h4>
 											<span className="fps">120</span> FPS
@@ -159,6 +156,7 @@ function SingleProductHero({ filter }) {
 										<img
 											className="game-logo"
 											src="https://nzxt.com/assets/cms/34299/1620400899-minecraft-logo.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+											alt=""
 										></img>
 										<h4>
 											<span className="fps">120</span> FPS
@@ -168,6 +166,7 @@ function SingleProductHero({ filter }) {
 										<img
 											className="game-logo"
 											src="https://nzxt.com/assets/cms/34299/1620401520-gta.png?auto=format&dpr=2&fit=clamp&fm=webp&h=127&w=127"
+											alt=""
 										></img>
 										<h4>
 											<span className="fps">120</span> FPS

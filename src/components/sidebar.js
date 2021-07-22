@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../context/user_context";
-import { FaRegUser, FaRegQuestionCircle, FaShoppingCart } from "react-icons/fa";
+import { FaRegUser, FaRegQuestionCircle } from "react-icons/fa";
 import PrebuiltSidebarMenu from "./PrebulitSidebar";
 import PerifSidebarMenu from "./PerifSidebarMenu";
 import BuildingSidebarMenu from "./PcBuildingSidebar";

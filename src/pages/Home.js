@@ -27,6 +27,7 @@ function Home() {
 					<img
 						className="product"
 						src="https://nzxt.com/assets/cms/34299/1621638411-case-cut-fade-mid.png?ar=16%3A9&auto=format&fit=max&fm=webp&h=675&w=1200"
+						alt=""
 					></img>
 				</div>
 			</div>
@@ -35,6 +36,7 @@ function Home() {
 					<img
 						className="rgb_pc"
 						src="https://nzxt.com/assets/cms/34299/1618960827-elite5grid.png?auto=format&dpr=1.5&fit=max&fm=webp&h=900&w=900"
+						alt=""
 					/>
 					<h2>Gaming PCs Made Simple</h2>
 					<p>Content creation hs never been easier</p>
@@ -59,7 +61,10 @@ function Home() {
 										<p className="sub-title">Build The Legend</p>
 										<p className="company">CRFT</p>
 									</div>
-									<img src="https://www.datocms-assets.com/34299/1621467509-h510-valhalla-rear-with-cover.png?auto=format&fit=max&h=460&w=654"></img>
+									<img
+										src="https://www.datocms-assets.com/34299/1621467509-h510-valhalla-rear-with-cover.png?auto=format&fit=max&h=460&w=654"
+										alt=""
+									></img>
 								</div>
 							</Link>
 						</div>
@@ -79,6 +84,7 @@ function Home() {
 									<img
 										className="cooler"
 										src="https://nzxt.com/assets/cms/34299/1615584271-kraken-x53-rgbsfrontbnwith-purple-fan.png?bg=F5F5F8&dpr=2&fit=crop&fm=webp&h=576&w=576"
+										alt=""
 									></img>
 								</div>
 							</Link>
@@ -96,7 +102,10 @@ function Home() {
 										<p className="sub-title">Liquid Cooler with LCD Display</p>
 										<p className="company">Kraken Z</p>
 									</div>
-									<img src="https://www.datocms-assets.com/34299/1615589318-kraken-zpumpfrontangleui.png?auto=format&fit=max&h=460&w=654"></img>
+									<img
+										src="https://www.datocms-assets.com/34299/1615589318-kraken-zpumpfrontangleui.png?auto=format&fit=max&h=460&w=654"
+										alt=""
+									></img>
 								</div>
 							</Link>
 						</div>
@@ -111,7 +120,10 @@ function Home() {
 										<p className="sub-title">High performance RGB Fans</p>
 										<p className="company">AER</p>
 									</div>
-									<img src="https://www.datocms-assets.com/34299/1615574435-aerrgb140frontrainbow.png?auto=format&fit=max&h=460&w=654"></img>
+									<img
+										src="https://www.datocms-assets.com/34299/1615574435-aerrgb140frontrainbow.png?auto=format&fit=max&h=460&w=654"
+										alt=""
+									></img>
 								</div>
 							</Link>
 						</div>
@@ -121,34 +133,52 @@ function Home() {
 			<div className="mid-nav">
 				<div className="nav-bundle">
 					<div className="nav-option">
-						<img src="https://nzxt.com/assets/cms/34299/1621561418-case-h510-left-side.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<img
+							src="https://nzxt.com/assets/cms/34299/1621561418-case-h510-left-side.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"
+							alt=""
+						></img>
 						<p>Cases</p>
 						<p className="sub-descrip">The H510</p>
 					</div>
 					<div className="nav-option">
-						<img src="https://nzxt.com/assets/cms/34299/1621561407-case-h510-right-side.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<img
+							src="https://nzxt.com/assets/cms/34299/1621561407-case-h510-right-side.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"
+							alt=""
+						></img>
 						<p>Prebuilt PCs</p>
 						<p className="sub-descrip">Starter Series</p>
 					</div>
 					<div className="nav-option">
-						<img src="https://nzxt.com/assets/cms/34299/1621561411-kraken-z.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<img
+							src="https://nzxt.com/assets/cms/34299/1621561411-kraken-z.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"
+							alt=""
+						></img>
 						<p>Liquid Cooling</p>
 						<p className="sub-descrip">Kraken Z</p>
 					</div>
 				</div>
 				<div className="nav-bundle">
 					<div className="nav-option">
-						<img src="https://nzxt.com/assets/cms/34299/1621561387-software-generic.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<img
+							src="https://nzxt.com/assets/cms/34299/1621561387-software-generic.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"
+							alt=""
+						></img>
 						<p>NZXT CAM</p>
 						<p className="sub-descrip">Software</p>
 					</div>
 					<div className="nav-option">
-						<img src="https://nzxt.com/assets/cms/34299/1621561365-service.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<img
+							src="https://nzxt.com/assets/cms/34299/1621561365-service.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"
+							alt=""
+						></img>
 						<p>Support</p>
 						<p className="sub-descrip">FAQs & Support</p>
 					</div>
 					<div className="nav-option">
-						<img src="https://nzxt.com/assets/cms/34299/1621561403-document.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"></img>
+						<img
+							src="https://nzxt.com/assets/cms/34299/1621561403-document.png?auto=format&dpr=1.5&fit=max&fm=webp&h=80&w=80"
+							alt=""
+						></img>
 						<p>News</p>
 						<p className="sub-descrip">Community & Company</p>
 					</div>

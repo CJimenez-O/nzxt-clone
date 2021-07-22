@@ -4,11 +4,7 @@ import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 
 function PerifMenu() {
-	const {
-		openPerifMenu,
-		isPerifMenuOpen,
-		closePerifMenu,
-	} = useProductsContext();
+	const { isPerifMenuOpen, closePerifMenu } = useProductsContext();
 	return (
 		<Wrapper style={{ display: `${isPerifMenuOpen ? "block" : "none"}` }}>
 			<div className="sub-menu">

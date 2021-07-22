@@ -1,5 +1,3 @@
-import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from "../actions";
-
 function sidebarReducer(state, action) {
 	if (action.type === "SIDEBAR_OPEN") {
 		// console.log(action);

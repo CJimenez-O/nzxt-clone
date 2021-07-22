@@ -46,7 +46,10 @@ function Audio() {
 						</p>
 					</div>
 					<div className="audio-image">
-						<img src="https://nzxt.com/assets/cms/34299/1619817914-blueprint-2x.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=470&w=470"></img>
+						<img
+							src="https://nzxt.com/assets/cms/34299/1619817914-blueprint-2x.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=470&w=470"
+							alt=""
+						></img>
 					</div>
 				</div>
 			</div>

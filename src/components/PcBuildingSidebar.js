@@ -11,7 +11,6 @@ import CompSidebar from "./CompSidebarMenu";
 function Sidebar() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
 	const {
-		isSidebarOpen,
 		isBuiltSideBarMenuOpen,
 		openCaseMenu,
 		openCoolingMenu,

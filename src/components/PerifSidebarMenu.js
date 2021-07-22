@@ -8,7 +8,6 @@ import { FaRegUser, FaRegQuestionCircle, FaAngleLeft } from "react-icons/fa";
 function PerifSidebar() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
 	const {
-		isSidebarOpen,
 		isPerifSidebarMenuOpen,
 		openSidebar,
 		closeSidebar,

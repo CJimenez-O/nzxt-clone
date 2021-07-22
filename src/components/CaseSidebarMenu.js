@@ -7,12 +7,7 @@ import { FaRegUser, FaRegQuestionCircle, FaAngleLeft } from "react-icons/fa";
 
 function Sidebar() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
-	const {
-		isSidebarOpen,
-		isCaseMenuOpen,
-		openSidebar,
-		closeSidebar,
-	} = useProductsContext();
+	const { isCaseMenuOpen, openSidebar, closeSidebar } = useProductsContext();
 	return (
 		<SidebarContainer>
 			<aside

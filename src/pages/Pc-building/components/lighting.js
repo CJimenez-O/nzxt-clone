@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import ProductHero from "../../../components/ProductHero";
-import Video from "../../../components/video";
 import ProductImageLeft from "../../../components/productFlexLeft";
 import ProductImageRight from "../../../components/ProductFlexRight";
 import Warranty from "../../../components/warranty";

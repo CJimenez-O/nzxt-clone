@@ -10,7 +10,7 @@ function ProductHero({ title, subtitle, image }) {
 					<h5 className="subtitle">{subtitle}</h5>
 				</div>
 				<div>
-					<img className="product-img" src={image}></img>
+					<img className="product-img" src={image} alt=""></img>
 				</div>
 			</div>
 		</ProdHero>

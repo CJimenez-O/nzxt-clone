@@ -7,11 +7,9 @@ import {
 	Elements,
 	useElements,
 } from "@stripe/react-stripe-js";
-import StripeCheckout from "react-stripe-checkout";
 
 import axios from "axios";
 import { useCartContext } from "../context/cart_context";
-import { useUserContext } from "../context/user_context";
 import { formatPrice } from "../helpers";
 import { useHistory } from "react-router-dom";
 
@@ -149,9 +147,6 @@ const CheckoutForm = () => {
 };
 
 const StripeCheckoutPage = () => {
-	const onToken = (token) => {
-		console.log(token);
-	};
 	return (
 		<Wrapper>
 			<Elements stripe={promise}>

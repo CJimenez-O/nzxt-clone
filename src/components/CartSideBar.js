@@ -1,17 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useCartContext } from "../context/cart_context";
 import { formatPrice } from "../helpers";
 import { FaWindowClose, FaRegTrashAlt } from "react-icons/fa";
 import StripeCheckout from "react-stripe-checkout";
-import {
-	CardElement,
-	useStripe,
-	Elements,
-	useElements,
-} from "@stripe/react-stripe-js";
-import axios from "axios";
 
 function CartSideBar() {
 	const {
@@ -23,7 +16,6 @@ function CartSideBar() {
 		toggleAmount,
 		cart,
 		removeItem,
-		color,
 	} = useCartContext();
 
 	const onClose = () => {
@@ -112,7 +104,7 @@ function CartSideBar() {
 								<div className="item-added">
 									<div className="prod-item-info">
 										<div>
-											<img className="item-image" src={cart.image}></img>
+											<img className="item-image" src={cart.image} alt=""></img>
 										</div>
 										<div className="item-name">
 											<h4>{cart.name}</h4>

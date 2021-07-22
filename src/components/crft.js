@@ -29,25 +29,40 @@ function Crft() {
 					<img
 						className="pc"
 						src="https://nzxt.com/assets/cms/34299/1622086462-home-crft-valhalla.png?auto=format&fit=max&h=558&w=523"
+						alt=""
 					/>
 				</div>
 			</div>
 			<div className="brands">
 				<div className="logos">
-					<img src="https://nzxt.com/assets/cms/34299/1619643575-pubg.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1619643575-pubg.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"
+						alt=""
+					></img>
 					<img
 						className="mid-logo"
 						src="https://nzxt.com/assets/cms/34299/1619643592-fallout.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"
+						alt=""
 					></img>
-					<img src="https://nzxt.com/assets/cms/34299/1619643601-wow.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1619643601-wow.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"
+						alt=""
+					></img>
 				</div>
 				<div className="logos">
-					<img src="https://nzxt.com/assets/cms/34299/1619643617-mass-effect.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1619643617-mass-effect.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"
+						alt=""
+					></img>
 					<img
 						className="mid-logo"
 						src="https://nzxt.com/assets/cms/34299/1619643623-siege.png?auto=format&dpr=2&fit=max&fm=webp&h=138&w=314"
+						alt=""
 					></img>
-					<img src="https://nzxt.com/assets/cms/34299/1622086865-assassin-s-creed-logo.png?auto=format&fit=max&fm=webp&h=138&w=314"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1622086865-assassin-s-creed-logo.png?auto=format&fit=max&fm=webp&h=138&w=314"
+						alt=""
+					></img>
 				</div>
 			</div>
 
@@ -62,7 +77,10 @@ function Crft() {
 					>
 						Learn More
 					</Link>
-					<img src="https://nzxt.com/assets/cms/34299/1620336914-cam-home-page.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1620336914-cam-home-page.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
+						alt=""
+					></img>
 				</div>
 				<div className="cam">
 					<h3>Starter Series</h3>
@@ -74,7 +92,10 @@ function Crft() {
 					>
 						Learn More
 					</Link>
-					<img src="https://nzxt.com/assets/cms/34299/1620339562-starter-series-home-page-2x.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1620339562-starter-series-home-page-2x.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
+						alt=""
+					></img>
 				</div>
 			</div>
 		</Product>

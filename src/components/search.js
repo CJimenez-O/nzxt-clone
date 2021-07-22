@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-	FaRegUser,
-	FaRegQuestionCircle,
-	FaShoppingCart,
-	FaUserSlash,
-	FaUserAltSlash,
-} from "react-icons/fa";
+import { FaRegUser, FaRegQuestionCircle, FaUserAltSlash } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useUserContext } from "../context/user_context";
 import { useCartContext } from "../context/cart_context";

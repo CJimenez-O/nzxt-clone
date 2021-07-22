@@ -12,6 +12,7 @@ function Suggestion() {
 					<img
 						className="product-img"
 						src="https://nzxt.com/assets/cms/34299/1616123904-creatorblack1.png?ar=1%3A1&auto=format&fit=crop&fm=webp&h=400&w=400"
+						alt=""
 					></img>
 					<h3 className="name">Creater PC</h3>
 					<p className="sub">A prebuilt creature with high performace specs</p>
@@ -21,6 +22,7 @@ function Suggestion() {
 					<img
 						className="product-img"
 						src="https://nzxt.com/assets/cms/34299/1615983328-whtstarterpcplus3quarterview.png?ar=1%3A1&auto=format&dpr=2&fit=crop&fm=webp&h=400&w=400"
+						alt=""
 					></img>
 					<h3 className="name">Starter Pro</h3>
 					<p className="sub">Comes with upgraded CPU & graphics card</p>
@@ -30,6 +32,7 @@ function Suggestion() {
 					<img
 						className="product-img"
 						src="https://nzxt.com/assets/cms/34299/1615983718-emberpcwhtgigabyte1660superochero.png?ar=1%3A1&auto=format&fit=crop&fm=webp&h=400&w=400"
+						alt=""
 					></img>
 					<h3 className="name">Starter Plus</h3>
 					<p className="sub">Built by experts for a competative advantage</p>

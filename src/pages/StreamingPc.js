@@ -7,12 +7,7 @@ import Warranty from "../components/warranty";
 import Suggestion from "../components/suggest";
 import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
-import Products from "../products.json";
 import ProductDisplays from "../components/ProductDisplay";
-import Child from "../components/child";
-import { FaCircle } from "react-icons/fa";
-import MailForm from "../components/mailingListForm";
-import { Link } from "react-router-dom";
 
 function StreamingPc() {
 	useEffect(() => {

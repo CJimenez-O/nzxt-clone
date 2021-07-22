@@ -8,9 +8,7 @@ import { FaRegUser, FaRegQuestionCircle, FaAngleLeft } from "react-icons/fa";
 function PrebuiltSidebar() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
 	const {
-		isSidebarOpen,
 		isPrebuiltSideBarMenuOpen,
-		openPrebuiltSidebar,
 		openSidebar,
 		closeSidebar,
 	} = useProductsContext();

@@ -4,7 +4,7 @@ import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 
 function GamingSec() {
-	const { openPrebuilt, isPrebuiltOpen, closePrebuilt } = useProductsContext();
+	const { isPrebuiltOpen, closePrebuilt } = useProductsContext();
 	return (
 		<Wrapper style={{ display: `${isPrebuiltOpen ? "block" : "none"}` }}>
 			<div className="sub-menu">

@@ -50,7 +50,7 @@ function ProductDisplay({ filter, title, details, height }) {
 										}}
 										className="product-link-item"
 									>
-										<img className="prod-image" src={displayImage}></img>
+										<img className="prod-image" src={displayImage} alt=""></img>
 										<h3 className="name">{name}</h3>
 										<p className="sub">{sub}</p>
 									</Link>

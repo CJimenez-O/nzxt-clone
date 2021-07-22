@@ -26,6 +26,7 @@ function Software() {
 					<img
 						className="software-image"
 						src="https://nzxt.com/assets/cms/34299/1620941749-cam-hero-en-1380x1380.png?auto=format&dpr=2&fit=max&fm=webp&h=690&w=690"
+						alt=""
 					></img>
 				</div>
 			</div>
@@ -71,6 +72,7 @@ function Software() {
 				title="Track Every Aspect of Your Computer"
 				description="NZXT CAM empowers you to see what your computer is doing, from processor load to bandwidth consumption. It also lets you know what applications are making use of every part of your machine. You can quickly track down any issues to ensure that you’re getting the optimal performance out of your computer."
 				image="https://nzxt.com/assets/cms/34299/1621033426-cam-screenshot-en-928x928.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
+				alt=""
 			/>
 
 			<div className="prod-img-left">
@@ -79,6 +81,7 @@ function Software() {
 						<img
 							className="left-img"
 							src="https://nzxt.com/assets/cms/34299/1621031976-cam-monitoring-928x928.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
+							alt=""
 						></img>
 					</div>
 					<div className="image-description">
@@ -110,7 +113,10 @@ function Software() {
 					<Link className="link" style={{ textDecoration: "none" }}>
 						Download CAM
 					</Link>
-					<img src="https://nzxt.com/assets/cms/34299/1619545322-cam-icons-w-case.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1619545322-cam-icons-w-case.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
+						alt=""
+					></img>
 				</div>
 				<div className="cam">
 					<h3>Become a Beta Tester</h3>
@@ -126,6 +132,7 @@ function Software() {
 					<img
 						className="cam-logo"
 						src="https://nzxt.com/assets/cms/34299/1619545933-cam-beta-logo-spacer.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
+						alt=""
 					></img>
 				</div>
 			</div>

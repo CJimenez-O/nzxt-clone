@@ -4,11 +4,7 @@ import { useProductsContext } from "../context/sidebarContext";
 import { Link } from "react-router-dom";
 
 function BuildingMenu() {
-	const {
-		openBuiltMenu,
-		isBuiltMenuOpen,
-		closeBuiltMenu,
-	} = useProductsContext();
+	const { isBuiltMenuOpen, closeBuiltMenu } = useProductsContext();
 	return (
 		<Wrapper style={{ display: `${isBuiltMenuOpen ? "block" : "none"}` }}>
 			<div className="sub-menu">

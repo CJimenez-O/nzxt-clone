@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import ProductHero from "../components/ProductHero";
 import ProductImageLeft from "../components/productFlexLeft";
 import ProductImageRight from "../components/ProductFlexRight";
@@ -7,13 +6,7 @@ import Warranty from "../components/warranty";
 import Suggestion from "../components/suggest";
 import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
-import Products from "../products.json";
-import ProductDisplays from "../components/ProductDisplay";
 import SingleProdDisplay from "../components/SingleProductDisplay";
-import Child from "../components/child";
-import { FaCircle } from "react-icons/fa";
-import MailForm from "../components/mailingListForm";
-import { Link } from "react-router-dom";
 
 function CreatorPc() {
 	React.useEffect(() => {

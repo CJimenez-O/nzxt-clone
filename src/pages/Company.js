@@ -23,6 +23,7 @@ function Company() {
 					<img
 						className="company-img"
 						src="https://nzxt.com/assets/cms/34299/1617117602-image-4.png?auto=format&dpr=2&fit=max&fm=webp&h=690&w=690"
+						alt=""
 					></img>
 				</div>
 			</div>

@@ -10,7 +10,7 @@ function ProductFlexRight({ title, description, image }) {
 					<p className="descript">{description}</p>
 				</div>
 				<div className="image-display">
-					<img className="left-img" src={image}></img>
+					<img className="left-img" src={image} alt=""></img>
 				</div>
 				<div className="image-description mobile">
 					<h2 className="title">{title}</h2>

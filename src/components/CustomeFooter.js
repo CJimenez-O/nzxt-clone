@@ -14,7 +14,7 @@ import {
 	FaDiscord,
 } from "react-icons/fa";
 
-function Footer({ full, mid }) {
+function Footer() {
 	const {
 		openCompanyLinks,
 		isCompanyLinkOpen,
@@ -36,7 +36,7 @@ function Footer({ full, mid }) {
 		closeStoreLinks,
 	} = useProductsContext();
 	return (
-		<Footer_section>
+		<FooterSection>
 			<div className="full">
 				<div className="upper">
 					<div className="social-icons">
@@ -305,11 +305,11 @@ function Footer({ full, mid }) {
 					</ul>
 				</div>
 			</div>
-		</Footer_section>
+		</FooterSection>
 	);
 }
 
-const Footer_section = styled.footer`
+const FooterSection = styled.footer`
 	padding-top: 40px;
 	padding-bottom: 40px;
 	padding-left: 5%;

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 
 function Support() {
@@ -18,6 +17,7 @@ function Support() {
 					<img
 						className="support-hero-image"
 						src="https://nzxt.com/assets/cms/34299/1619745249-customer-support-2x.png?auto=format&dpr=2&fit=max&fm=webp&h=540&w=540"
+						alt=""
 					></img>
 				</div>
 			</div>

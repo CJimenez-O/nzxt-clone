@@ -25,7 +25,10 @@ function Meet() {
 					</Link>
 				</div>
 				<div className="founder-image">
-					<img src="https://nzxt.com/assets/cms/34299/1621553076-johnny.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"></img>
+					<img
+						src="https://nzxt.com/assets/cms/34299/1621553076-johnny.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
+						alt=""
+					></img>
 				</div>
 			</div>
 		</OwnerSection>

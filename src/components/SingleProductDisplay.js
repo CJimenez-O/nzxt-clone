@@ -50,7 +50,11 @@ function SingleProductDisplay({ filter, title, details, height }) {
 										}}
 									>
 										<div className="image-wrapper">
-											<img className="prod-image" src={displayImage}></img>
+											<img
+												className="prod-image"
+												src={displayImage}
+												alt=""
+											></img>
 										</div>
 										<h3 className="name">{name}</h3>
 										<p className="sub">{sub}</p>

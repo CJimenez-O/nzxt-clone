@@ -7,7 +7,7 @@ function ProductFlexLeft({ title, description, image }) {
 		<ProdFlex>
 			<div className="product-flex">
 				<div className="image-display">
-					<img className="left-img" src={image}></img>
+					<img className="left-img" src={image} alt=""></img>
 				</div>
 				<div className="image-description">
 					<h2 className="title">{title}</h2>

@@ -1,4 +1,4 @@
-import React, { useContext, useReducer, useEffect } from "react";
+import React, { useContext, useReducer } from "react";
 import reducer from "../reducer/sidebarReducer";
 import { MAIL_OPEN, MAIL_CLOSE } from "../actions";
 

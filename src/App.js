@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
@@ -63,8 +63,6 @@ import Support from "./pages/Support";
 import Checkout from "./pages/CheckoutPage";
 import { links } from "./link";
 import Error from "./pages/ErrorPage";
-import MailingForm from "./components/mailingListForm";
-import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
 	return (
