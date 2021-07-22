@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 function Search() {
 	const { loginWithRedirect, myUser, logout } = useUserContext();
-	const { openCart, total_items, isCartOpen, closeCart } = useCartContext();
+	const { openCart, total_items } = useCartContext();
 
 	return (
 		<Searchbar>

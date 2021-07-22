@@ -24,7 +24,7 @@ const Navbar = () => {
 		isPerifMenuOpen,
 		closePerifMenu,
 	} = useProductsContext();
-	const { openCart } = useCartContext();
+	const { openCart, total_items } = useCartContext();
 
 	return (
 		<NavContainer>
@@ -40,11 +40,21 @@ const Navbar = () => {
 					<Link onClick={resetNav} to="/" style={{ textDecoration: "none" }}>
 						<h4 className="logo">NZXT-CLONE</h4>
 					</Link>
-					<button type="button" className="auth-btn" onClick={openCart}>
-						<h3 className="signOut">
-							<FaShoppingCart />
-						</h3>
-					</button>
+					<div className="shoppingCart-btn">
+						<button type="button" className="auth-btn" onClick={openCart}>
+							<h3 className="signOut">
+								<FaShoppingCart />
+							</h3>
+						</button>
+						<p
+							style={{
+								display: `${total_items ? "block" : "none"}`,
+							}}
+							className="total-cart-items"
+						>
+							{total_items}
+						</p>
+					</div>
 				</div>
 				<div className="nav-links">
 					<div className="nav-menu">
@@ -179,6 +189,25 @@ const NavContainer = styled.nav`
 		display: block;
 	}
 
+	.shoppingCart-btn {
+		display: flex;
+	}
+
+	.total-cart-items {
+		height: 18px;
+		width: 18px;
+		text-align: center;
+		padding-top: 2px;
+		font-size: 11px;
+		font-weight: 600;
+		border-radius: 50%;
+		margin-left: -8px;
+		margin-top: -5px;
+		z-index: 40;
+		color: white;
+		background-color: gray;
+	}
+
 	@media (min-width: 990px) {
 		margin-top: 50px;
 
@@ -187,6 +216,10 @@ const NavContainer = styled.nav`
 		}
 
 		.auth-btn {
+			display: none;
+		}
+
+		.shoppingCart-btn {
 			display: none;
 		}
 

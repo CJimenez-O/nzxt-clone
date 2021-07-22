@@ -17,6 +17,7 @@ function Sidebar() {
 		closeSidebar,
 		openBuiltSidebar,
 	} = useProductsContext();
+
 	return (
 		<SidebarContainer>
 			<aside
@@ -234,6 +235,12 @@ const SidebarContainer = styled.nav`
 	.signOut {
 		font-size: 16px;
 		font-weight: 400;
+	}
+
+	@media (max-width: 690px) {
+		.standard {
+			width: 100%;
+		}
 	}
 
 	@media (min-width: 1082px) {

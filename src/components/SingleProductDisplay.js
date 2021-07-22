@@ -165,5 +165,15 @@ const DisplayWrapper = styled.div`
 	.white {
 		color: white;
 	}
+
+	@media (max-width: 1090px) {
+		margin-top: 50px;
+		.product-section {
+			display: grid;
+			justify-items: center;
+			width: 100%;
+			margin: 0;
+		}
+	}
 `;
 export default SingleProductDisplay;
