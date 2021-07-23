@@ -135,6 +135,7 @@ function BuildingMenu() {
 					className="promo-link"
 					style={{ "text-decoration": "none" }}
 					onClick={closeBuiltMenu}
+					to="/collection/starter-pc"
 				>
 					<p className="promo-title">New to PC gaming? </p>
 					<p className="promo-details">Check out our Starter PC family</p>

@@ -60,6 +60,7 @@ function PerifMenu() {
 				<Link
 					className="promo-link"
 					to="/product/puck"
+					onClick={closePerifMenu}
 					style={{ "text-decoration": "none" }}
 				>
 					<p className="promo-title">Get organized with Puck</p>
