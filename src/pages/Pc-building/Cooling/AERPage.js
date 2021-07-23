@@ -31,6 +31,7 @@ function Kraken() {
 				upper="AER RGB Fans"
 				title="OUR COOLEST FANS YET."
 				lower=""
+				link="/product/aer-rgb"
 				url="https://stream.mux.com/g01s1vk7IPvAH7ghkrHeX00piLFIxirzNz/high.mp4"
 			/>
 

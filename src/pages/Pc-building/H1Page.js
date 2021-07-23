@@ -31,6 +31,7 @@ function H1() {
 				upper="SFF Case"
 				title="H1"
 				lower="Go small. Game big."
+				link="/product/h1"
 				url="https://stream.mux.com/Ub8P2zXC02lQZu298Vvqt1l02v6wOOpbdh/medium.mp4"
 			/>
 

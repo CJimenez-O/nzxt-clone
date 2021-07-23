@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Promo() {
 	return (
 		<Ad>
-			<p>This website is for educational purposes only.</p>
+			<p>This website is for educational purposes.</p>
 		</Ad>
 	);
 }

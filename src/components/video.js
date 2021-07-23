@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-function Video({ upper, title, lower, url }) {
+function Video({ upper, title, lower, url, link }) {
 	return (
 		<VideoStream>
 			<div className="video-stream">
@@ -10,7 +10,7 @@ function Video({ upper, title, lower, url }) {
 					<h6>{upper}</h6>
 					<h3>{title}</h3>
 					<h6 className="keep">{lower}</h6>
-					<Link className="button" style={{ textDecoration: "none" }}>
+					<Link to={link} className="button" style={{ textDecoration: "none" }}>
 						Shop Now
 					</Link>
 				</div>

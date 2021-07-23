@@ -455,9 +455,20 @@ const MainContainer = styled.div`
 		color: #7f00f5;
 	}
 
-	@media (max-width: 650px) {
+	@media (max-width: 690px) {
 		.flex {
 			display: block;
+		}
+
+		.promo-text h1 {
+			font-size: 30px;
+		}
+		.promo-text p {
+			font-size: 20px;
+		}
+
+		.product {
+			height: 200px !important;
 		}
 
 		.prod_display img {
@@ -465,6 +476,14 @@ const MainContainer = styled.div`
 			position: relative;
 			margin-left: 240px;
 			bottom: 160px;
+		}
+
+		.rgb_pc {
+			height: 220px !important;
+		}
+
+		.nav-option {
+			padding-left: 20px !important;
 		}
 
 		.cooler {
@@ -517,7 +536,7 @@ const MainContainer = styled.div`
 		}
 
 		.nav-option {
-			padding-right: 40px !important;
+			padding-right: 20px !important;
 			padding-left: 30px;
 		}
 

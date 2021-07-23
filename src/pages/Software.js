@@ -114,6 +114,7 @@ function Software() {
 						Download CAM
 					</Link>
 					<img
+						className="cam-image"
 						src="https://nzxt.com/assets/cms/34299/1619545322-cam-icons-w-case.png?auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
 						alt=""
 					></img>
@@ -314,7 +315,7 @@ const SoftwareContainer = styled.div`
 			display: block;
 		}
 		.software-image {
-			height: 400px !important;
+			height: 300px !important;
 		}
 
 		.product-flex {

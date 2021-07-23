@@ -348,6 +348,9 @@ const About = styled.div`
 	}
 
 	@media (max-width: 790px) {
+		.company-img {
+			height: 300px;
+		}
 		.import-lists {
 			display: block;
 		}

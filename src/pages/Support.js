@@ -11,7 +11,9 @@ function Support() {
 			<div className="support-hero">
 				<div className="support-hero-text">
 					<h1>Support</h1>
-					<p>Find additional customer support articles and FAQ.</p>
+					<p className="header-sub">
+						Find additional customer support articles and FAQ.
+					</p>
 				</div>
 				<div>
 					<img
@@ -286,6 +288,15 @@ const SupportContainer = styled.div`
 		font-size: 18px;
 		font-weight: 400;
 		padding-top: 15px;
+	}
+
+	@media (max-width: 790px) {
+		.header-sub {
+			font-size: 12px;
+		}
+		.support-hero-image {
+			height: 200px !important;
+		}
 	}
 
 	@media (max-width: 990px) {

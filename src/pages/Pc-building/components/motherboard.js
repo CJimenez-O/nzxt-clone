@@ -31,6 +31,7 @@ function Kraken() {
 				upper="NZXT x Intel"
 				title="N7 Z490"
 				lower=""
+				link="/product/n7-z490"
 				url="https://stream.mux.com/D8u009yGI612B00bxWVXnETjKxW6C00Z5Vu/high.mp4"
 			/>
 

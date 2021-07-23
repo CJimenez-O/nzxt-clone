@@ -31,6 +31,7 @@ function CRFT() {
 				upper="CRFT 08: H510"
 				title="VALHALLA"
 				lower="Limited Edition!"
+				link="/product/h510-valhalla"
 				url="https://stream.mux.com/yqnk6gcHP9yaIC8gSPlrTMwa4GWzpJDN/high.mp4"
 			/>
 

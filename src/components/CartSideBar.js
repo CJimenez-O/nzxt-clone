@@ -365,7 +365,6 @@ const CartBar = styled.div`
 		border-radius: 20px;
 		border: none;
 		padding-top: 10px;
-		padding-bottom: 10px;
 		font-size: 16px;
 		letter-spacing: 0.5px;
 		font-weight: 600;

@@ -31,6 +31,7 @@ function Kraken() {
 				upper="AIO Liquid"
 				title="COOLER THAN COOL"
 				lower="Keep your cool. Keep Your Style."
+				link="/product/KrakenZ63"
 				url="https://stream.mux.com/Un02D7xPL00fDjLRm01tzBU84q2US02YsWsW/high.mp4"
 			/>
 
