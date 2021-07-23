@@ -14,7 +14,7 @@ function Video({ upper, title, lower, url, link }) {
 						Shop Now
 					</Link>
 				</div>
-				<video webkit-playsInline playsInline autoPlay loop muted>
+				<video webkit-playsinline playsinline autoPlay loop muted>
 					<source src={url} />
 				</video>
 			</div>
