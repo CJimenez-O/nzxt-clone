@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Suggestion() {
@@ -9,34 +10,42 @@ function Suggestion() {
 			</div>
 			<div className="products">
 				<div className="product-1 left">
-					<img
-						className="product-img"
-						src="https://nzxt.com/assets/cms/34299/1616123904-creatorblack1.png?ar=1%3A1&auto=format&fit=crop&fm=webp&h=400&w=400"
-						alt=""
-					></img>
-					<h3 className="name">Creater PC</h3>
-					<p className="sub">A prebuilt creature with high performace specs</p>
-					<p className="price">$3,999.00</p>
+					<Link className="link" to="/collection/product/creator-pc">
+						<img
+							className="product-img"
+							src="https://nzxt.com/assets/cms/34299/1616123904-creatorblack1.png?ar=1%3A1&auto=format&fit=crop&fm=webp&h=400&w=400"
+							alt=""
+						></img>
+						<h3 className="name">Creater PC</h3>
+						<p className="sub">
+							A prebuilt creature with high performace specs
+						</p>
+						<p className="price">$3,999.00</p>
+					</Link>
 				</div>
 				<div className="product-1">
-					<img
-						className="product-img"
-						src="https://nzxt.com/assets/cms/34299/1615983328-whtstarterpcplus3quarterview.png?ar=1%3A1&auto=format&dpr=2&fit=crop&fm=webp&h=400&w=400"
-						alt=""
-					></img>
-					<h3 className="name">Starter Pro</h3>
-					<p className="sub">Comes with upgraded CPU & graphics card</p>
-					<p className="price">$1,399.00</p>
+					<Link className="link" to="/collection/product/starter-pc">
+						<img
+							className="product-img"
+							src="https://nzxt.com/assets/cms/34299/1615983328-whtstarterpcplus3quarterview.png?ar=1%3A1&auto=format&dpr=2&fit=crop&fm=webp&h=400&w=400"
+							alt=""
+						></img>
+						<h3 className="name">The Starter </h3>
+						<p className="sub">Begin your PC gaming journey </p>
+						<p className="price">$999.00</p>
+					</Link>
 				</div>
 				<div className="product-1">
-					<img
-						className="product-img"
-						src="https://nzxt.com/assets/cms/34299/1615983718-emberpcwhtgigabyte1660superochero.png?ar=1%3A1&auto=format&fit=crop&fm=webp&h=400&w=400"
-						alt=""
-					></img>
-					<h3 className="name">Starter Plus</h3>
-					<p className="sub">Built by experts for a competative advantage</p>
-					<p className="price">$1,299.00</p>
+					<Link className="link" to="/collection/product/starter-pc-plus">
+						<img
+							className="product-img"
+							src="https://nzxt.com/assets/cms/34299/1615983718-emberpcwhtgigabyte1660superochero.png?ar=1%3A1&auto=format&fit=crop&fm=webp&h=400&w=400"
+							alt=""
+						></img>
+						<h3 className="name">Starter Plus</h3>
+						<p className="sub">Built by experts for a competative advantage</p>
+						<p className="price">$1,299.00</p>
+					</Link>
 				</div>
 			</div>
 		</SuggestProd>
@@ -53,6 +62,11 @@ const SuggestProd = styled.div`
 		margin-bottom: 50px;
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+
+	.link {
+		text-decoration: none;
+		color: black;
 	}
 
 	.like {

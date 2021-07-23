@@ -5,7 +5,6 @@ import ProductImageLeft from "../components/productFlexLeft";
 import ProductImageRight from "../components/ProductFlexRight";
 import Warranty from "../components/warranty";
 import Suggestion from "../components/suggest";
-import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
 import SingleProductDisplay from "../components/SingleProductDisplay";
 
@@ -41,7 +40,6 @@ function H1Mini() {
 
 			<Warranty />
 			<Suggestion />
-			<MailingList />
 			<Footer />
 		</Wrapper>
 	);

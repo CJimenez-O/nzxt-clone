@@ -157,6 +157,7 @@ const NavContainer = styled.nav`
 		letter-spacing: 0.5px;
 		font-weight: 600;
 		padding-right: 20px;
+		transition: all 0.3s linear;
 	}
 
 	.link:hover {
