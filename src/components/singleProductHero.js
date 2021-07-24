@@ -466,7 +466,7 @@ const Wrapper = styled.div`
 
 	@media (max-width: 670px) {
 		.main-image {
-			height: 400px !important;
+			height: 300px !important;
 		}
 	}
 

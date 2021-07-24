@@ -197,7 +197,7 @@ function Home() {
 						Shop Now
 					</Link>
 				</div>
-				<video autoPlay loop muted>
+				<video playsInline autoPlay loop muted>
 					<source src="https://stream.mux.com/Un02D7xPL00fDjLRm01tzBU84q2US02YsWsW/high.mp4" />
 				</video>
 			</div>
