@@ -26,6 +26,7 @@ function Meet() {
 				</div>
 				<div className="founder-image">
 					<img
+						className="founder"
 						src="https://nzxt.com/assets/cms/34299/1621553076-johnny.png?ar=1%3A1&auto=format&dpr=2&fit=max&fm=webp&h=464&w=464"
 						alt=""
 					></img>
@@ -85,6 +86,12 @@ const OwnerSection = styled.div`
 		height: 500px;
 	}
 
+	@media (max-width: 790px) {
+		.founder {
+			height: 300px;
+		}
+	}
+
 	@media (max-width: 1200px) {
 		margin-top: 95rem;
 		background-color: white;
@@ -100,7 +107,7 @@ const OwnerSection = styled.div`
 
 		.founder-decript {
 			left: 35%;
-			margin-top: 13rem;
+			margin-top: 14rem;
 			position: absolute;
 			transform: translate(-50%, -50%);
 		}
@@ -111,8 +118,8 @@ const OwnerSection = styled.div`
 		}
 
 		.founder-button {
-			padding-left: 60px;
-			padding-right: 60px;
+			padding-left: 30px;
+			padding-right: 30px;
 		}
 
 		img {

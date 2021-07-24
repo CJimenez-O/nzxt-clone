@@ -59,6 +59,10 @@ const ProdFlex = styled.div`
 		.image-display {
 			left: 10% !important;
 		}
+
+		.left-img {
+			height: 300px !important;
+		}
 	}
 
 	@media (max-width: 790px) {

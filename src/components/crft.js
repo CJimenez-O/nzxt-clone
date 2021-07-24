@@ -246,6 +246,10 @@ const Product = styled.div`
 			height: 80px !important;
 		}
 
+		.pc {
+			height: 300px;
+		}
+
 		.gaming h2 {
 			font-size: 2rem;
 		}
@@ -254,6 +258,10 @@ const Product = styled.div`
 			margin-top: 10px;
 			font-size: 9rem;
 			padding-bottom: 20px;
+		}
+
+		.cam img {
+			height: 120px;
 		}
 	}
 
@@ -280,7 +288,8 @@ const Product = styled.div`
 
 		.learn-more {
 			margin-top: 55rem;
-			display: block;
+			display: grid;
+			justify-items: center;
 		}
 		.cam {
 			margin-bottom: 40px;

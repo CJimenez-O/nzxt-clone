@@ -55,6 +55,12 @@ const ProdHero = styled.div`
 		height: 350px;
 	}
 
+	@media (max-width: 690px) {
+		.product-img {
+			height: 130px !important;
+		}
+	}
+
 	@media (max-width: 790px) {
 		.promo-text {
 			padding-top: 0px;
@@ -69,7 +75,7 @@ const ProdHero = styled.div`
 		}
 
 		.product-img {
-			height: 180px !important;
+			height: 180px;
 		}
 	}
 

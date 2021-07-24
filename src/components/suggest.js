@@ -99,6 +99,11 @@ const SuggestProd = styled.div`
 		font-weight: 600;
 	}
 
+	@media (max-width: 690px) {
+		.products {
+		}
+	}
+
 	@media (max-width: 790px) {
 		.products {
 			overflow: auto;

@@ -157,6 +157,20 @@ const DisplayWrapper = styled.div`
 		color: white;
 	}
 
+	@media (max-width: 690px) {
+		.prod-image {
+			height: 300px;
+		}
+
+		.cart-btn {
+			margin-left: 250px;
+		}
+
+		.details h3 {
+			font-size: 20px;
+		}
+	}
+
 	@media (max-width: 1090px) {
 		margin-top: 60px;
 

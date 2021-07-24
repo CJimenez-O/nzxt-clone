@@ -474,7 +474,7 @@ const MainContainer = styled.div`
 		.prod_display img {
 			height: 220px;
 			position: relative;
-			margin-left: 240px;
+			margin-left: 100px;
 			bottom: 160px;
 		}
 
@@ -487,7 +487,7 @@ const MainContainer = styled.div`
 		}
 
 		.cooler {
-			margin-left: 240px !important;
+			margin-left: 100px !important;
 		}
 	}
 
