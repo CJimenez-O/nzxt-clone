@@ -101,8 +101,8 @@ const AudioContainer = styled.div`
 		img {
 			height: 200px;
 			display: block;
-			width: 200px;
 			margin: auto;
+			width: unset;
 		}
 	}
 
