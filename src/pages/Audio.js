@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Suggestion from "../components/suggest";
-import MailingList from "../components/mailingListBtn";
 import Footer from "../components/Footer";
 
 function Audio() {
@@ -54,7 +53,6 @@ function Audio() {
 				</div>
 			</div>
 			<Suggestion />
-			<MailingList />
 			<Footer />
 		</AudioContainer>
 	);
@@ -99,6 +97,15 @@ const AudioContainer = styled.div`
 		height: 450px;
 	}
 
+	@media (max-width: 790px) {
+		img {
+			height: 300px;
+			display: block;
+			width: 300px;
+			margin: auto;
+		}
+	}
+
 	@media (max-width: 990px) {
 		.audio-content {
 			display: block;
@@ -109,6 +116,12 @@ const AudioContainer = styled.div`
 			justify-content: center;
 			position: relative;
 			width: 100%;
+		}
+
+		img {
+			display: block;
+			width: 400px;
+			margin: auto;
 		}
 	}
 `;
