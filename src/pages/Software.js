@@ -300,7 +300,7 @@ const SoftwareContainer = styled.div`
 	}
 
 	.cam-logo {
-		height: 165px !important;
+		height: 135px;
 		padding-bottom: 32px;
 	}
 
@@ -338,6 +338,17 @@ const SoftwareContainer = styled.div`
 		.descript {
 			width: 80%;
 		}
+
+		.left-img {
+			height: 250px !important;
+		}
+
+		.cam img {
+			height: 120px;
+		}
+
+		.cam-logo {
+		height: 105px;
 	}
 
 	@media (max-width: 1200px) {

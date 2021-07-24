@@ -172,7 +172,7 @@ const DisplayWrapper = styled.div`
 
 	@media (max-width: 690px) {
 		.prod-image {
-			height: 300px;
+			height: 200px;
 		}
 
 		.cart-btn {
