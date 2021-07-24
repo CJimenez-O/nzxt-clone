@@ -99,9 +99,9 @@ const AudioContainer = styled.div`
 
 	@media (max-width: 790px) {
 		img {
-			height: 300px;
+			height: 200px;
 			display: block;
-			width: 300px;
+			width: 200px;
 			margin: auto;
 		}
 	}
