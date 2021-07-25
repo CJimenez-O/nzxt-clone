@@ -123,9 +123,7 @@ function Software() {
 					<h3>Become a Beta Tester</h3>
 					<h6>
 						Get your hands on next-generation CAM software before anyone else in
-						the community. CAM Beta provides tech-savvy users the opportunity to
-						work directly with our dev team to provide feedback on future
-						versions of NZXT CAM.
+						the community.
 					</h6>
 					<Link className="link" style={{ textDecoration: "none" }}>
 						Download CAM Beta

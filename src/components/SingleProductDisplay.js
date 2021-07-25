@@ -171,12 +171,15 @@ const DisplayWrapper = styled.div`
 	}
 
 	@media (max-width: 690px) {
+		.details {
+			width: 60%;
+		}
 		.prod-image {
 			height: 200px;
 		}
 
 		.cart-btn {
-			margin-left: 250px;
+			margin-left: 220px;
 		}
 
 		.details h3 {
