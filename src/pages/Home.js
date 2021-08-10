@@ -487,6 +487,7 @@ const MainContainer = styled.div`
 		}
 
 		.cooler {
+			margin-top: 20px;
 			margin-left: 100px !important;
 		}
 	}
